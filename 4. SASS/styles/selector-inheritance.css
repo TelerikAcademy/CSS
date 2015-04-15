@@ -1,0 +1,15 @@
+.clearfix, body ul {
+  zoom: 1; }
+  .clearfix:after, body ul:after {
+    display: block;
+    height: 0;
+    content: "";
+    clear: both; }
+
+body ul li {
+  float: left;
+  margin-left: 15px;
+  background-color: #f19d9d; }
+  body ul li:nth-of-type(2n) {
+    background-color: #037e7e; }
+

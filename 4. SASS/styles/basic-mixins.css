@@ -1,0 +1,15 @@
+body ul {
+  list-style-type: none;
+  zoom: 1; }
+  body ul:after {
+    display: block;
+    content: "";
+    height: 0;
+    clear: both; }
+  body ul li {
+    float: left;
+    padding: 0;
+    margin: 0; }
+    body ul li a {
+      padding: 5px; }
+

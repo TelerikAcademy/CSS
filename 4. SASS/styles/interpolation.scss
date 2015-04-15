@@ -1,0 +1,11 @@
+$border-side:top;
+$border-color:blue;
+$border-style:ridge;
+$border-width:15px;
+
+body
+{
+	div{
+		border-#{$border-side}:$border-width $border-style $border-color;
+	}
+}

@@ -1,0 +1,26 @@
+.clearfix{
+	zoom:1;
+	&:after{
+		display:block;
+		height:0;
+		content:"";
+		clear:both;
+	}
+}
+
+body {
+
+	ul{
+		@extend .clearfix;
+
+		li{
+			float:left;
+			margin-left:15px;
+			background-color:#f19d9d;
+
+			&:nth-of-type(2n){
+				background-color:#037e7e;
+			}
+		}
+	}
+}

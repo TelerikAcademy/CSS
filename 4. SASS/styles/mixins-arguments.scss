@@ -1,0 +1,53 @@
+@mixin linear-gradient($from, $to,$repeat:none) {
+    background-image: -webkit-linear-gradient(top, $from, $to);
+    background-image: -moz-linear-gradient(top, $from, $to);
+    background-image: -ms-linear-gradient(top, $from, $to);
+    background-image: -o-linear-gradient(top, $from, $to);
+    background-image: linear-gradient(to bottom, $from, $to);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#{$from}', endColorstr='#{$to}',GradientType=0 );
+	background-repeat:$repeat;
+}
+
+@mixin rounded-corner($vertical,$horizonal,$radius:10px) {	
+	border-#{$vertical}-#{$horizonal}-radius: $radius;
+	-moz-border-radius-#{$vertical}#{$horizonal}: $radius;
+	-webkit-border-#{$vertical}-#{$horizonal}-radius: $radius;
+}
+
+@mixin rounded-corners($radius:10px){
+	@include rounded-corner(top,left,$radius);
+	@include rounded-corner(top,right,$radius);
+	@include rounded-corner(bottom,right,$radius);
+	@include rounded-corner(bottom,left,$radius);
+}
+
+@mixin box($border:none,$background:rgba(0,0,0,0.7),$size:200px) {
+	display:block;
+	width:$size;
+	height:$size;
+	border:$border;
+	background:$background;
+	padding:15px;
+}
+
+body {
+    height: 500px;
+    @include
+    linear-gradient(#ffffff,#000000);
+
+    div {
+        height: 200px;
+        width: 200px;
+        @include
+        linear-gradient(#ff0000,#0000ff);
+
+        &.box {
+			color:white;
+			$background-color: linear-gradient(#222,#ccc);
+            @include
+            box(3px solid #333,$background-color,300px);
+            @include
+            rounded-corners(15px);
+        }
+    }
+}

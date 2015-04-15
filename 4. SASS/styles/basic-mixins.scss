@@ -1,0 +1,24 @@
+@mixin clearfix{
+	zoom:1;
+	&:after{
+		display:block;
+		content:"";
+		height:0;
+		clear:both;
+	}
+}
+
+body {
+	ul{
+		list-style-type:none;
+		@include clearfix;
+		li{
+			float:left;
+			padding:0;
+			margin:0;
+			a{
+				padding:5px;
+			}
+		}
+	}
+}

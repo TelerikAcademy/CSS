@@ -1,0 +1,43 @@
+body, header, h1, nav, ul, li, a {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font: normal 16px arial;
+  color: #fff;
+  background-color: #011b63; }
+  body h1 {
+    font-size: 2.3em;
+    font-weight: bold; }
+  body nav {
+    background-color: rgba(0, 148, 255, 0.73);
+    font-size: 1.4em;
+    vertical-align: center; }
+    body nav ul {
+      list-style-type: none; }
+      body nav ul li {
+        display: inline-block;
+        padding: 0 15px;
+        margin: 5px 0;
+        border-right: 1px solid black; }
+        body nav ul li a {
+          text-decoration: none;
+          color: #fff; }
+        body nav ul li > ul {
+          display: none;
+          position: absolute;
+          background-color: rgba(0, 77, 255, 0.73); }
+          body nav ul li > ul li {
+            display: block;
+            border: none;
+            margin: 5px;
+            border-bottom: 1px solid #fff; }
+            body nav ul li > ul li:last-of-type {
+              border: none; }
+        body nav ul li:last-of-type {
+          border: none; }
+        body nav ul li:hover > a {
+          text-decoration: underline; }
+        body nav ul li:hover > ul {
+          display: block; }
+

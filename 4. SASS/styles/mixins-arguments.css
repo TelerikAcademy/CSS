@@ -1,0 +1,40 @@
+body {
+  height: 500px;
+  background-image: -webkit-linear-gradient(top, white, black);
+  background-image: -moz-linear-gradient(top, white, black);
+  background-image: -ms-linear-gradient(top, white, black);
+  background-image: -o-linear-gradient(top, white, black);
+  background-image: linear-gradient(to bottom, white, black);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='white', endColorstr='black',GradientType=0 );
+  background-repeat: none; }
+  body div {
+    height: 200px;
+    width: 200px;
+    background-image: -webkit-linear-gradient(top, red, blue);
+    background-image: -moz-linear-gradient(top, red, blue);
+    background-image: -ms-linear-gradient(top, red, blue);
+    background-image: -o-linear-gradient(top, red, blue);
+    background-image: linear-gradient(to bottom, red, blue);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='red', endColorstr='blue',GradientType=0 );
+    background-repeat: none; }
+    body div.box {
+      color: white;
+      display: block;
+      width: 300px;
+      height: 300px;
+      border: 3px solid #333333;
+      background: linear-gradient(#222222, #cccccc);
+      padding: 15px;
+      border-top-left-radius: 15px;
+      -moz-border-radius-topleft: 15px;
+      -webkit-border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      -moz-border-radius-topright: 15px;
+      -webkit-border-top-right-radius: 15px;
+      border-bottom-right-radius: 15px;
+      -moz-border-radius-bottomright: 15px;
+      -webkit-border-bottom-right-radius: 15px;
+      border-bottom-left-radius: 15px;
+      -moz-border-radius-bottomleft: 15px;
+      -webkit-border-bottom-left-radius: 15px; }
+
