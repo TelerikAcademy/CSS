@@ -1,0 +1,48 @@
+﻿body, div, ul, li, a {
+margin:0;padding:0;
+}
+body {
+	@background-color:#888;
+	@default-border:1px solid black;
+	background-color:@background-color;
+
+	aside{
+		width:300px;
+	}
+
+	ul{
+		&.list-view{
+			background:lighten(@background-color,10%);		
+			list-style-type:none;			
+
+			li{
+				display:block;
+				border:none;
+				border-bottom:@default-border;
+
+				a{
+					color:white;
+					text-decoration:none;
+				}
+
+				ul{
+					display:none;
+					margin-left:15px;
+				}
+
+				&:last-of-type{
+					border:none;
+				}
+
+				&:hover{
+					& > a{
+						text-decoration:underline;
+					}
+					& > ul {
+						display:block;
+					}
+				}
+			}
+		}
+	}
+}

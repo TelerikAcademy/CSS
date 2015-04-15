@@ -1,0 +1,222 @@
+﻿
+
+body, header, footer, aside, section, div, p, ul, li, a, article, h1, h2 {
+    margin: 0;
+    padding: 0;
+}
+
+.linear-gradient(@from-color,@from-pos,@to-color,@to-pos,@repeat: no-repeat) {
+    background: @to-color;
+    background: -moz-linear-gradient(top, @from-color @from-pos, @to-color @to-pos);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(@from-pos,@from-color), color-stop(@to-pos,@to-color));
+    background: -webkit-linear-gradient(top, @from-color @from-pos,@to-color @to-pos);
+    background: -o-linear-gradient(top, @from-color @from-pos,@to-color @to-pos);
+    background: -ms-linear-gradient(top, @from-color @from-pos,@to-color @to-pos);
+    background: linear-gradient(to bottom, @from-color @from-pos,@to-color @to-pos);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='@{from-color}', endColorstr='@{to-color}',GradientType=0 );
+    background-repeat: @repeat;
+}
+
+.clearfix() {
+    zoom: 1;
+
+    &:after {
+        display: block;
+        height: 0;
+        content: "";
+        height: 0;
+    }
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    @default-bg-color: #89FFB0;
+    @default-font-size: 14px;
+    @default-font-color: #123456;
+    @default-font-family: Cambria, 'Times New Roman', 'Nimbus Roman No9 L', 'Freeserif', Times, serif;
+    @nav-font-family: 'Monotype Corsiva', 'Apple Chancery', 'ITC Zapf Chancery', 'URW Chancery L', cursive;
+    @nav-from-bg-color: #0B6F0B;
+    background-color: @default-bg-color;
+
+    div#wrapper {
+        color: @default-font-color;
+        font-size: @default-font-size;
+        font-family: @default-font-family;
+        min-height: 100%;
+        position: relative;
+
+        header {
+            &#site-header {
+                .linear-gradient(@nav-from-bg-color,0%,@default-bg-color,75%);
+                margin-bottom: 25px;
+                padding: 25px;
+
+                h1 {
+                    font-size: 2.7em;
+                    color: #cbefdb;
+                }
+
+                nav {
+                    margin-left: 15px;
+                    font-family: @nav-font-family;
+                    font-size: 1.9em;
+
+                    ul {
+                        list-style-type: none;
+
+                        li {
+                            display: inline-block;
+                            padding: 5px;
+                            border-right: 1px solid black;
+                            text-align: center;
+
+                            a {
+                                color: @default-font-color;
+                                text-decoration: none;
+                            }
+
+                            &:last-of-type {
+                                border: none;
+                            }
+
+                            &:hover {
+                                & > a {
+                                    text-decoration: underline;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        aside {
+            width: 150px;
+            min-width: 150px;
+            display: block;
+            margin: 0 35px;
+            padding: 5px;
+            text-align: center;
+            border: 1px solid black;
+            border-radius: 15px;
+            .linear-gradient(@default-bg-color,0%,lighten(@default-bg-color,20%),100%);
+
+            h2 {
+                font-size: 1.8em;
+				margin-bottom:10px;
+            }
+
+            ul {
+                margin-left: 0 auto;
+                display: inline-block;
+                text-align: left;
+
+                li {
+                    margin-left: 15px;
+					margin-bottom:5px;
+
+                    a {
+                        text-decoration: none;
+                        color: @default-font-color;
+                    }
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+
+            div {
+            }
+
+            &.left {
+                float: left;
+            }
+
+            &.right {
+                float: right;
+            }
+        }
+
+        section {
+            margin: 0 auto;
+            width: 1200px;
+            position: relative;
+            display: block;
+            .clearfix;
+
+            article {
+                header {
+                    background: none;
+
+                    h1 {
+                        font-size: 1.7em;
+                        color: @default-font-color;
+                    }
+                }
+
+                div {
+                    p {
+                        text-indent: 2em;
+                        margin-bottom: 0.7em;
+
+                        a {
+                            text-decoration: none;
+                            color: lighten(@default-font-color,20%);
+
+                            &:hover {
+                                text-decoration: underline;
+                            }
+                        }
+
+                        strong {
+                            font-weight: bold;
+                            color: lighten(@default-font-color,10%);
+                        }
+
+                        em {
+                            font-style: italic;
+                            font-weight: 400;
+                            color: lighten(@default-font-color,15%);
+                        }
+                    }
+
+                    ul {
+                        list-style-type: none;
+
+                        li {
+                            h2 {
+                                margin-left: 20px;
+                                font-size: 1.3em;
+                            }
+                        }
+                    }
+                }
+
+
+                footer {
+                }
+            }
+        }
+
+
+        footer {
+            display: block;
+            position: absolute;
+            height: 40px;
+            margin: 0 auto;
+            bottom: 0;
+            text-align: center;
+            width: 100%;
+            background-color: @default-bg-color;
+
+            h2 {
+                text-align: center;
+                font-size: 1.4em;
+            }
+        }
+    }
+}

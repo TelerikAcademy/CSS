@@ -1,0 +1,176 @@
+﻿ body,
+header,
+footer,
+aside,
+section,
+div,
+p,
+ul,
+li,
+a,
+article,
+h1,
+h2 {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  background-color: #89ffb0;
+}
+body div#wrapper {
+  color: #123456;
+  font-size: 14px;
+  font-family: Cambria, 'Times New Roman', 'Nimbus Roman No9 L', 'Freeserif', Times, serif;
+  min-height: 100%;
+  position: relative;
+}
+body div#wrapper header#site-header {
+  background: #89ffb0;
+  background: -moz-linear-gradient(top, #0b6f0b 0%, #89ffb0 75%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #0b6f0b), color-stop(75%, #89ffb0));
+  background: -webkit-linear-gradient(top, #0b6f0b 0%, #89ffb0 75%);
+  background: -o-linear-gradient(top, #0b6f0b 0%, #89ffb0 75%);
+  background: -ms-linear-gradient(top, #0b6f0b 0%, #89ffb0 75%);
+  background: linear-gradient(to bottom, #0b6f0b 0%, #89ffb0 75%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0b6f0b', endColorstr='#89ffb0', GradientType=0);
+  background-repeat: no-repeat;
+  margin-bottom: 25px;
+  padding: 25px;
+}
+body div#wrapper header#site-header h1 {
+  font-size: 2.7em;
+  color: #cbefdb;
+}
+body div#wrapper header#site-header nav {
+  margin-left: 15px;
+  font-family: 'Monotype Corsiva', 'Apple Chancery', 'ITC Zapf Chancery', 'URW Chancery L', cursive;
+  font-size: 1.9em;
+}
+body div#wrapper header#site-header nav ul {
+  list-style-type: none;
+}
+body div#wrapper header#site-header nav ul li {
+  display: inline-block;
+  padding: 5px;
+  border-right: 1px solid black;
+  text-align: center;
+}
+body div#wrapper header#site-header nav ul li a {
+  color: #123456;
+  text-decoration: none;
+}
+body div#wrapper header#site-header nav ul li:last-of-type {
+  border: none;
+}
+body div#wrapper header#site-header nav ul li:hover > a {
+  text-decoration: underline;
+}
+body div#wrapper aside {
+  width: 150px;
+  min-width: 150px;
+  display: block;
+  margin: 0 35px;
+  padding: 5px;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 15px;
+  background: #effff4;
+  background: -moz-linear-gradient(top, #89ffb0 0%, #effff4 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #89ffb0), color-stop(100%, #effff4));
+  background: -webkit-linear-gradient(top, #89ffb0 0%, #effff4 100%);
+  background: -o-linear-gradient(top, #89ffb0 0%, #effff4 100%);
+  background: -ms-linear-gradient(top, #89ffb0 0%, #effff4 100%);
+  background: linear-gradient(to bottom, #89ffb0 0%, #effff4 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#89ffb0', endColorstr='#effff4', GradientType=0);
+  background-repeat: no-repeat;
+}
+body div#wrapper aside h2 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+body div#wrapper aside ul {
+  margin-left: 0 auto;
+  display: inline-block;
+  text-align: left;
+}
+body div#wrapper aside ul li {
+  margin-left: 15px;
+  margin-bottom: 5px;
+}
+body div#wrapper aside ul li a {
+  text-decoration: none;
+  color: #123456;
+}
+body div#wrapper aside ul li:hover {
+  text-decoration: underline;
+}
+body div#wrapper aside.left {
+  float: left;
+}
+body div#wrapper aside.right {
+  float: right;
+}
+body div#wrapper section {
+  margin: 0 auto;
+  width: 1200px;
+  position: relative;
+  display: block;
+  zoom: 1;
+}
+body div#wrapper section:after {
+  display: block;
+  content: "";
+  height: 0;
+}
+body div#wrapper section article header {
+  background: none;
+}
+body div#wrapper section article header h1 {
+  font-size: 1.7em;
+  color: #123456;
+}
+body div#wrapper section article div p {
+  text-indent: 2em;
+  margin-bottom: 0.7em;
+}
+body div#wrapper section article div p a {
+  text-decoration: none;
+  color: #2467aa;
+}
+body div#wrapper section article div p a:hover {
+  text-decoration: underline;
+}
+body div#wrapper section article div p strong {
+  font-weight: bold;
+  color: #1b4d80;
+}
+body div#wrapper section article div p em {
+  font-style: italic;
+  font-weight: 400;
+  color: #1f5a95;
+}
+body div#wrapper section article div ul {
+  list-style-type: none;
+}
+body div#wrapper section article div ul li h2 {
+  margin-left: 20px;
+  font-size: 1.3em;
+}
+body div#wrapper footer {
+  display: block;
+  position: absolute;
+  height: 40px;
+  margin: 0 auto;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+  background-color: #89ffb0;
+}
+body div#wrapper footer h2 {
+  text-align: center;
+  font-size: 1.4em;
+}
