@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>CSS Position Rules 2</title>
+<style type="text/css">
+	body {font-size:25px}
+	div {border:1px solid red; background-color:white;}
+	td {border:1px solid red}
+</style>
+</head>
+<body>
+This image <img src="images/arrow.gif" style="vertical-align:-10px" alt="arrow" /> has vertical align set to -10px<br />
+<br />
+This image <img src="images/arrow.gif" style="vertical-align:super" alt="arrow" /> has vertical align set to super<br />
+<br />
+This image <img src="images/arrow.gif" style="vertical-align:baseline" alt="arrow" /> has vertical align set to baseline<br />
+<br />
+<strong>Vertical align, applied to table cells:</strong>
+<table>
+	<tr>
+		<td style="vertical-align:top">cell with vertical align: top</td>
+		<td style="vertical-align:middle">cell with vertical align: middle</td>
+		<td style="vertical-align:bottom">cell with vertical align: bottom</td>
+		<td>Some cell <br />to make<br />the table<br />higher</td>
+	</tr>
+</table>
+<br />
+<strong>Z-index property applied to four div elements</strong>
+<div style="position:relative;height:160px">
+	<div style="position:absolute;top: 50px;left:150px;height:100px;width:250px">This div is first in code</div>
+	<div style="position:absolute;top:100px;left:200px;height: auto;width:300px;z-index:3">This div is seccond in code</div>
+	<div style="position:absolute;top: 50px;left:420px;height:100px;width:250px;z-index:2">This div is third in code</div>
+	<div style="position:absolute;top: 10px;left:520px;height:100px;width:250px;z-index:1">This div is fourth in code</div>
+</div>
+</body>
+</html>

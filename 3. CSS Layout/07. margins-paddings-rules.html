@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+
+<title>CSS Size Rules</title>
+	<style type="text/css">
+		body {font-size:25px}
+		div, td, table {border:3px solid red}		
+		.green { 
+			background: #77FF77; 
+			border: 1px solid black;
+			padding: 15px;
+			padding-top: 5px;
+		}
+		.red { 
+			background: #FF7777;
+			border: 5px solid red;
+			padding-left: 20px;
+			margin-bottom: 30px;
+		}		
+		.one {padding:30px;margin:20px}
+		.two {padding:5px 100px 50px 30px; margin:50px 20px}
+	</style>
+</head>
+
+<body>
+
+	<div class="green">
+		External div
+		<div class="red">
+			Internal div		
+		</div>	
+	</div>
+	
+	<div class="one">This div has padding and margin on four sides of 20px
+		<div class="two">This div has padding on top, left, bottom and right of
+		5px, 100px, 50px, 30px; 50px margin on top and bottom and 20px on left and right</div>
+	</div>
+	<br />
+	<br />
+	
+	<table>
+		<tr><td style="margin:10px;padding:20px;">This table cell has 10px margin
+		and 20px padding on all four sides.<br />
+		Notice it ignores the margins!</td></tr>
+	</table>
+	
+</body>
+
+</html>
