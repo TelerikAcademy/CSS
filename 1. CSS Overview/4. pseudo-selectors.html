@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Pseudo selectors</title>
+    <style>
+        
+        header nav ul {
+            list-style-type:none;
+        }
+        header nav ul li a {
+            text-decoration:none;
+        }
+
+            header nav ul li a:hover {
+                text-decoration:underline;
+            }
+
+        section article header h1:before {
+            content:" « "
+        }
+        section article header h1:after{
+            content:" » "
+        }
+
+        section article p:first-letter {
+            font-size:1.7em;
+            font-family:'Old English Text MT';
+        }
+
+        section article p:first-line{
+            color:blue;
+            background-color:lightblue;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">item</a>
+                </li>
+                <li>
+                    <a href="#">item</a>
+                </li>
+                <li>
+                    <a href="#">item</a>
+                </li>
+                <li>
+                    <a href="#">item</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <article>
+            <header>
+                <h1>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet</h1>
+            </header>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum aliquam neque sit amet lorem sagittis elementum. Donec sed turpis nisl, vel pharetra massa. Integer semper erat arcu. Vivamus nec leo eleifend dui bibendum volutpat. Integer vel augue at enim rhoncus gravida. Nulla facilisi. </p>
+        </article>
+    </section>
+</body>
+</html>
