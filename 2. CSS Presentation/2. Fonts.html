@@ -1,0 +1,49 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+	<title>More Fonts</title>
+	<style>
+		@font-face {
+			font-family: SketchRockwell;
+			src: url(fonts/SketchRockwell-Bold.ttf);
+		}
+
+		h1 {
+			font-family: SketchRockwell;
+			font-size: 3.7em;
+			font-weight: normal;
+			text-shadow: 2px 5px 27px rgba(178, 0, 255, 0.78);
+		}
+
+		h2 {
+			font: normal 2.5em Consolas;
+		}
+
+		.box {
+			height: 100px;
+			width: 200px;
+			overflow: hidden;
+			white-space:nowrap;
+		}
+
+		.overflow-ellipsis {
+			text-overflow: ellipsis;
+		}
+		
+		.overflow-clip {
+			text-overflow: clip;
+		}
+	</style>
+</head>
+<body>
+	<h1>Telerik Software Academy</h1>
+	<h2>Normal text</h2>
+	<p class="box">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam elit sapien, faucibus in vehicula vel, consectetur id arcu. Fusce magna nulla, sagittis ut iaculis in, hendrerit eu massa. Vestibulum ornare varius tellus in tincidunt. Suspendisse sit amet turpis ipsum, id dignissim ligula. Vestibulum commodo vestibulum tortor vitae euismod. Maecenas gravida pulvinar massa in vestibulum. In erat enim, scelerisque eget auctor nec, volutpat ac sem. Suspendisse sagittis orci at est placerat faucibus eu et mauris. Aliquam consectetur magna vitae magna dictum sodales.</p>
+
+	<h2>Text-overflow:ellipsis</h2>
+	<p class="box overflow-ellipsis">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam elit sapien, faucibus in vehicula vel, consectetur id arcu. Fusce magna nulla, sagittis ut iaculis in, hendrerit eu massa. Vestibulum ornare varius tellus in tincidunt. Suspendisse sit amet turpis ipsum, id dignissim ligula. Vestibulum commodo vestibulum tortor vitae euismod. Maecenas gravida pulvinar massa in vestibulum. In erat enim, scelerisque eget auctor nec, volutpat ac sem. Suspendisse sagittis orci at est placerat faucibus eu et mauris. Aliquam consectetur magna vitae magna dictum sodales.</p>
+	<h2>text-overflow: clip</h2>
+	<p class="box overflow-clip">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam elit sapien, faucibus in vehicula vel, consectetur id arcu. Fusce magna nulla, sagittis ut iaculis in, hendrerit eu massa. Vestibulum ornare varius tellus in tincidunt. Suspendisse sit amet turpis ipsum, id dignissim ligula. Vestibulum commodo vestibulum tortor vitae euismod. Maecenas gravida pulvinar massa in vestibulum. In erat enim, scelerisque eget auctor nec, volutpat ac sem. Suspendisse sagittis orci at est placerat faucibus eu et mauris. Aliquam consectetur magna vitae magna dictum sodales.</p>
+</body>
+</html>
+

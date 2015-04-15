@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title></title>
+	<style>
+		.invisible {
+			-moz-opacity: 0;
+			opacity: 0;
+			-ms-filter: alpha(opacity=0);
+			-webkit-filter: alpha(opacity=0);
+			filter: alpha(opacity=0);
+			-ms-zoom: 1;
+			zoom: 1;
+		}
+
+		.third-visible {
+			-moz-opacity: 0.3;
+			opacity: 0.3;
+			-ms-filter: alpha(opacity=30);
+			-webkit-filter: alpha(opacity=30);
+			filter: alpha(opacity=30);
+			-ms-zoom: 1;
+			zoom: 1;
+		}
+
+		.half-visible {
+			-moz-opacity: 0.5;
+			opacity: 0.5;
+			-ms-filter: alpha(opacity=50);
+			-webkit-filter: alpha(opacity=50);
+			filter: alpha(opacity=50);
+			-ms-zoom: 1;
+			zoom: 1;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<img class="invisible" src="imgs/sheep.png" />
+		<img class="third-visible" src="imgs/sheep.png" />
+		<img class="half-visible" src="imgs/sheep.png" />
+		<img src="imgs/sheep.png" />
+	</div>
+
+	<div class="half-visible">
+		<img class="invisible" src="imgs/sheep.png" />
+		<img class="third-visible" src="imgs/sheep.png" />
+		<img class="half-visible" src="imgs/sheep.png" />
+		<img src="imgs/sheep.png" />
+	</div>
+
+</body>
+</html>
