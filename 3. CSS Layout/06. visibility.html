@@ -10,17 +10,40 @@
 
         span {
             color: red;
+            border: 1px red solid;
+        }
+
+        pre {
+            display: inline;
+            text-decoration: underline;
+        }
+
+        .hidden {
+            visibility: hidden;
+        }
+
+        .visible {
+            visibility: visible;
+        }
+
+        .none {
+            display: none;
         }
     </style>
 </head>
 <body>
-    In this text here is a span with content "test" that has visibility: hidden -
-    <span style="visibility: hidden">test</span>. You don't see the span, but it takes space<br />
+    In this text here is a span with content "test"<br/>that has <pre>visibility: hidden</pre> -
+    <span class="hidden">test</span>...<br />
+    You don't see the span, but it takes space<br />
     <br />
-    In this text here is a span with content "test" that has visibility: visible -
-    <span style="visibility: visible">test</span>. Now you see the span, but the surrounding text is the same<br />
+
+    In this text here is a span with content "test"<br />that has <pre>visibility: visible</pre> -
+    <span class="visible">test</span>...<br />
+    Now you see the span, but the surrounding text is the same<br />
     <br />
-    In this text here is a span with content "test" that has display:none -
-    <span style="display: none">test</span>. You don't see the span and it doesnt take space<br />
+
+    In this text here is a span with content "test"<br />that has <pre>display: none</pre> -
+    <span class="none">test</span>...<br />
+    You don't see the span and it doesnt take space<br />
 </body>
 </html>
