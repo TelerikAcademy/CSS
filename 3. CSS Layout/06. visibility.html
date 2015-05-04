@@ -5,7 +5,7 @@
     <style type="text/css">
         body {
             font-family: Verdana, Sans-Serif;
-            font-size: 25px;
+            font-size: 20px;
         }
 
         span {
@@ -18,12 +18,24 @@
             text-decoration: underline;
         }
 
+        table {
+            border-collapse: collapse;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+        }
+
         .hidden {
             visibility: hidden;
         }
 
         .visible {
             visibility: visible;
+        }
+
+        .collapse {
+            visibility: collapse;
         }
 
         .none {
@@ -44,6 +56,24 @@
 
     In this text here is a span with content "test"<br />that has <pre>display: none</pre> -
     <span class="none">test</span>...<br />
-    You don't see the span and it doesnt take space<br />
+    You don't see the span and it doesn't take space<br />
+    <br />
+
+    <table>
+        <tr>
+            <td>Cell 1, 1</td>
+            <td>Cell 1, 2</td>
+        </tr>
+        <tr>
+            <td class="collapse">Cell 2, 1</td>
+            <td>Cell 2, 2</td>
+        </tr>
+        <tr>
+            <td>Cell 3, 1</td>
+            <td>Cell 3, 2</td>
+        </tr>
+    </table>
+    <br />
+    <a href="http://stackoverflow.com/q/3695813/1862812">Difference between “visibility:collapse” and “display:none”</a>
 </body>
 </html>
