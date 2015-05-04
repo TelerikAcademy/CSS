@@ -3,13 +3,21 @@
 <head>
     <title>CSS Display - Overflow</title>
     <style>
-        .box {
-            display: block;
-            width: 250px;
-            height: 250px;
-            border: 1px solid #2929d3;
-            background-color: #add8e6;
-            text-align: center;
+        header nav ul li {
+            display: inline-block;
+            height: 40px;
+            width: 75px;
+            background-color: cyan;
+        }
+
+        div {
+            border: 2px solid black;
+            margin: 5px;
+        }
+
+        span {
+            border: 2px solid red;
+            margin: 5px;
         }
 
         .inline {
@@ -28,24 +36,17 @@
             display: inline-block;
         }
 
-        div {
-            background-color: #add8e6;
+        .hidden {
+            visibility: hidden;
         }
 
-        span {
-            background-color: #a020ae;
+        .box {
+            display: block;
+            width: 200px;
+            height: 200px;
+            background-color: cyan;
+            text-align: center;
         }
-
-        header nav ul li {
-            display: inline-block;
-            height: 50px;
-            width: 100px;
-            background-color: #add8e6;
-        }
-
-            header nav ul li:nth-of-type(2n+1) {
-                background-color: #13b44c;
-            }
     </style>
 </head>
 <body>
@@ -56,22 +57,25 @@
                 <li><a href="#">Nav item</a></li>
                 <li><a href="#">Nav item</a></li>
                 <li><a href="#">Nav item</a></li>
-                <li><a href="#">Nav item</a></li>
-                <li><a href="#">Nav item</a></li>
             </ul>
         </nav>
     </header>
-    <section>
 
+    <section>
         <div>Normal div</div>
-        <div class="inline">Div with display <strong>inline</strong></div>
         <span>Normal span</span>
-        <span class="block">Span with display <strong>block</strong></span>
+        <div class="inline">inline div</div>
+        <div class="block">block div</div>
+        <div class="hidden">hidden div</div>
+        <span class="block">block span</span>
+        <div class="none">display:none div</div>
+        <div class="inline-block">inline-block div 1</div>
+        <div class="inline-block">inline-block div 2</div>
+        <div class="inline-block">inline-block div 3</div>
 
         <div class="box">
             text in a box
         </div>
     </section>
-
 </body>
 </html>
