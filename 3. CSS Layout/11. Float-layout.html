@@ -1,0 +1,97 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+
+<head>
+    <title>CSS Float and Clear rules</title>
+    <style type="text/css">
+        body {
+            font-family: Verdana, Sans-Serif;
+            font-size: 18px;
+        }
+
+        aside, section, article {
+            border: 1px solid black;
+        }
+
+        article {
+            margin: 10px;
+            padding: 20px;
+        }
+
+        section {
+            width: 78%;
+            margin: 0 1%;
+            padding: 0 20px;
+
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        aside {
+            width: 10%;
+
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+        
+        .red {
+            color: red;
+        }
+
+        .left {
+            float: left;
+        }
+
+        .right {
+            float: right;
+        }
+
+        .clear-both {
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <aside class="left">
+        <ul>
+            <li><a href="#">link</a></li>
+            <li><a href="#">link</a></li>
+            <li><a href="#">link</a></li>
+            <li><a href="#">link</a></li>
+            <li><a href="#">link</a></li>
+            <li><a href="#">link</a></li>
+            <li><a href="#">link</a></li>
+        </ul>
+    </aside>
+
+    <section class="main-content left">
+        <h1>Some Heading</h1>
+        <article>
+            <h2>Article Headming</h2>
+            <p>Bacon ipsum dolor amet biltong pancetta corned beef drumstick short ribs tail fatback kielbasa prosciutto ball tip kevin, ham bacon sausage strip steak. Tri-tip jerky bresaola prosciutto ham hock drumstick kielbasa swine. T-bone ribeye spare ribs ham hock tongue. Meatloaf pork ham hock jerky tongue tri-tip corned beef t-bone kevin frankfurter alcatra prosciutto shoulder.</p>
+            <p>Chicken ground round chuck prosciutto ham hock fatback doner sausage pork meatball shoulder hamburger. Shoulder jowl flank, kielbasa jerky sirloin andouille doner tri-tip tongue capicola boudin ham hock prosciutto corned beef. Doner kielbasa salami, sausage tongue meatloaf rump corned beef jerky bacon ground round ham hock kevin. Tri-tip ham hock picanha leberkas short loin meatloaf chicken pork chop flank porchetta ham kevin capicola t-bone. Shoulder landjaeger turkey beef jerky meatloaf fatback strip steak chuck ribeye picanha meatball shank pastrami tongue. Cupim tongue shoulder pork belly tenderloin spare ribs ham hock.</p>
+        </article>
+        <article>
+            <h2>Article Headming</h2>
+            <p>Bacon ipsum dolor amet biltong pancetta corned beef drumstick short ribs tail fatback kielbasa prosciutto ball tip kevin, ham bacon sausage strip steak. Tri-tip jerky bresaola prosciutto ham hock drumstick kielbasa swine. T-bone ribeye spare ribs ham hock tongue. Meatloaf pork ham hock jerky tongue tri-tip corned beef t-bone kevin frankfurter alcatra prosciutto shoulder.</p>
+            <p>Chicken ground round chuck prosciutto ham hock fatback doner sausage pork meatball shoulder hamburger. Shoulder jowl flank, kielbasa jerky sirloin andouille doner tri-tip tongue capicola boudin ham hock prosciutto corned beef. Doner kielbasa salami, sausage tongue meatloaf rump corned beef jerky bacon ground round ham hock kevin. Tri-tip ham hock picanha leberkas short loin meatloaf chicken pork chop flank porchetta ham kevin capicola t-bone. Shoulder landjaeger turkey beef jerky meatloaf fatback strip steak chuck ribeye picanha meatball shank pastrami tongue. Cupim tongue shoulder pork belly tenderloin spare ribs ham hock.</p>
+        </article>
+    </section>
+
+    <aside class="right">
+        <ul>
+            <li><a href="#">link</a></li>
+            <li><a href="#">link</a></li>
+            <li><a href="#">link</a></li>
+            <li><a href="#">link</a></li>
+            <li><a href="#">link</a></li>
+            <li><a href="#">link</a></li>
+            <li><a href="#">link</a></li>
+        </ul>
+    </aside>
+</body>
+
+</html>
