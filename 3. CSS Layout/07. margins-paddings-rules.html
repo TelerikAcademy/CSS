@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>CSS Margins and Paddings</title>
+    <title>CSS Size Rules</title>
     <style type="text/css">
         body {
             font-size: 25px;
         }
 
-        div, td, table {
+            body > div {
+                margin: 20px;
+            }
+
+        body > div, td, table {
             border: 3px solid red;
         }
 
@@ -34,6 +38,27 @@
             padding: 5px 100px 50px 30px;
             margin: 50px 20px;
         }
+
+        .three {
+            margin: 10px;
+            padding: 20px;
+        }
+
+        h1 {
+            margin: 0 0 25px 0;
+            background: #cfc;
+        }
+
+        div.nested {
+            margin: 40px 0 25px 0;
+            background: #cfc;
+            /*border-top: 1px solid black;*/
+        }
+
+        p {
+            margin: 20px 0 0 0;
+            background: #cf9;
+        }
     </style>
 </head>
 <body>
@@ -51,12 +76,19 @@
             5px, 100px, 50px, 30px; 50px margin on top and bottom and 20px on left and right
         </div>
     </div>
-    <br />
-    <br />
+
+    <div>
+        <h1>Heading 1</h1>
+        <!--<div class="nested">-->
+            <p>
+                Paragraph content
+            </p>
+        <!--</div>-->
+    </div>
 
     <table>
         <tr>
-            <td style="margin:10px;padding:20px;">
+            <td class="three">
                 This table cell has 10px margin
                 and 20px padding on all four sides.<br />
                 Notice it ignores the margins!
