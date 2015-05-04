@@ -11,25 +11,69 @@
             border: 1px solid red;
             background-color: white;
         }
+
+        .parent {
+            position: absolute;
+            top: 100px;
+            left: 200px;
+            height: 600px;
+            width: 700px;
+        }
+
+        .relative {
+            position: relative;
+            left: 20px;
+        }
+
+        .absolute {
+            position: absolute;
+            left: 400px;
+            top: 50px;
+        }
+
+        .absolute-scroll {
+            position: absolute;
+            left: 120px;
+            top: 130px;
+            height: 450px;
+            width: 500px;
+            overflow: scroll;
+        }
+
+        .absolute-inner {
+            position: absolute;
+            right: 20px;
+            bottom: 20px;
+            vertical-align: bottom;
+            height: 100px;
+        }
+
+        .fixed {
+            position: fixed;
+            top: 50px;
+            right: 10px;
+        }
     </style>
 </head>
 
 <body>
-    <div style="position:absolute;top:100px;left:200px;height:600px;width:700px">
+    <div class="parent">
         absolute positioned<br />
         <br />
-        <div style="position:relative;left:20px;">
+        <div class="relative">
             relative positioned<br />
             notice the width! it is because default width is 100% of parent element<br />
         </div>
-        <div style="position:absolute;left:400px;top: 50px">absolute positioned</div>
-        <div style="position:absolute;left:120px;top: 130px;height:450px;width:500px;overflow:scroll">
+        <div class="absolute">
+            absolute positioned
+        </div>
+        <div class="absolute-scroll">
             absolute positioned, scrolled<br />
             width and height are specified by css<br />
             <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-            <div style="position:absolute;right:20px;bottom:20px;vertical-align:bottom;height:100px;">absolute positioned</div>
+            <div class="absolute-inner">absolute positioned</div>
         </div>
-        <div style="position:fixed;top:50px;right:10px;">
+        <div class="fixed">
             fixed position<br />
             This element is fixed in the SCREEN, not the parent element
         </div>
