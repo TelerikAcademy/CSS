@@ -7,11 +7,7 @@
             font-size: 25px;
         }
 
-            body > div {
-                margin: 20px;
-            }
-
-        body > div, td, table {
+        div {
             border: 3px solid red;
         }
 
@@ -39,25 +35,12 @@
             margin: 50px 20px;
         }
 
-        .three {
+        .first {
             margin: 10px;
-            padding: 20px;
         }
 
-        h1 {
-            margin: 0 0 25px 0;
-            background: #cfc;
-        }
-
-        div.nested {
-            margin: 40px 0 25px 0;
-            background: #cfc;
-            /*border-top: 1px solid black;*/
-        }
-
-        p {
-            margin: 20px 0 0 0;
-            background: #cf9;
+        .second {
+            margin: 10px;
         }
     </style>
 </head>
@@ -67,33 +50,20 @@
         <div class="red">
             Internal div
         </div>
+        More text
     </div>
 
     <div class="one">
-        This div has padding and margin on four sides of 20px
+        This div has padding 30px and margin on four sides of 20px
         <div class="two">
-            This div has padding on top, left, bottom and right of
-            5px, 100px, 50px, 30px; 50px margin on top and bottom and 20px on left and right
+            This div has padding on top, right, bottom and left of
+            5px, 100px, 50px, 30px;<br />50px margin on top and bottom and 20px on left and right
         </div>
+        More text
     </div>
 
-    <div>
-        <h1>Heading 1</h1>
-        <!--<div class="nested">-->
-            <p>
-                Paragraph content
-            </p>
-        <!--</div>-->
-    </div>
-
-    <table>
-        <tr>
-            <td class="three">
-                This table cell has 10px margin
-                and 20px padding on all four sides.<br />
-                Notice it ignores the margins!
-            </td>
-        </tr>
-    </table>
+    <h1>Collapsing margin</h1>
+    <div class="first">First</div>
+    <div class="second">Second</div>
 </body>
 </html>
