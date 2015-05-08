@@ -1,0 +1,15 @@
+fontColor= #59f
+bgColor= #ccc
+
+body
+  background-color bgColor
+  color fontColor
+  
+.link
+  color darken(fontColor, 15%)
+  text-decoration underline
+  &:hover
+    cursor pointer
+    text-decoration none
+    box-shadow 3px 3px 5px darken(bgColor, 30%)
+  

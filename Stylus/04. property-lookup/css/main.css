@@ -1,0 +1,13 @@
+.box {
+  display: inline-block;
+  width: 150px;
+  height: 100px;
+  margin: 5px;
+  background-color: #59f;
+  border: 3px solid #005fee;
+  border-radius: 100px;
+}
+.box:hover {
+  background-color: #a60;
+  border-color: #ffa011;
+}

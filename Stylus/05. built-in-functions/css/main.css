@@ -1,0 +1,22 @@
+.normal,
+.darker,
+.lighter {
+  font-size: 24px;
+  font-weight: bold;
+}
+.normal {
+  color: #808080;
+}
+.darker {
+  color: #464646;
+}
+.lighter {
+  color: #b9b9b9;
+}
+.link {
+  color: #808080;
+}
+.link:hover {
+  text-decoration: none;
+  color: #5a5a5a;
+}

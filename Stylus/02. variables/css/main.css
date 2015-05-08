@@ -1,0 +1,13 @@
+body {
+  background-color: #ccc;
+  color: #59f;
+}
+.link {
+  color: #227aff;
+  text-decoration: underline;
+}
+.link:hover {
+  cursor: pointer;
+  text-decoration: none;
+  box-shadow: 3px 3px 5px #8f8f8f;
+}

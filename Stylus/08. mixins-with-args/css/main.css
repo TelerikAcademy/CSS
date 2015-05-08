@@ -1,0 +1,20 @@
+.button {
+  -webkit-opacity: 0.5;
+  -moz-opacity: 0.5;
+  opacity: 0.5;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  display: inline-block;
+  padding: 5px 15px;
+  color: #000;
+  text-decoration: none;
+  background: #ddd;
+  box-shadow: 3px 2px 1px #ccc;
+  border: 1px solid #222;
+  font-size: 14px;
+  font-family: Corbel;
+}
+.button:hover {
+  box-shadow: -3px -2px 1px #ccc;
+}

@@ -1,0 +1,17 @@
+.box
+  bgColor= #59f
+  borderColor= darken(bgColor, 30%)
+  side= 150px
+  display inline-block
+  width side
+  height (2*@width/3)
+  margin 5px
+  background-color bgColor
+  border 3px solid borderColor
+  border-radius min(@width, @height)
+  &:hover
+    background-color invert(bgColor)
+    border-color invert(borderColor)
+    
+  
+  

@@ -1,0 +1,20 @@
+fontColor= (#fff/2)
+.normal
+.darker
+.lighter
+  font-size 24px
+  font-weight bold
+
+.normal
+  color fontColor
+.darker
+  color darken(fontColor, 45%)
+.lighter
+  color lighten(fontColor, 45%)
+
+.link
+  color fontColor
+  &:hover
+    text-decoration none
+    color darken(fontColor, 30%)
+    

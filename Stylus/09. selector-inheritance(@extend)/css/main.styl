@@ -1,0 +1,25 @@
+.clear-fix
+  zoom 1
+  &:after
+    content ''
+    display block
+    clear both
+    height 0
+    
+.horizontal-list
+  list-style-type none
+  @extend .clear-fix
+  
+  .list-item
+    float left
+    border-right 1px solid #ccc
+    
+    &:last-of-type
+      border-right none
+.link
+  color #59f
+  display inline-block
+  padding 5px 15px
+  text-decoration none
+  &:hover
+    text-decoration underline
