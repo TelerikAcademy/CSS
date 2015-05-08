@@ -1,0 +1,26 @@
+.horizontal-list {
+  list-style-type: none;
+  zoom: 1;
+}
+.horizontal-list:after {
+  content: '';
+  display: block;
+  clear: both;
+  height: 0;
+}
+.horizontal-list .list-item {
+  float: left;
+  border-right: 1px solid #ccc;
+}
+.horizontal-list .list-item:last-of-type {
+  border-right: none;
+}
+.link {
+  color: #59f;
+  display: inline-block;
+  padding: 5px 15px;
+  text-decoration: none;
+}
+.link:hover {
+  text-decoration: underline;
+}

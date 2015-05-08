@@ -1,0 +1,21 @@
+box(bgColor, side)
+  width side
+  height @width
+  background-color bgColor
+  borderColor= darken(bgColor, 25%)
+  if dark(bgColor)
+    borderColor= lighten(bgColor, 25%)
+  border 15px solid borderColor
+.box
+  display inline-block
+  margin 15px
+
+bgColors= #ccc #222 #123 #321 #678910 #abcdef #f77 #00f
+
+i=1
+for bgColor in bgColors
+  .box-{i}
+    box(bgColor, 200px)
+  i+=1
+  
+  

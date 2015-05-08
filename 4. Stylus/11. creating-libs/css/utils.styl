@@ -1,0 +1,32 @@
+.clearfix
+  zoom 1
+  &:after
+    content ''
+    display block
+    clear both
+    height 0
+    
+clearfix()
+  @extend .clearfix
+
+linearGradient(stops)
+  w3cGradient = 'linear-gradient(to bottom, '
+  prefixedGradient = 'linear-gradient(top, '
+  
+  i = 1
+
+  for stop in stops
+    w3cGradient += stop
+    prefixedGradient += stop
+    if i is not length(stops)
+      w3cGradient += ', '
+      prefixedGradient += ', '
+    i += 1
+      
+  w3cGradient += ')'
+  prefixedGradient += ')'
+  
+  background unquote(w3cGradient)
+  background unquote('-webkit-' + prefixedGradient)
+  background unquote('-o-' + prefixedGradient)
+  background unquote('-ms-' + prefixedGradient)
