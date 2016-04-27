@@ -3,7 +3,7 @@ SASS
 
 ### Problem 1. Forum Post
 *	Implement the following using SASS
-	*	Use the [HTML](https://github.com/TelerikAcademy/CSS/blob/master/4.%20SASS/homework/homework.html) code
+	*	Use the [HTML](https://github.com/TelerikAcademy/CSS/blob/master/04.%20SASS/homework/homework.html) code
 	*	Make the SASS easy to change (backgrounds, fonts)
 	*	Use mixins for clears, gradients
 
