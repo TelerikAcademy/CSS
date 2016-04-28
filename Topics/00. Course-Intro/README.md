@@ -1,6 +1,6 @@
 ## 00. Course Introduction
 
-Course Program, Examination, Trainers
+Course Objectives & Program, Examination, Required Software
 
 ## Resources
 
@@ -8,10 +8,8 @@ Course Program, Examination, Trainers
 
 
 ## Table of Contents
-- [Course Objectives](slides/README.md#/objectives)
-- [Course Program](slides/README.md#/topics)
-- [Trainers Team]()
-- [Examination](slides/README.md#/examination)
-- [Learning Resources](slides/README.md#/resources)
+- [Course Objectives & Program](#/curriculum)
+- [Evaluation](#/evaluation)
+- [Required Software](#/software)
 
 #### [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/home.png" height="20" /> home](/README.md)
