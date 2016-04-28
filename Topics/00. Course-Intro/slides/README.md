@@ -3,8 +3,8 @@
 # CSS Styling Introduction
 ## About the Course
 
-<!-- <img class="slide-image" showInPresentation="true" src="\imgs\pic01.png" style="top:51.93%; left:70%; width:20%; z-index:-1" /> -->
-<!-- <img class="slide-image" showInPresentation="true" src="\imgs\pic00.png" style="top:30%; left:10%; width:20%; z-index:-1; transform: rotate(-15deg)" /> -->
+<!-- <img class="slide-image" showInPresentation="true" src="imgs/pic01.png" style="top:51.93%; left:70%; width:20%; z-index:-1" /> -->
+<!-- <img class="slide-image" showInPresentation="true" src="imgs/pic00.png" style="top:30%; left:10%; width:20%; z-index:-1; transform: rotate(-15deg)" /> -->
 <div class="signature">
 	<p class="signature-course">CSS Styling</p>
 	<p class="signature-initiative">Telerik Academy</p>
@@ -21,8 +21,8 @@
 - [Evaluation](#/evaluation)
 - [Required Software](#/software)
 
-<!-- <img class="slide-image" showInPresentation="true" src="\imgs\pic03.png" style="top:21.16%; left:61.28%; width:37.01%; z-index:-1; border-radius: 15px; border: 2px solid white" /> -->
-<!-- <img class="slide-image" showInPresentation="true" src="\imgs\pic04.png" style="top:65%; left:9.36%; width:36.03%; z-index:-1; border-radius: 30px 0 30px 0" /> -->
+<!-- <img class="slide-image" showInPresentation="true" src="imgs/pic03.png" style="top:21.16%; left:61.28%; width:37.01%; z-index:-1; border-radius: 15px; border: 2px solid white" /> -->
+<!-- <img class="slide-image" showInPresentation="true" src="imgs/pic04.png" style="top:65%; left:9.36%; width:36.03%; z-index:-1; border-radius: 30px 0 30px 0" /> -->
 
 
 
@@ -30,7 +30,7 @@
 <!-- section start -->
 <!-- attr: { id:'curriculum', class:'slide-section', showInPresentation: true, hasScriptWrapper: true, style:'font-size: 0.9em' } -->
 # <a id="curriculum"></a>Course Curriculum
-<!-- <img class="slide-image" showInPresentation="true" src="\imgs\pic05.png" style="top:50%; left:30%; width:40%; z-index:-1; border-radius: 15px" /> -->
+<!-- <img class="slide-image" showInPresentation="true" src="imgs/pic05.png" style="top:50%; left:30%; width:40%; z-index:-1; border-radius: 15px" /> -->
 
 
 <!-- attr: { showInPresentation: true, hasScriptWrapper: true, style:'font-size: 0.9em' } -->
@@ -48,7 +48,7 @@
 <!-- attr: { id:'evaluation', class:'slide-section', showInPresentation: true, hasScriptWrapper: true, style:'font-size: 0.9em' } -->
 # <a id="evaluation"></a>Evaluation 
 <!-- ## Thank God There Are Bonuses! -->
-<!-- <img class="slide-image" showInPresentation="true" src="\imgs\pic18.png" style="top:55%; left:30%; width:40%; z-index:-1; border-radius: 15px" /> -->
+<!-- <img class="slide-image" showInPresentation="true" src="imgs/pic18.png" style="top:55%; left:30%; width:40%; z-index:-1; border-radius: 15px" /> -->
 
 
 <!-- attr: { showInPresentation: true, hasScriptWrapper: true, style:'font-size: 0.9em' } -->
@@ -60,7 +60,7 @@
   - Homework **evaluation** up to **5%**
     - 3 peer reviews per homework
   
-<!-- <img class="slide-image" showInPresentation="true" src="\imgs\pic21.png" style="top:14.99%; left:78.60%; width:26.41%; z-index:-1" /> -->
+<!-- <img class="slide-image" showInPresentation="true" src="imgs/pic21.png" style="top:14.99%; left:78.60%; width:26.41%; z-index:-1" /> -->
 
 
 <!-- attr: { showInPresentation: true, style:'font-size: 0.9em' } -->
@@ -81,8 +81,8 @@
 - You are given HTML, JavaScript and images:
   - Your task is to achieve the looks with CSS
   
-<!-- <img class="slide-image" showInPresentation="true" src="\imgs\pic22.png" style="top:32%; left:50%; width:55%; z-index:-1" /> -->
-<!-- <img class="slide-image" showInPresentation="true" src="\imgs\pic23.png" style="top:32%; left:0%; width:45%; z-index:-1" /> -->
+<!-- <img class="slide-image" showInPresentation="true" src="imgs/pic22.png" style="top:32%; left:50%; width:55%; z-index:-1" /> -->
+<!-- <img class="slide-image" showInPresentation="true" src="imgs/pic23.png" style="top:32%; left:0%; width:45%; z-index:-1" /> -->
 
 
 <!-- attr: { showInPresentation: true, style:'font-size: 0.9em' } -->
@@ -106,7 +106,7 @@
   - Presence cards with barcode
   - Reports about your results
 
-<!-- <img class="slide-image" showInPresentation="true" src="\imgs\pic29.png" style="top:37.91%; left:60%; width:45%; z-index:-1" /> -->
+<!-- <img class="slide-image" showInPresentation="true" src="imgs/pic29.png" style="top:37.91%; left:60%; width:45%; z-index:-1" /> -->
 
 <!-- section start -->
 <!-- attr: { id:'software', class:'slide-section', showInPresentation: true, hasScriptWrapper: true, style:'font-size: 0.9em' } -->
