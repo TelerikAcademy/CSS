@@ -46,7 +46,7 @@
 
 <!-- section start -->
 <!-- attr: { id:'evaluation', class:'slide-section', showInPresentation: true, hasScriptWrapper: true, style:'font-size: 0.9em' } -->
-# <a id="evaluation"></a>Evaluation 
+# <a id="evaluation"></a>Evaluation
 <!-- ## Thank God There Are Bonuses! -->
 <!-- <img class="slide-image" showInPresentation="true" src="imgs/pic18.png" style="top:55%; left:30%; width:40%; z-index:-1; border-radius: 15px" /> -->
 
@@ -56,10 +56,12 @@
 - Evaluation components
   - **Practical exam** up to **75%**
   - **Attendance** up to **5%**
-  - **Homework** up to **15%**
+  - **Homework** up to **10%**
   - Homework **evaluation** up to **5%**
     - 3 peer reviews per homework
-  
+  - Helping others up to **5%**
+
+
 <!-- <img class="slide-image" showInPresentation="true" src="imgs/pic21.png" style="top:14.99%; left:78.60%; width:26.41%; z-index:-1" /> -->
 
 
@@ -80,7 +82,7 @@
 # CSS Styling Exam
 - You are given HTML, JavaScript and images:
   - Your task is to achieve the looks with CSS
-  
+
 <!-- <img class="slide-image" showInPresentation="true" src="imgs/pic22.png" style="top:32%; left:50%; width:55%; z-index:-1" /> -->
 <!-- <img class="slide-image" showInPresentation="true" src="imgs/pic23.png" style="top:32%; left:0%; width:45%; z-index:-1" /> -->
 
@@ -88,7 +90,7 @@
 <!-- attr: { showInPresentation: true, style:'font-size: 0.9em' } -->
 # Course Web Site & Forums
 - Register for the "Telerik Academy Forums":
-  - https://telerikacademy.com/Forum/Category/27/HTML-CSS 
+  - https://telerikacademy.com/Forum/Category/27/HTML-CSS
   - Discuss the course exercises with your colleagues
   - Find solutions for the exercises
   - Share source code / discuss ideas
@@ -146,5 +148,3 @@
 <!-- <img class="slide-image" showInPresentation="true"  src="imgs/pic00.png" style="top:58.18%; left:90.52%; width:16.97%; z-index:-1" /> -->
 <!-- <img class="slide-image" showInPresentation="true"  src="imgs/pic31.png" style="top:30%; left:68.14%; width:36.30%; z-index:-1" /> -->
 <!-- <img class="slide-image" showInPresentation="true"  src="imgs/pic32.png" style="top:48.92%; left:75.91%; width:10.85%; z-index:-1" /> -->
-
-
