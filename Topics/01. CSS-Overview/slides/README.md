@@ -4,8 +4,7 @@
 ## Cascading Style Sheets
 
 <!-- <img class="slide-image" src="imgs/pic00.png" showInPresentation="true" style="top:27.37%; left:6.83%; width:18.21%; z-index:-1" /> -->
-<!-- <img class="slide-image" src="imgs/pic01.png" showInPresentation="true" style="top:65%; left:37%; width:15.49%; z-index:-1" /> -->
-<!-- <img class="slide-image" src="imgs/pic02.png" showInPresentation="true" style="top:6.69%; left:33.18%; width:20.23%; z-index:-1" /> -->
+<!-- <img class="slide-image" src="imgs/pic01.png" showInPresentation="true" style="top:55%; left:37%; width:15.49%; z-index:-1" /> -->
 <!-- <img class="slide-image" src="imgs/pic03.png" showInPresentation="true" style="top:54.66%; left:59.94%; width:42.31%; z-index:-1" /> -->
 
 <div class="signature">
@@ -29,7 +28,7 @@
 - [Attribute selectors](#/attribute-selectors)
 - [Pseudo Selectors](#/pseudo-selectors)
 - [CSS Values](#/css-values)
-  
+
 <!-- <img class="slide-image" showInPresentation="true" src="imgs/pic06.png" style="top:53.77%; left:73.57%; width:30.30%; z-index:-1; border-radius: 15px; border: 3px solid yellowgreen" /> -->
 
 
@@ -52,7 +51,7 @@
 <img class="slide-image" src="imgs/pic04.png" style="top:20%; left:10%; width:80%; z-index:-1" />
 
 
-<!-- attr: { showInPresentation: true, hasScriptWrapper:'False', style:'font-size: 40px;  ' } -->
+<!-- attr: { showInPresentation: true, hasScriptWrapper:'False', style:'font-size: 40px;' } -->
 # The Resulting Page
 
 <img class="slide-image" src="imgs/pic05.png" style="top:15%; left:25%; width:50%; z-index:-1" />
@@ -106,12 +105,12 @@
 <img class="slide-image" src="imgs/pic14.png" style="top:15.5%; left:22.5%; width:55%; z-index:-1; border-radius: 15px" />
 
 
-<!-- attr: { showInPresentation: true } -->
+<!-- attr: { showInPresentation: true, hasScriptWrapper: true } -->
 # Style Inheritance
 - Some CSS styles are inherited and some are not
   - **Text-related** and **list-related** properties are **inherited**: color, font-size, font-family, line-height, text-align, list-style, etc.
   - **Box-related** and **positioning** styles are **not inherited**: width, height, border, margin, padding, position, float, etc
-  - `<a>` elements do not inherit color and text-decoration
+  - <code>&lt;a></code> elements do not inherit color and text-decoration
 
 
 <!-- attr: { showInPresentation: true, hasScriptWrapper: true } -->
@@ -141,8 +140,8 @@ h1,h2,h3 { color: green; font-weight: bold; }
 <!-- attr: { showInPresentation: true } -->
 # Selectors
 - Selectors determine which element the rules apply to:
-  - All elements of specific type (**tag**)
-  - Those that match a specific attribute (**id**, **class**)
+  - All elements of specific type (`tag`)
+  - Those that match a specific attribute (`id`, `class`)
   - Elements may be matched depending on how they are nested in the document tree (HTML)
 - _Examples_:
 
@@ -157,19 +156,21 @@ h1,h2,h3 { color: green; font-weight: bold; }
 
 
 
-<!-- attr: { id:'primary-selectors', class:'', showInPresentation: true, hasScriptWrapper:'False', style:'font-size: 32px;' } -->
+<!-- attr: { id:'primary-selectors', class:'', showInPresentation: true, hasScriptWrapper:'False', style:'font-size: 0.9em;' } -->
 # <a id="primary-selectors"></a>Primary Selectors
 - Three primary kinds of selectors:
 - By tag (type selector):
-  
+
 ```css
 h1 { font-family: verdana,sans-serif; }
 ```
   - By element id:
- 
+
 ```css
 #element_id { color: #ff0000; }
-``` 
+```
+<!-- attr: { showInPresentation: true, hasScriptWrapper:'False', style:'font-size: 0.9em;' } -->
+<!-- # Primary Selectors -->
   - By element class name (only for HTML):
 
 ```css
@@ -181,10 +182,10 @@ h1 { font-family: verdana,sans-serif; }
 h1, .link, #top-link {font-weight: bold}
 ```
 
-- 	This will match **&lt;h1&gt;** **tags**, elements with **class** **link**, and the element with **id** **top-link**
+- 	This will match <code>&lt;h1&gt;</code> **tags**, elements with **class** **link**, and the element with **id** **top-link**
 
 
-<!-- attr: { id:'nested-selectors', class:'', showInPresentation: true, hasScriptWrapper:'False', style:'font-size: 0.8em' } -->
+<!-- attr: { id:'nested-selectors', class:'', showInPresentation: true, hasScriptWrapper:'False', style:'font-size: 0.9em' } -->
 # <a id="nested-selectors"></a>Nested Selectors
 - Match relative to element placement:
 
@@ -192,32 +193,34 @@ h1, .link, #top-link {font-weight: bold}
 p a {text-decoration: underline}
 ```
 
-- This will match all **&lt;a&gt;** tags that are inside of **&lt;p&gt;**
-- ***** – universal selector (avoid or use with care!):
+- This will match all <code>&lt;a&gt;</code> tags that are inside of <code>&lt;p&gt;</code>
+- `*` – universal selector (avoid or use with care!):
 
 ```css
 p * {color: black}
 ```
 
-- This will match all descendants of **&lt;p&gt;** element
-- **+** selector – used to match “next sibling”:
+<!-- attr: { showInPresentation: true, hasScriptWrapper:'False', style:'font-size: 0.9em' } -->
+# Nested Selectors
+- This will match all descendants of <code>&lt;p&gt;</code> element
+- `+` selector – used to match “next sibling”:
 
 ```css
 img + .link {float:right}
 ```
 
-- 	This will match all siblings with class name **link** that appear immediately after **&lt;img&gt;** tag
+- 	This will match all siblings with class name **link** that appear immediately after <code>&lt;img&gt;</code> tag
 
 <!-- attr: { showInPresentation: true, hasScriptWrapper:'False', style:'font-size: 40px' } -->
 <!-- # Nested Selectors -->
-- **&gt;** selector – matches direct child nodes:
+- <code>&gt;</code> selector – matches direct child nodes:
 
 ```css
 p > .error {font-size: 8px}
 ```
-- 	This will match all elements with class **error**, direct children of **&lt;p&gt;** tag
+- 	This will match all elements with class **error**, direct children of <code>&lt;p&gt;</code> tag
 
-- **.class1.class2** (no space!)
+- `.class1.class2` (no space!)
 
 ```css
 p.post-text.special {font-weight: bold}
@@ -259,7 +262,7 @@ p.post-text.special {font-weight: bold}
 - Using **external CSS files** is highly recommended
   - Simplifies the HTML document
   - Improves page load speed (CSS file is cached)
-  
+
 <!-- <img class="slide-image" src="imgs/pic21.png" showInPresentation="true" style="top:44.96%; left:17.78%; width:20.58%; z-index:-1" /> -->
 <!-- <img class="slide-image" src="imgs/pic22.png" showInPresentation="true" style="top:44.96%; left:70.78%; width:20.58%; z-index:-1" /> -->
 
@@ -275,7 +278,7 @@ p.post-text.special {font-weight: bold}
 </head>
 <body>
   <p>Here is some text</p>
-  
+
 <!-- Separate multiple styles with a semicolon -->
 
   <p style="font-size: 20pt">Here is some
@@ -299,7 +302,7 @@ p.post-text.special {font-weight: bold}
 </head>
 <body>
   <p>Here is some text</p>
-  
+
 <!-- Separate multiple styles with a semicolon -->
 
   <p style="font-size: 20pt">Here is some
@@ -345,29 +348,6 @@ p.post-text.special {font-weight: bold}
   </style>
 <head>
 ```
-
-
-
-<!-- attr: { showInPresentation: true, hasScriptWrapper:'False' } -->
-<!-- # Embedded Styles: _Example_ -->
-
-```html
-<body>
-  <header>
-      <h1 class="blue">A Heading</h1>  </header>  <article>
-      <p>Here is some text. Here is some text.     
-      Here is some text. Here is some text. Here
-      is some text.</p>      
-     <h1>Another Heading</h1>        
-     <p class="blue">Here is some more text.
-     Here is some more text.</p>
-     <p class="blue">Here is some <em>more</em>
-     text. Here is some more text.</p>  </article>
-</body>
-</html>
-```
-
-
 
 <!-- attr: { showInPresentation: true, hasScriptWrapper: true } -->
 <!-- # Embedded Styles: _Example_ -->
@@ -458,26 +438,6 @@ ul ul {
     margin-left: .5cm
 }
 ```
-
-
-
-<!-- attr: { showInPresentation: true, hasScriptWrapper:'False' } -->
-<!-- # External Styles: _Example_ -->
-
-```html
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Importing style sheets</title>
-  <link type="text/css" rel="stylesheet"
-    href="styles.css"  />
-</head>
-<body>
-  <h1>Shopping list for <em>Monday</em>:</h1>
-  <li>Milk</li>
-```
-
-
 
 <!-- attr: { showInPresentation: true, hasScriptWrapper:'False' } -->
 <!-- # External Styles: _Example_ -->
@@ -791,7 +751,7 @@ color: rgb (7, 242, 179)
   - `0%` is dark (black)
   - `100%` is light (white)
   - `50%` is the average
-  
+
 <img class="slide-image" src="imgs/pic45.png" style="top:49.81%; left:72.98%; width:30.85%; z-index:-1; border-radius: 15px" />
 
 
@@ -803,7 +763,7 @@ color: rgb (7, 242, 179)
 - _Example_:
   - **hsla(0,** **100%,** **50%,** **0.5)**
   - Result:
-  
+
 <img class="slide-image" src="imgs/pic46.png" style="top:45%; left:65%; width:35%; z-index:-1; border-radius: 15px" />
 <!-- <img class="slide-image" src="imgs/pic47.png" showInPresentation="true" style="top:65%; left:25%; width:15%; z-index:-1; border-radius: 15px" /> -->
 
