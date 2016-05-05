@@ -99,7 +99,7 @@
 
 
 <!-- attr: { showInPresentation: true, hasScriptWrapper: true, style:'font-size: 0.9em' } -->
-<!-- # Telerik IntegratedLearning System -->
+<!-- # Telerik Integrated Learning System -->
 - The Telerik Integrated Learning System (TILS)
   - https://www.telerikacademy.com
   - Important resource for all students
