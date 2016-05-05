@@ -45,14 +45,14 @@
 <img class="slide-image" src="imgs/pic10.png" style="top:55%; left:31%; width:40%; z-index:-1; border-radius: 15px" />
 
 
-<!-- attr: { showInPresentation: true, hasScriptWrapper:'False', style:'font-size: 40px;' } -->
+<!-- attr: { showInPresentation: true, hasScriptWrapper:true, style:'font-size: 40px;' } -->
 # CSS: A New Philosophy
 - Separate content from presentation!
 
 <img class="slide-image" src="imgs/pic04.png" style="top:20%; left:10%; width:80%; z-index:-1" />
 
 
-<!-- attr: { showInPresentation: true, hasScriptWrapper:'False', style:'font-size: 40px;  ' } -->
+<!-- attr: { showInPresentation: true, hasScriptWrapper:true, style:'font-size: 40px;' } -->
 # The Resulting Page
 
 <img class="slide-image" src="imgs/pic05.png" style="top:15%; left:25%; width:50%; z-index:-1" />
@@ -70,7 +70,7 @@
 <!-- <img class="slide-image" src="imgs/pic13.png" showInPresentation="true" style="top:55%; left:39.71%; width:19.14%; z-index:-1" /> -->
 
 
-<!-- attr: { showInPresentation: true, hasScriptWrapper:'False' } -->
+<!-- attr: { showInPresentation: true, hasScriptWrapper:true } -->
 # CSS Introduction
 - Cascading Style Sheets (CSS)
   - Used to **describe** the presentation of documents
@@ -157,7 +157,7 @@ h1,h2,h3 { color: green; font-weight: bold; }
 
 
 
-<!-- attr: { id:'primary-selectors', class:'', showInPresentation: true, hasScriptWrapper:'False', style:'font-size: 32px;' } -->
+<!-- attr: { id:'primary-selectors', showInPresentation: true, hasScriptWrapper:true, style:'font-size: 32px;' } -->
 # <a id="primary-selectors"></a>Primary Selectors
 - Three primary kinds of selectors:
 - By tag (type selector):
@@ -184,7 +184,7 @@ h1, .link, #top-link {font-weight: bold}
 - 	This will match **&lt;h1&gt;** **tags**, elements with **class** **link**, and the element with **id** **top-link**
 
 
-<!-- attr: { id:'nested-selectors', class:'', showInPresentation: true, hasScriptWrapper:'False', style:'font-size: 0.8em' } -->
+<!-- attr: { id:'nested-selectors', showInPresentation: true, hasScriptWrapper:true, style:'font-size: 0.8em' } -->
 # <a id="nested-selectors"></a>Nested Selectors
 - Match relative to element placement:
 
@@ -193,7 +193,7 @@ p a {text-decoration: underline}
 ```
 
 - This will match all **&lt;a&gt;** tags that are inside of **&lt;p&gt;**
-- ***** – universal selector (avoid or use with care!):
+- __*__ – universal selector (avoid or use with care!):
 
 ```css
 p * {color: black}
@@ -208,7 +208,7 @@ img + .link {float:right}
 
 - 	This will match all siblings with class name **link** that appear immediately after **&lt;img&gt;** tag
 
-<!-- attr: { showInPresentation: true, hasScriptWrapper:'False', style:'font-size: 40px' } -->
+<!-- attr: { showInPresentation: true, hasScriptWrapper:true, style:'font-size: 40px' } -->
 <!-- # Nested Selectors -->
 - **&gt;** selector – matches direct child nodes:
 
@@ -242,7 +242,7 @@ p.post-text.special {font-weight: bold}
 <!-- <img class="slide-image" showInPresentation="true" src="imgs/pic20.png" style="top:60%; left:44.91%; width:52.89%; z-index:-1; border-radius: 15px; transform: rotate(-15deg)" /> -->
 
 
-<!-- attr: { showInPresentation: true, hasScriptWrapper:'False' } -->
+<!-- attr: { showInPresentation: true, hasScriptWrapper:true } -->
 # Importing CSS Into HTML
 - **CSS** (presentation) can be imported in **HTML** (content) in three ways:
   - **Inline**: the CSS rules in the **style** attribute
@@ -264,7 +264,7 @@ p.post-text.special {font-weight: bold}
 <!-- <img class="slide-image" src="imgs/pic22.png" showInPresentation="true" style="top:44.96%; left:70.78%; width:20.58%; z-index:-1" /> -->
 
 
-<!-- attr: { showInPresentation: true, hasScriptWrapper:'False' } -->
+<!-- attr: { showInPresentation: true, hasScriptWrapper:true } -->
 # Inline Styles: _Example_
 
 ```html
@@ -289,7 +289,7 @@ p.post-text.special {font-weight: bold}
 
 
 <!-- attr: { showInPresentation: true, hasScriptWrapper: true } -->
-# Inline Styles: _Example_
+<!-- # Inline Styles: _Example_ -->
 
 ```html
 <!DOCTYPE html>
@@ -313,7 +313,7 @@ p.post-text.special {font-weight: bold}
 <img class="slide-image" src="imgs/pic23.png" style="top:34.38%; left:75%; width:34.82%; z-index:0" />
 
 
-<!-- attr: { showInPresentation: true, hasScriptWrapper:'False' } -->
+<!-- attr: { showInPresentation: true, hasScriptWrapper:true } -->
 # Embedded Styles
 - Embedded in the HTML in the **&lt;style&gt;** tag:
   - The **&lt;style&gt;** tag is placed in the **&lt;head&gt;** section of the document
@@ -329,7 +329,7 @@ p.post-text.special {font-weight: bold}
 
 
 
-<!-- attr: { showInPresentation: true, hasScriptWrapper:'False' } -->
+<!-- attr: { showInPresentation: true, hasScriptWrapper:true } -->
 # Embedded Styles: _Example_
 
 ```html
@@ -348,7 +348,7 @@ p.post-text.special {font-weight: bold}
 
 
 
-<!-- attr: { showInPresentation: true, hasScriptWrapper:'False' } -->
+<!-- attr: { showInPresentation: true, hasScriptWrapper:true } -->
 <!-- # Embedded Styles: _Example_ -->
 
 ```html
@@ -396,7 +396,7 @@ p.post-text.special {font-weight: bold}
 <img class="slide-image" src="imgs/pic24.png" style="top:40%; left:80%; width:30%; z-index:0" />
 
 
-<!-- attr: { showInPresentation: true, hasScriptWrapper:'False', style:'font-size: 0.9em' } -->
+<!-- attr: { showInPresentation: true, hasScriptWrapper:true, style:'font-size: 0.9em' } -->
 # External CSS Styles
 - External linking
   - Separate pages can all use a shared style sheet
@@ -413,7 +413,7 @@ p.post-text.special {font-weight: bold}
 
 
 
-<!-- attr: { showInPresentation: true, hasScriptWrapper:'False' } -->
+<!-- attr: { showInPresentation: true, hasScriptWrapper:true } -->
 <!-- # External CSS Styles -->
 - **@import**
   - Another way to link external CSS files
@@ -429,7 +429,7 @@ p.post-text.special {font-weight: bold}
 
 
 
-<!-- attr: { showInPresentation: true, hasScriptWrapper:'False', style:'font-size: 0.75em' } -->
+<!-- attr: { showInPresentation: true, hasScriptWrapper:true, style:'font-size: 0.75em' } -->
 # External Styles: _Example_
 
 ```css
@@ -461,7 +461,7 @@ ul ul {
 
 
 
-<!-- attr: { showInPresentation: true, hasScriptWrapper:'False' } -->
+<!-- attr: { showInPresentation: true, hasScriptWrapper:true } -->
 <!-- # External Styles: _Example_ -->
 
 ```html
@@ -479,7 +479,7 @@ ul ul {
 
 
 
-<!-- attr: { showInPresentation: true, hasScriptWrapper:'False' } -->
+<!-- attr: { showInPresentation: true, hasScriptWrapper:true } -->
 <!-- # External Styles: _Example_ -->
 
 ```html
@@ -534,7 +534,7 @@ ul ul {
 ## Picking Elements with Certain Attributes -->
 
 
-<!-- attr: { showInPresentation: true, hasScriptWrapper:'False', style:'font-size: 0.85em' } -->
+<!-- attr: { showInPresentation: true, hasScriptWrapper:true, style:'font-size: 0.85em' } -->
 # Attribute Selectors
 - **[ ]** selects elements based on attributes
   - Element with a given attributeSelects **&lt;a&gt;** elements with **title**
@@ -555,7 +555,7 @@ a[title*=logo] {border: none}
 
 
 <!-- attr: { class:'slide-section demo', showInPresentation: true, hasScriptWrapper: true } -->
-# Attribute Selectors
+<!-- # Attribute Selectors -->
 ## [Demo]()
 
 
@@ -568,7 +568,7 @@ a[title*=logo] {border: none}
 <!-- <img class="slide-image" src="imgs/pic29.png" showInPresentation="true" style="top:55%; left:29.5%; width:40%; z-index:-1; border-radius: 15px; border: 2px solid white" /> -->
 
 
-<!-- attr: { showInPresentation: true, hasScriptWrapper:'False', style:'font-size: 0.75em' } -->
+<!-- attr: { showInPresentation: true, hasScriptWrapper:true, style:'font-size: 0.75em' } -->
 # Common Pseudo Selectors
 - **Pseudo-classes** define state
   - `:hover`, `:visited`, `:active` , `:lang`
@@ -596,11 +596,11 @@ p:first-line {
 
 
 <!-- attr: { class:'slide-section demo', showInPresentation: true, hasScriptWrapper: true } -->
-# Common Pseudo Selectors
+<!-- # Common Pseudo Selectors -->
 ## [Demo]()
 
 
-<!-- attr: { showInPresentation: true, hasScriptWrapper:'False' } -->
+<!-- attr: { showInPresentation: true, hasScriptWrapper:true } -->
 # Structural Pseudo-classes
 - `:root`
   - The root of the document
@@ -612,7 +612,7 @@ p:first-line {
   - An `E` element, the n-th sibling of its type
 
 
-<!-- attr: { showInPresentation: true, hasScriptWrapper:'False' } -->
+<!-- attr: { showInPresentation: true, hasScriptWrapper:true } -->
 <!-- # Structural Pseudo-classes -->
 - `E:nth-last-of-type(n)`
   - An `E` element, the n-th sibling of its type, counting from the last one
@@ -624,7 +624,7 @@ p:first-line {
   - An `E` element, last sibling of its type
 
 
-<!-- attr: { showInPresentation: true, hasScriptWrapper:'False', style:'font-size: 0.9em' } -->
+<!-- attr: { showInPresentation: true, hasScriptWrapper:true, style:'font-size: 0.9em' } -->
 <!-- # Structural Pseudo-classes -->
 - `E:only-child`
   - An `E` element, only child of its parent
@@ -643,8 +643,8 @@ p:first-line {
 <!-- <img class="slide-image" src="imgs/pic31.png" showInPresentation="true" style="top:55%; left:15%; width:25%; z-index:-1" /> -->
 
 
-<!-- attr: { showInPresentation: true, hasScriptWrapper:'False' } -->
-# The UI Element StatesPseudo-Classes
+<!-- attr: { showInPresentation: true, hasScriptWrapper:true } -->
+# The UI Element States Pseudo-Classes
 - `E:enabled`
   - A user interface element `E` which is enabled
 - `E:disabled`
@@ -661,7 +661,7 @@ p:first-line {
 <!-- <img class="slide-image" src="imgs/pic32.png" showInPresentation="true" style="top:55%; left:37.5%; width:25%; z-index:-1; border-radius: 20px 0 20px 0" /> -->
 
 
-<!-- attr: { showInPresentation: true, hasScriptWrapper:'False' } -->
+<!-- attr: { showInPresentation: true, hasScriptWrapper:true } -->
 # Other CSS 3 Selectors
 - `E:target`
   - An `E` element being the target of the referring URI
@@ -690,7 +690,7 @@ p:first-line {
 
 
 
-<!-- attr: { showInPresentation: true, hasScriptWrapper:'False', style:'font-size: 0.9em' } -->
+<!-- attr: { showInPresentation: true, hasScriptWrapper:true, style:'font-size: 0.9em' } -->
 <!-- # CSS Values -->
 - All values in CSS are strings
   - They can represent values that are not strings
@@ -713,7 +713,7 @@ li.nav-item {
 
 
 
-<!-- attr: { showInPresentation: true, hasScriptWrapper:'False' } -->
+<!-- attr: { showInPresentation: true, hasScriptWrapper:true } -->
 # Size Values
 - When setting a size (width, height, font-size…) the values are given as numbers
   - Multiple formats / metrics may be used
@@ -824,7 +824,7 @@ color: rgb (7, 242, 179)
 <img class="slide-image" src="imgs/pic49.png" style="top:60%; left:33%; width:35%; z-index:-1; border-radius: 15px" />
 
 
-<!-- attr: { showInPresentation: true, hasScriptWrapper:'False', style:'font-size: 0.90em' } -->
+<!-- attr: { showInPresentation: true, hasScriptWrapper:true, style:'font-size: 0.90em' } -->
 <!-- # Default Browser Styles -->
 - Browsers have **predefined** CSS styles
   - Used when there is no CSS information or any other style information in the document
@@ -849,7 +849,7 @@ body, h1, p, ul, li {
 
 
 
-<!-- attr: { showInPresentation: true, hasScriptWrapper:'False' } -->
+<!-- attr: { showInPresentation: true, hasScriptWrapper:true } -->
 <!-- # CSS Cascade (Precedence) -->
 - There are browser, user and author stylesheets with "`normal`" and "`important`" declarations
   - Browser styles (least priority)
@@ -866,7 +866,7 @@ a {
 
 
 
-<!-- attr: { showInPresentation: true, hasScriptWrapper:'False', style:'font-size: 0.9em' } -->
+<!-- attr: { showInPresentation: true, hasScriptWrapper:true, style:'font-size: 0.9em' } -->
 # CSS Specificity
 - CSS specificity is used to determine the precedence (priority) of the CSS style declarations with the same origin
   - Simple calculation:
@@ -884,7 +884,7 @@ a {
 ## [Demo]()
 
 
-<!-- attr: { showInPresentation: true, hasScriptWrapper:'False' } -->
+<!-- attr: { showInPresentation: true, hasScriptWrapper:true } -->
 # CSS References
 - The CSS documentation at WebPlatform.org:
   - http://docs.webplatform.org/wiki/css
@@ -909,4 +909,4 @@ a {
   - Telerik Academy @ Facebook
     - [facebook.com/TelerikAcademy](facebook.com/TelerikAcademy)
   - Telerik Academy Learning System
-    - [telerikacademy.com](telerikacademy.com)
+    - [telerikacademy.com](https://telerikacademy.com)
