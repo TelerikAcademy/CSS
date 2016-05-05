@@ -1,6 +1,6 @@
-## 00. Course Introduction
+## 01. CSS Overview
 
-Course Objectives & Program, Examination, Required Software
+What is CSS, How to use it, Selectors, Css values, External css
 
 ## Resources
 
