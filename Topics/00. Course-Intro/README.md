@@ -8,8 +8,8 @@ Course Objectives & Program, Examination, Required Software
 
 
 ## Table of Contents
-- [Course Objectives & Program](#/curriculum)
-- [Evaluation](#/evaluation)
-- [Required Software](#/software)
+- [Course Objectives & Program](slides/README.md/#curriculum)
+- [Evaluation](slides/README.md/#evaluation)
+- [Required Software](slides/README.md/#software)
 
 #### [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/home.png" height="20" /> home](/README.md)
