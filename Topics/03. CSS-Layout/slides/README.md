@@ -1,20 +1,18 @@
 <!-- section start -->
-<!-- attr: { id:'', class:'slide-title', showInPresentation:'True', hasScriptWrapper:'True', style:'' } -->
+<!-- attr: { class:'slide-title', showInPresentation:true, hasScriptWrapper:true } -->
 # CSS Layout
 ## Control the arrangement of the HTML elements
-<img class="slide-image" src="\imgs\pic00.png" style="top:51.39%; left:53.53%; width:49.76%; z-index:-1" />
-<img class="slide-image" src="\imgs\pic01.png" style="top:51%; left:10.02%; width:40.99%; z-index:-1" />
+<!-- <img class="slide-image" showInPresentation="true" showInPresentation="false" src="imgs/pic00.png" style="top:51.39%; left:53.53%; width:49.76%; z-index:-1" />  -->
+
+<!-- <img class="slide-image" showInPresentation="true" src="imgs/pic01.png" style="top:51%; left:10.02%; width:40.99%; z-index:-1" />  -->
 <div class="signature">
-	<p class="signature-course"></p>
-	<p class="signature-initiative"></p>
-	<a href="" class="signature-link"></a>
+	<p class="signature-course">CSS Styling</p>
+	<p class="signature-initiative">Telerik Software Academy</p>
+	<a href="https://telerikacademy.com" class="signature-link">https://telerikacademy.com</a>
 </div>
 
-
-
-
 <!-- section start -->
-<!-- attr: { id:'', class:'', showInPresentation:'True', hasScriptWrapper:'True', style:'' } -->
+<!-- attr: { showInPresentation:true, hasScriptWrapper:true } -->
 # Table of Contents
 - Width and Height
 - Overflow
@@ -24,20 +22,21 @@
 - CSS Box Model
 - Position
 - Float
-<img class="slide-image" src="\imgs\pic02.png" style="top:12.34%; left:56.01%; width:47.07%; z-index:-1" />
-<img class="slide-image" src="\imgs\pic03.png" style="top:45.37%; left:64.61%; width:30.86%; z-index:-1" />
+
+<!-- <img class="slide-image" showInPresentation="true" src="imgs/pic02.png" style="top:12.34%; left:56.01%; width:47.07%; z-index:-1" />  -->
+<!-- <img class="slide-image" showInPresentation="true" src="imgs/pic03.png" style="top:45.37%; left:64.61%; width:30.86%; z-index:-1" />  -->
 
 
 
 
 <!-- section start -->
-<!-- attr: { id:'', class:'slide-section', showInPresentation:'True', hasScriptWrapper:'True', style:'' } -->
-# Width/Height
-<img class="slide-image" src="\imgs\pic04.png" style="top:40%; left:25%; width:48%; z-index:-1" />
-<img class="slide-image" src="\imgs\pic05.png" style="top:43%; left:32%; width:25%; z-index:-1" />
+<!-- attr: { class:'slide-section', showInPresentation:true, hasScriptWrapper:true } -->
+<!-- # Width/Height -->
+<!-- <img class="slide-image" showInPresentation="true" src="imgs/pic04.png" style="top:40%; left:25%; width:48%; z-index:-1" />  -->
+<!-- <img class="slide-image" showInPresentation="true" src="imgs/pic05.png" style="top:43%; left:32%; width:25%; z-index:-1" />  -->
 
 
-<!-- attr: { id:'', class:'', showInPresentation:'True', hasScriptWrapper:'False', style:'font-size: 40px;' } -->
+<!-- attr: { showInPresentation:true, hasScriptWrapper:true } -->
 # Width
 - **width** – defines numerical value for the width of element, e.g. **200px**
 - **width** applies only for block elements
@@ -49,13 +48,13 @@
   - **max-width** overrides width if (**width>max-width**)
 
 
-<!-- attr: { id:'', class:'slide-section demo', showInPresentation:'True', hasScriptWrapper:'True', style:'' } -->
-# Width
-## [Demo]()
-<img class="slide-image" src="\imgs\pic06.png" style="top:50%; left:28%; width:44.08%; z-index:-1" />
+<!-- attr: { class:'slide-section demo', showInPresentation:true, hasScriptWrapper:true } -->
+<!-- # Width
+## [Demo]() -->
+<!-- <img class="slide-image" showInPresentation="true" src="imgs/pic06.png" style="top:50%; left:28%; width:44.08%; z-index:-1" />  -->
 
 
-<!-- attr: { id:'', class:'', showInPresentation:'True', hasScriptWrapper:'False', style:'' } -->
+<!-- attr: { showInPresentation:true, hasScriptWrapper:true } -->
 # Height
 - **height** – defines numerical value for the height of element, e.g. **100px**
 - **height** applies only on block elements
@@ -66,7 +65,7 @@
   - **max-height** overrides height
 
 
-<!-- attr: { id:'', class:'', showInPresentation:'True', hasScriptWrapper:'False', style:'' } -->
+<!-- attr: { showInPresentation:true, hasScriptWrapper:true } -->
 # Width and Height Values
 - The values of the **width** and **height** properties are numerical:
   - Pixels (px)
@@ -75,22 +74,20 @@
     - A percent of the available width
 
 
-<!-- attr: { id:'', class:'slide-section demo', showInPresentation:'True', hasScriptWrapper:'True', style:'' } -->
-# Height
-## [Demo]()
-<img class="slide-image" src="\imgs\pic07.png" style="top:20%; left:31%; width:37.47%; z-index:-1" />
-
-
+<!-- attr: { class:'slide-section demo', showInPresentation:true, hasScriptWrapper:true } -->
+<!-- # Height
+## [Demo]() -->
+<!-- <img class="slide-image" showInPresentation="true" src="imgs/pic07.png" style="top:20%; left:31%; width:37.47%; z-index:-1" />  -->
 
 
 <!-- section start -->
-<!-- attr: { id:'', class:'slide-section', showInPresentation:'True', hasScriptWrapper:'True', style:'' } -->
-# Overflow
-<img class="slide-image" src="\imgs\pic09.png" style="top:45%; left:55%; width:37.91%; z-index:-1" />
-<img class="slide-image" src="\imgs\pic10.png" style="top:45%; left:5%; width:38%; z-index:-1" />
+<!-- attr: { class:'slide-section', showInPresentation:true, hasScriptWrapper:true } -->
+<!-- # Overflow -->
+<!-- <img class="slide-image" showInPresentation="true" src="imgs/pic09.png" style="top:45%; left:55%; width:37.91%; z-index:-1" />  -->
+<!-- <img class="slide-image" showInPresentation="true" src="imgs/pic10.png" style="top:45%; left:5%; width:38%; z-index:-1" />  -->
 
 
-<!-- attr: { id:'', class:'', showInPresentation:'True', hasScriptWrapper:'False', style:'' } -->
+<!-- attr: { showInPresentation:true, hasScriptWrapper:true } -->
 # Overflow
 - **overflow** defines the behavior of element when content needs more space than the available
 - **overflow** values:
@@ -100,22 +97,20 @@
   - **hidden** – any content that cannot fit is clipped
 
 
-<!-- attr: { id:'', class:'slide-section demo', showInPresentation:'True', hasScriptWrapper:'True', style:'' } -->
-# Overflow
-## [Demo]()
-<img class="slide-image" src="\imgs\pic11.png" style="top:42.31%; left:59.88%; width:35.42%; z-index:-1" />
-<img class="slide-image" src="\imgs\pic12.png" style="top:42.31%; left:15%; width:26.45%; z-index:-1" />
-
-
+<!-- attr: { class:'slide-section demo', showInPresentation:true, hasScriptWrapper:true } -->
+<!-- # Overflow
+## [Demo]() -->
+<!-- <img class="slide-image" showInPresentation="true" src="imgs/pic11.png" style="top:42.31%; left:59.88%; width:35.42%; z-index:-1" />  -->
+<!-- <img class="slide-image" showInPresentation="true" src="imgs/pic12.png" style="top:42.31%; left:15%; width:26.45%; z-index:-1" />  -->
 
 
 <!-- section start -->
-<!-- attr: { id:'', class:'slide-section', showInPresentation:'True', hasScriptWrapper:'True', style:'' } -->
-# Display
-<img class="slide-image" src="\imgs\pic13.png" style="top:38.79%; left:20%; width:63.92%; z-index:-1" />
+<!-- attr: { class:'slide-section', showInPresentation:true, hasScriptWrapper:true } -->
+<!-- # Display -->
+<!-- <img class="slide-image" showInPresentation="true" src="imgs/pic13.png" style="top:38.79%; left:20%; width:63.92%; z-index:-1" />  -->
 
 
-<!-- attr: { id:'', class:'', showInPresentation:'True', hasScriptWrapper:'False', style:'font-size: 40px;' } -->
+<!-- attr: { showInPresentation:true, hasScriptWrapper:true } -->
 # Display
 - **display** controls the display of the element and the way it is rendered and if breaks should be placed before and after the element
 - **display** values:
@@ -125,7 +120,7 @@
     - **height** and **width** may not depend on the size of the content
 
 
-<!-- attr: { id:'', class:'', showInPresentation:'True', hasScriptWrapper:'False', style:'' } -->
+<!-- attr: { showInPresentation:true, hasScriptWrapper:true } -->
 # Display Values
 - **display** values:
   - **none**: element is hidden and its dimensions are not used to calculate the surrounding elements rendering
@@ -135,21 +130,19 @@
   - **table**, **table-row**, **table-cell**: the elements are arranged in a table-like layout
 
 
-<!-- attr: { id:'', class:'slide-section demo', showInPresentation:'True', hasScriptWrapper:'True', style:'' } -->
-# Display
-## [Demo]()
-<img class="slide-image" src="\imgs\pic14.png" style="top:22.85%; left:9.44%; width:43.16%; z-index:-1" />
-
-
+<!-- attr: { class:'slide-section demo', showInPresentation:true, hasScriptWrapper:true } -->
+<!-- # Display
+## [Demo]() -->
+<!-- <img class="slide-image" showInPresentation="true" src="imgs/pic14.png" style="top:22.85%; left:9.44%; width:43.16%; z-index:-1" />  -->
 
 
 <!-- section start -->
-<!-- attr: { id:'', class:'slide-section', showInPresentation:'True', hasScriptWrapper:'True', style:'' } -->
-# Visibility
-<img class="slide-image" src="\imgs\pic15.png" style="top:40%; left:28.36%; width:42%; z-index:-1" />
+<!-- attr: { class:'slide-section', showInPresentation:true, hasScriptWrapper:true } -->
+<!-- # Visibility -->
+<!-- <img class="slide-image" showInPresentation="true" src="imgs/pic15.png" style="top:40%; left:28.36%; width:42%; z-index:-1" />  -->
 
 
-<!-- attr: { id:'', class:'', showInPresentation:'True', hasScriptWrapper:'False', style:'' } -->
+<!-- attr: { showInPresentation:true, hasScriptWrapper:true } -->
 # Visibility
 - **visibility**
   - Determines whether the element is visible
@@ -161,21 +154,21 @@
     - The space taken up by the row or column will be available for other content
 
 
-<!-- attr: { id:'', class:'slide-section demo', showInPresentation:'True', hasScriptWrapper:'True', style:'' } -->
-# Visibility
-## [Demo]()
-<img class="slide-image" src="\imgs\pic16.png" style="top:35%; left:54.27%; width:44.09%; z-index:-1" />
+<!-- attr: { class:'slide-section demo', showInPresentation:true, hasScriptWrapper:true } -->
+<!-- # Visibility
+## [Demo]() -->
+<!-- <img class="slide-image" showInPresentation="true" src="imgs/pic16.png" style="top:35%; left:54.27%; width:44.09%; z-index:-1" />  -->
 
 
 
 
 <!-- section start -->
-<!-- attr: { id:'', class:'slide-section', showInPresentation:'True', hasScriptWrapper:'True', style:'' } -->
-# Margins and Paddings
-<img class="slide-image" src="\imgs\pic17.png" style="top:26.96%; left:10.58%; width:85.84%; z-index:-1" />
+<!-- attr: { class:'slide-section', showInPresentation:true, hasScriptWrapper:true } -->
+<!-- # Margins and Paddings -->
+<!-- <img class="slide-image" showInPresentation="true" src="imgs/pic17.png" style="top:26.96%; left:10.58%; width:85.84%; z-index:-1" />  -->
 
 
-<!-- attr: { id:'', class:'', showInPresentation:'True', hasScriptWrapper:'False', style:'font-size: 40px;' } -->
+<!-- attr: { showInPresentation:true, hasScriptWrapper:true } -->
 # Margin and Padding
 - **margin** and **padding** define the spacing around the element
   - Numerical value, e.g. **10px** or **-5px**
@@ -186,7 +179,7 @@
   - When the vertical margins of two elements are touching, only the margin of the element with the largest margin value will be honored
 
 
-<!-- attr: { id:'', class:'', showInPresentation:'True', hasScriptWrapper:'False', style:'font-size: 40px;' } -->
+<!-- attr: { showInPresentation:true, hasScriptWrapper:true } -->
 # Margin and Padding: Short Rules
 - **margin: 5px**;
   - Sets all four sides to have margin of 5 px;
@@ -199,21 +192,21 @@
 - Same for **padding**
 
 
-<!-- attr: { id:'', class:'slide-section demo', showInPresentation:'True', hasScriptWrapper:'True', style:'' } -->
-# Margins and Paddings
-## [Demo]()
-<img class="slide-image" src="\imgs\pic18.png" style="top:52%; left:32%; width:35%; z-index:-1" />
+<!-- attr: { class:'slide-section demo', showInPresentation:true, hasScriptWrapper:true } -->
+<!-- # Margins and Paddings
+## [Demo]() -->
+<!-- <img class="slide-image" showInPresentation="true" src="imgs/pic18.png" style="top:52%; left:32%; width:35%; z-index:-1" />  -->
 
 
 
 
 <!-- section start -->
-<!-- attr: { id:'', class:'slide-section', showInPresentation:'True', hasScriptWrapper:'True', style:'' } -->
-# Box Model
-<img class="slide-image" src="\imgs\pic19.png" style="top:42%; left:28%; width:45%; z-index:-1" />
+<!-- attr: { class:'slide-section', showInPresentation:true, hasScriptWrapper:true } -->
+<!-- # Box Model -->
+<!-- <img class="slide-image" showInPresentation="true" src="imgs/pic19.png" style="top:42%; left:28%; width:45%; z-index:-1" />  -->
 
 
-<!-- attr: { id:'', class:'', showInPresentation:'True', hasScriptWrapper:'False', style:'' } -->
+<!-- attr: { showInPresentation:true, hasScriptWrapper:true } -->
 # CSS3 box-sizing
 - Determine whether you want an element to render it's borders and padding within its specified width, or outside of it.
 - Possible values:
@@ -221,11 +214,12 @@
   - **box-sizing: border-box** box width: 300px, including padding and borders
 
 
-<!-- attr: { id:'', class:'', showInPresentation:'True', hasScriptWrapper:'False', style:'' } -->
+<!-- attr: { showInPresentation:true, hasScriptWrapper:true } -->
 <!-- # CSS3 box-sizing (_Example_) -->
 - _Example_: Box with total width of 300px (including paddings and borders)
 
 ```cs
+.container{
 width: 300px;
 border: 1px solid black;
 padding: 5px;
@@ -236,34 +230,36 @@ padding: 5px;
 -webkit-box-sizing: border-box;
 /* Opera 9.5+, Google Chrome */
 box-sizing: border-box;
+}
 ```
 
 
 
-<!-- attr: { id:'', class:'', showInPresentation:'True', hasScriptWrapper:'True', style:'' } -->
+<!-- attr: { showInPresentation:true, hasScriptWrapper:true } -->
 # IE Quirks Mode
 - When using quirks mode<br /> (pages with no DOCTYPE <br /> or with a HTML 4 <br /> Transitional DOCTYPE)
     - Internet Explorer violates<br /> the box model standard!
-<img class="slide-image" src="\imgs\pic20.png" style="top:13.02%; left:56.14%; width:45.73%; z-index:-1" />
+
+<!-- <img class="slide-image" showInPresentation="true" src="imgs/pic20.png" style="top:13.02%; left:56.14%; width:45.73%; z-index:-1" />  -->
 
 
-<!-- attr: { id:'', class:'slide-section demo', showInPresentation:'True', hasScriptWrapper:'True', style:'' } -->
-# Box Model
-## [Demo]()
-<img class="slide-image" src="\imgs\pic21.png" style="top:18.51%; left:21%; width:59.88%; z-index:-1" />
+<!-- attr: { class:'slide-section demo', showInPresentation:true, hasScriptWrapper:true } -->
+<!-- # Box Model
+## [Demo]() -->
+<!-- <img class="slide-image" showInPresentation="true" src="imgs/pic21.png" style="top:18.51%; left:21%; width:59.88%; z-index:-1" />  -->
 
 
 
 
 <!-- section start -->
-<!-- attr: { id:'', class:'slide-section', showInPresentation:'True', hasScriptWrapper:'True', style:'' } -->
-# Positioning
-<img class="slide-image" src="\imgs\pic22.png" style="top:39.67%; left:80.06%; width:30.29%; z-index:-1" />
-<img class="slide-image" src="\imgs\troll.png" style="top:20%; left:80.06%; width:30.29%; z-index:-1" />
+<!-- attr: { class:'slide-section', showInPresentation:true, hasScriptWrapper:true } -->
+<!-- # Positioning -->
+<!-- <img class="slide-image" showInPresentation="true" src="imgs/pic22.png" style="top:39.67%; left:80.06%; width:30.29%; z-index:-1" />  -->
+<!-- <img class="slide-image" showInPresentation="true" src="imgs/troll.png" style="top:20%; left:80.06%; width:30.29%; z-index:-1" />  -->
 
 
 
-<!-- attr: { id:'', class:'', showInPresentation:'True', hasScriptWrapper:'False', style:'' } -->
+<!-- attr: { showInPresentation:true, hasScriptWrapper:true } -->
 # Positioning
 - **position**: defines the positioning of the element in the page content flow
 -  The value is one of:
@@ -273,7 +269,7 @@ box-sizing: border-box;
   - **fixed** – relative to the browser window, but ignores page scrolling
 
 
-<!-- attr: { id:'', class:'', showInPresentation:'True', hasScriptWrapper:'False', style:'' } -->
+<!-- attr: { showInPresentation:true, hasScriptWrapper:true } -->
 <!-- # Positioning -->
 - Margin VS relative positioning
 - Fixed and absolutely positioned elements do not influence the page normal flow and usually stay on top of other elements
@@ -282,46 +278,47 @@ box-sizing: border-box;
   - Inline fixed or absolutely positioned elements can apply height like block-level elements
 
 
-<!-- attr: { id:'', class:'', showInPresentation:'True', hasScriptWrapper:'True', style:'' } -->
+<!-- attr: { showInPresentation:true, hasScriptWrapper:true } -->
 <!-- # Positioning -->
 - **top**, **left**, **bottom**, **right**: specifies offset of absolute/fixed/relative positioned element as numerical values
 - **z-index** : specifies the stack level of positioned elements
   - Understanding stacking context
-<img class="slide-image" src="\imgs\pic23.png" style="top:52.75%; left:70.80%; width:29.38%; z-index:-1" />
+
+<!-- <img class="slide-image" showInPresentation="true" src="imgs/pic23.png" style="top:52.75%; left:70.80%; width:29.38%; z-index:-1" />  -->
 
 
-<!-- attr: { id:'', class:'slide-section demo', showInPresentation:'True', hasScriptWrapper:'True', style:'' } -->
-# Positioning
-## [Demo]()
-<img class="slide-image" src="\imgs\pic24.png" style="top:42%; left:62%; width:28.28%; z-index:-1" />
-<img class="slide-image" src="\imgs\pic25.png" style="top:42%; left:10%; width:29.47%; z-index:-1" />
+<!-- attr: { class:'slide-section demo', showInPresentation:true, hasScriptWrapper:true } -->
+<!-- # Positioning
+## [Demo]() -->
+<!-- <img class="slide-image" showInPresentation="true" src="imgs/pic24.png" style="top:42%; left:62%; width:28.28%; z-index:-1" />  -->
+<!-- <img class="slide-image" showInPresentation="true" src="imgs/pic25.png" style="top:42%; left:10%; width:29.47%; z-index:-1" />  -->
 
 
-<!-- attr: { id:'', class:'', showInPresentation:'True', hasScriptWrapper:'False', style:'' } -->
+<!-- attr: { showInPresentation:true, hasScriptWrapper:true } -->
 # Inline element positioning
 - **vertical-align**: sets the vertical-alignment of an inline element, according to the line height
   - Values: **baseline**, **sub**, **super**, **top**, **text-top**, **middle**, **bottom**, **text-bottom** or numeric
   - Also used for content of table cells (which apply **middle** alignment by default)
 
 
-<!-- attr: { id:'', class:'slide-section demo', showInPresentation:'True', hasScriptWrapper:'True', style:'' } -->
-# Alignment and Z-Index
-## [Demo]()
-<img class="slide-image" src="\imgs\pic26.png" style="top:42%; left:6.26%; width:20.98%; z-index:-1" />
-<img class="slide-image" src="\imgs\pic27.png" style="top:42%; left:80.87%; width:21.58%; z-index:-1" />
-<img class="slide-image" src="\imgs\pic28.png" style="top:52%; left:34.62%; width:40.14%; z-index:-1" />
+<!-- attr: { class:'slide-section demo', showInPresentation:true, hasScriptWrapper:true } -->
+<!-- # Alignment and Z-Index
+## [Demo]() -->
+<!-- <img class="slide-image" showInPresentation="true" src="imgs/pic26.png" style="top:42%; left:6.26%; width:20.98%; z-index:-1" />  -->
+<!-- <img class="slide-image" showInPresentation="true" src="imgs/pic27.png" style="top:42%; left:80.87%; width:21.58%; z-index:-1" />  -->
+<!-- <img class="slide-image" showInPresentation="true" src="imgs/pic28.png" style="top:52%; left:34.62%; width:40.14%; z-index:-1" />  -->
 
 
 
 
 <!-- section start -->
-<!-- attr: { id:'', class:'slide-section', showInPresentation:'True', hasScriptWrapper:'True', style:'' } -->
-# Floating
-<img class="slide-image" src="\imgs\pic29.png" style="top:42%; left:63.57%; width:30.09%; z-index:-1" />
-<img class="slide-image" src="\imgs\pic30.png" style="top:42%; left:13.10%; width:36.73%; z-index:-1" />
+<!-- attr: { class:'slide-section', showInPresentation:true, hasScriptWrapper:true } -->
+<!-- # Floating -->
+<!-- <img class="slide-image" showInPresentation="true" src="imgs/pic29.png" style="top:42%; left:63.57%; width:30.09%; z-index:-1" />  -->
+<!-- <img class="slide-image" showInPresentation="true" src="imgs/pic30.png" style="top:42%; left:13.10%; width:36.73%; z-index:-1" />  -->
 
 
-<!-- attr: { id:'', class:'', showInPresentation:'True', hasScriptWrapper:'False', style:'' } -->
+<!-- attr: { showInPresentation:true, hasScriptWrapper:true } -->
 # Float
 - **float**: the element “floats” to one side
   - **left**: places the element on the left and following content on the right
@@ -331,13 +328,14 @@ box-sizing: border-box;
   - floated inline elements can apply height
 
 
-<!-- attr: { id:'', class:'', showInPresentation:'True', hasScriptWrapper:'True', style:'' } -->
+<!-- attr: { showInPresentation:true, hasScriptWrapper:true } -->
 <!-- # Float -->
 - How floated elements are positioned
-<img class="slide-image" src="\imgs\pic31.png" style="top:21.14%; left:22.46%; width:62.59%; z-index:-1" />
+
+<!-- <img class="slide-image" showInPresentation="true" src="imgs/pic31.png" style="top:21.14%; left:22.46%; width:62.59%; z-index:-1" />  -->
 
 
-<!-- attr: { id:'', class:'', showInPresentation:'True', hasScriptWrapper:'False', style:'font-size: 40px;' } -->
+<!-- attr: { showInPresentation:true, hasScriptWrapper:true } -->
 # Clear
 - **clear**
   - Sets the sides of the element where other floating elements are NOT allowed
@@ -351,12 +349,12 @@ box-sizing: border-box;
 - IE: positioniseverything.net/easyclearing.html
 
 <!-- section start -->
-<!-- attr: { id:'', class:'slide-section', showInPresentation:'True', hasScriptWrapper:'True', style:'' } -->
-# Flexbox
-## The Next Generation of CSS Layout
-<img class="slide-image" src="\imgs\flexbox.jpg" style="top:52%; left:33%; width:35%; z-index:-1" />
+<!-- attr: { class:'slide-section', showInPresentation:true, hasScriptWrapper:true } -->
+<!-- # Flexbox
+## The Next Generation of CSS Layout -->
+<!-- <img class="slide-image" showInPresentation="true" src="imgs/flexbox.jpg" style="top:52%; left:33%; width:35%; z-index:-1" />  -->
 
-<!-- attr: { id:'', class:'', showInPresentation:'True', hasScriptWrapper:'False', style:'font-size: 40px;' } -->
+<!-- attr: { showInPresentation:true, hasScriptWrapper:true } -->
 # Flexbox
 - **Flexbox Layout**
   - Layout mode for the arrangement of elements on a page
@@ -366,7 +364,7 @@ box-sizing: border-box;
 - **Complete guide**
   - [guide](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 
-  <!-- attr: { id:'', class:'', showInPresentation:'True', hasScriptWrapper:'False', style:'font-size: 40px;' } -->
+  <!-- attr: { showInPresentation:true, hasScriptWrapper:true } -->
 # Flexbox vocabulary
 
 - Flex container
@@ -375,9 +373,10 @@ box-sizing: border-box;
 - Directions
 - Lines
 - Dimensions
-  <img class="slide-image" src="\imgs\flexbox.png" style="top:10%; left:33%; width:75%; z-index:-1" />
 
-  <!-- attr: { id:'', class:'', showInPresentation:'True', hasScriptWrapper:'False', style:'font-size: 40px;' } -->
+  <!-- <img class="slide-image" showInPresentation="true" src="imgs/flexbox.png" style="top:10%; left:33%; width:75%; z-index:-1" />  -->
+
+  <!-- attr: { showInPresentation:true, hasScriptWrapper:true } -->
   # Parent properties
 - **display** - enables flex for all children
 
@@ -403,7 +402,7 @@ box-sizing: border-box;
 }
 ```
 
-<!-- attr: { id:'', class:'', showInPresentation:'True', hasScriptWrapper:'False', style:'font-size: 40px;' } -->
+<!-- attr: { showInPresentation:true, hasScriptWrapper:true } -->
 # Parent properties
 - **flex-flow** - shorthand for **flex-direction** and **flex-wrap**
 
@@ -420,9 +419,10 @@ flex-flow: <‘flex-direction’> || <‘flex-wrap’>
   justify-content: flex-start | flex-end | center | space-between | space-around;
 }
 ```
-<img class="fragment balloon" src="\imgs\justify.png" style="top:20%; left:33%; width:45%; z-index:0" />
 
-<!-- attr: { id:'', class:'', showInPresentation:'True', hasScriptWrapper:'False', style:'font-size: 40px;' } -->
+<!-- <img class="fragment balloon" showInPresentation="true" src="imgs/justify.png" style="top:20%; left:33%; width:45%; z-index:0" />  -->
+
+<!-- attr: { showInPresentation:true, hasScriptWrapper:true } -->
 # Parent properties
 - **align-items** - justify-content version for the cross-axis
 
@@ -439,14 +439,15 @@ flex-flow: <‘flex-direction’> || <‘flex-wrap’>
   align-content: flex-start | flex-end | center | space-between | space-around | stretch;
 }
 ```
+
 <div class="fragment balloon" style="top:20%; left:5%; width:45%;">Align Items
-    <img  src="\imgs\align-items.png"  />
+    <img  src="imgs/align-items.png"  />
 </div>
 <div class="fragment balloon" style="top:20%; left:55%; width:45%;">Align Content
-    <img  src="\imgs\align-content.png"  />
+    <img  src="imgs/align-content.png"  />
 </div>
 
-<!-- attr: { id:'', class:'', showInPresentation:'True', hasScriptWrapper:'False', style:'font-size: 40px;' } -->
+<!-- attr: { showInPresentation:true, hasScriptWrapper:true } -->
 # Children properties
 - **order** - controls the order in which the children appear in the flex container
 
@@ -464,8 +465,8 @@ flex-flow: <‘flex-direction’> || <‘flex-wrap’>
 }
 ```
 
-<!-- attr: { id:'', class:'', showInPresentation:'True', hasScriptWrapper:'False', style:'font-size: 40px;' } -->
-# Children properties
+<!-- attr: { showInPresentation:true, hasScriptWrapper:true } -->
+<!-- # Children properties -->
 - **flex-shrink** - defines the ability for a flex item to shrink if necessary
 
 ```css
@@ -482,8 +483,8 @@ flex-flow: <‘flex-direction’> || <‘flex-wrap’>
 }
 ```
 
-<!-- attr: { id:'', class:'', showInPresentation:'True', hasScriptWrapper:'False', style:'font-size: 40px;' } -->
-# Children properties
+<!-- attr: { showInPresentation:true, hasScriptWrapper:true } -->
+<!-- # Children properties -->
 - **flex** - shorthand for **flex-grow**, **flex-shrink** and **flex-basis** combined (**recommended**)
 
 ```css
@@ -501,18 +502,18 @@ flex-flow: <‘flex-direction’> || <‘flex-wrap’>
 ```
 
 <div class="fragment balloon" style="top:45%; left:55%; width:25%;"><p>Align Self</p>
-    <img  src="\imgs\align-self.png"  />
+    <img  src="imgs/align-self.png"  />
 </div>
 
 
 
-<!-- attr: { id:'', class:'slide-section', showInPresentation:'True', hasScriptWrapper:'False', style:'' } -->
+<!-- attr: { class:'slide-section', showInPresentation:true, hasScriptWrapper:true } -->
 
 # CSS Layout
 ## Questions?
 
 
-<!-- attr: { id:'', class:'', showInPresentation:'True', hasScriptWrapper:'True', style:'' } -->
+<!-- attr: { showInPresentation:true, hasScriptWrapper:true } -->
 # Free Trainings @ Telerik Academy
 - "Web Design with HTML 5, CSS 3 and JavaScript" course @ Telerik Academy
     - [html5course.telerik.com](html5course.telerik.com)
@@ -522,7 +523,8 @@ flex-flow: <‘flex-direction’> || <‘flex-wrap’>
     - [facebook.com/TelerikAcademy](facebook.com/TelerikAcademy)
   - Telerik Software Academy Forums
     - forums.academy.telerik.com
-<img class="slide-image" src="\imgs\pic34.png" style="top:58.18%; left:90.52%; width:16.97%; z-index:-1" />
-<img class="slide-image" src="\imgs\pic35.png" style="top:34.35%; left:68.14%; width:36.30%; z-index:-1" />
-<img class="slide-image" src="\imgs\pic36.png" style="top:48.92%; left:75.91%; width:10.85%; z-index:-1" />
-<img class="slide-image" src="\imgs\pic37.png" style="top:11.88%; left:91.56%; width:14.23%; z-index:-1" />
+
+<!-- <img class="slide-image" showInPresentation="true" src="imgs/pic34.png" style="top:58.18%; left:90.52%; width:16.97%; z-index:-1" />  -->
+<!-- <img class="slide-image" showInPresentation="true" src="imgs/pic35.png" style="top:34.35%; left:68.14%; width:36.30%; z-index:-1" />  -->
+<!-- <img class="slide-image" showInPresentation="true" src="imgs/pic36.png" style="top:48.92%; left:75.91%; width:10.85%; z-index:-1" />  -->
+<!-- <img class="slide-image" showInPresentation="true" src="imgs/pic37.png" style="top:11.88%; left:91.56%; width:14.23%; z-index:-1" />  -->

@@ -13,9 +13,6 @@
 	<a href="https://www.telerikacademy.com" class="signature-link">telerikacademy.com</a>
 </div>
 
-
-
-
 <!-- section start -->
 <!-- attr: { showInPresentation: true, hasScriptWrapper: true } -->
 # Table of Contents
