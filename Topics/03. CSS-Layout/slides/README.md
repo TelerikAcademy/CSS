@@ -38,7 +38,7 @@
 
 
 <!-- attr: { id:'width', showInPresentation:true, hasScriptWrapper:true } -->
-# Width
+# <a id="width"></a>Width
 - **width** – defines numerical value for the width of element, e.g. **200px**
 - **width** applies only for block elements
   - Their with is 100% by default
@@ -89,7 +89,7 @@
 
 
 <!-- attr: { id:'overflows', showInPresentation:true, hasScriptWrapper:true } -->
-# Overflow
+# <a id="overflows"></a>Overflow
 - **overflow** defines the behavior of element when content needs more space than the available
 - **overflow** values:
   - **visible** (default) – content spills out of the element
@@ -112,7 +112,7 @@
 
 
 <!-- attr: { id:'displays', showInPresentation:true, hasScriptWrapper:true } -->
-# Display
+# <a id="displays"></a>Display
 - **display** controls the display of the element and the way it is rendered and if breaks should be placed before and after the element
 - **display** values:
   - **inline**: no breaks are placed before or after (**<span>** is an inline element)
@@ -125,7 +125,7 @@
 # Display Values
 - **display** values:
   - **none**: element is hidden and its dimensions are not used to calculate the surrounding elements rendering
-    - differs from **visibility:** **hidden**!
+    - differs from **visibility:** **hidden**
   - **inline-block**: no breaks are placed before and after (like **inline**)
     - **height** and **width** can be applied (like **block**)
   - **table**, **table-row**, **table-cell**: the elements are arranged in a table-like layout
@@ -144,7 +144,7 @@
 
 
 <!-- attr: { id:'visible', showInPresentation:true, hasScriptWrapper:true } -->
-# Visibility
+# <a id="visible"></a>Visibility
 - **visibility**
   - Determines whether the element is visible
   - **hidden**: element is not rendered, but still occupies place on the page
@@ -170,7 +170,7 @@
 
 
 <!-- attr: { id:'margins' showInPresentation:true, hasScriptWrapper:true } -->
-# Margin and Padding
+# <a id="margins"></a>Margin and Padding
 - **margin** and **padding** define the spacing around the element
   - Numerical value, e.g. **10px** or **-5px**
   - Can be defined for each of the four sides separately – **margin-top**, **padding-left**, …
@@ -207,8 +207,8 @@
 <!-- <img class="slide-image" showInPresentation="true" src="imgs/pic19.png" style="top:42%; left:28%; width:45%; z-index:-1" />  -->
 
 
-<!-- attr: { id:'box-model', showInPresentation:true, hasScriptWrapper:true } -->
-# CSS3 box-sizing
+<!-- attr: { id:'boxmodel', showInPresentation:true, hasScriptWrapper:true } -->
+# <a id="boxmodel"></a>CSS3 box-sizing
 - Determine whether you want an element to render it's borders and padding within its specified width, or outside of it.
 - Possible values:
   - **box-sizing: content-box** (default)box width: 288px + 10px padding + 1px border on each side = 300px
@@ -261,7 +261,7 @@ box-sizing: border-box;
 
 
 <!-- attr: { id:'positioning', showInPresentation:true, hasScriptWrapper:true } -->
-# Positioning
+# <a id="positioning"></a>Positioning
 - **position**: defines the positioning of the element in the page content flow
 -  The value is one of:
   - **static** (default)
@@ -320,7 +320,7 @@ box-sizing: border-box;
 
 
 <!-- attr: { id:'floating', showInPresentation:true, hasScriptWrapper:true } -->
-# Float
+# <a id="floating"></a>Float
 - **float**: the element “floats” to one side
   - **left**: places the element on the left and following content on the right
   - **right**: places the element on the right and following content on the left
@@ -356,7 +356,7 @@ box-sizing: border-box;
 <!-- <img class="slide-image" showInPresentation="true" src="imgs/flexbox.jpg" style="top:52%; left:33%; width:35%; z-index:-1" />  -->
 
 <!-- attr: { id:'flex', showInPresentation:true, hasScriptWrapper:true } -->
-# Flexbox
+# <a id="flex"></a>Flexbox
 - **Flexbox Layout**
   - Layout mode for the arrangement of elements on a page
   - The elements behave predictably on different screen sizes and different display devices
