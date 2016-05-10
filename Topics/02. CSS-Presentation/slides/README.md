@@ -57,23 +57,21 @@
   - Shorthand rule for setting multiple font properties at the same time
 
 ```css
-{ font: italic normal bold 12px/16px verdana; }
+#selector { font: italic normal bold 12px/16px verdana; }
 ```
 
   - is equal to writing this:
 
 ```css
-{
-font-style: italic;
-font-variant: normal;
-font-weight: bold;
-font-size: 12px;
-line-height: 16px;
-font-family: verdana;
+.selector {
+	font-style: italic;
+	font-variant: normal;
+	font-weight: bold;
+	font-size: 12px;
+	line-height: 16px;
+	font-family: verdana;
 }
 ```
-
-
 
 <!-- attr: {  class:'slide-section demo', showInPresentation:true, hasScriptWrapper:true } -->
 <!-- # Text-related Properties
@@ -120,10 +118,12 @@ font-family: verdana;
 <br/>
 
 ```
-text-shadow: 2px 2px 7px #000000;
+.selector {
+	text-shadow: 2px 2px 7px #000000;
+}
 ```
 <!-- <img class="slide-image" showInPresentation="true" src="imgs\pic13.png" style="top:53%; left:17.12%; width:45%; z-index:-1" /> -->
-<!-- <img class="slide-image" showInPresentation="true" src="imgs\pic14.png" style="top:75%; left:17.76%; width:45%; z-index:-1" /> -->
+<!-- <img class="slide-image" showInPresentation="true" src="imgs\pic14.png" style="top:80%; left:17.76%; width:45%; z-index:-1" /> -->
 
 
 <!-- attr: {   showInPresentation:true, hasScriptWrapper:true } -->
@@ -182,20 +182,22 @@ text-shadow: 2px 2px 7px #000000;
   - `border-top-style`, `border-left-color`, …
 
 
-<!-- attr: {   showInPresentation:true, hasScriptWrapper:true, style:'font-size: 0.9em;' } -->
+<!-- attr: {   showInPresentation:true, hasScriptWrapper:true, style:'font-size: 0.85em;' } -->
 # Border Shorthand Property
 - `border`: shorthand rule for setting border properties at once:
 
 ```css
-{ border: 1px solid red }
+#selector { border: 1px solid red }
 ```
 
 - 	is equal to writing:
 
-```cs
-border-width:1px;
-border-color:red;
-border-style:solid;
+```css
+#complex .selector {
+	border-width:1px;
+	border-color:red;
+	border-style:solid;
+}
 ```
 
 
@@ -214,12 +216,12 @@ border-style:solid;
 - Only Firefox supports this type of coloring
 
 ```css
-{
-border: 8px solid #000;
--moz-border-bottom-colors: #555 #666 #777 #888 #999 #aaa #bbb #ccc;
--moz-border-top-colors: #555 #666 #777 #888 #999 #aaa #bbb #ccc;
--moz-border-left-colors: #555 #666 #777 #888 #999 #aaa #bbb #ccc;
--moz-border-right-colors: #555 #666 #777 #888 #999 #aaa #bbb #ccc;
+.selector-for-gradient {
+	border: 8px solid #000;
+	-moz-border-bottom-colors: #555 #666 #777 #888 #999 #aaa #bbb #ccc;
+	-moz-border-top-colors: #555 #666 #777 #888 #999 #aaa #bbb #ccc;
+	-moz-border-left-colors: #555 #666 #777 #888 #999 #aaa #bbb #ccc;
+	-moz-border-right-colors: #555 #666 #777 #888 #999 #aaa #bbb #ccc;
 }
 ```
 
@@ -233,47 +235,46 @@ border: 8px solid #000;
 - _Example_:
 
 ```css
-{
--moz-box-shadow: 10px 10px 5px #888;
--webkit-box-shadow: 10px 10px 5px #888;
-box-shadow: 10px 10px 5px #888;
+.box-shadow {
+	-moz-box-shadow: 10px 10px 5px #888;
+	-webkit-box-shadow: 10px 10px 5px #888;
+	box-shadow: 10px 10px 5px #888;
 }
 ```
 
 <!-- <img class="slide-image" showInPresentation="true" src="imgs\pic23.png" style="top:75%; left:23.39%; width:50%; z-index:-1" /> -->
 
 
-<!-- attr: {   showInPresentation:true, hasScriptWrapper:true, style:'font-size: 0.9em' } -->
+<!-- attr: {   showInPresentation:true, hasScriptWrapper:true, style:'font-size: 0.8em' } -->
 # Rounded Corners
 - Rounded corners are a part of CSS 3
   - Supported in all major browsers
   - Firefox, IE 9, Chrome, Opera and Safari
 - Done by the `border-radius` property
 
-```cs
-{ border-radius: [<length>|<%>][<length>|<%>]? }
+```css
+.selector { border-radius: [<length>|<%>][<length>|<%>]? }
 ```
 
-- Three ways to define corner radius:
+- Four ways to define corner radius:
 
-
-
-
-```cs
-{ border-radius: 15px; }
+```css
+.selector { border-radius: 15px; }
 ```
 
 
-```cs
-{ border-radius: 15px 20px; }
+```css
+.selector { border-radius: 15px 20px; }
 ```
 
 
-```cs
-{ border-radius: 15px 15px 15px 10px; }
+```css
+.selector { border-radius: 15px 15px 15px 10px; }
 ```
 
-
+```css
+.selector { border-top-left-radius: 15px }
+```
 
 <!-- attr: {  class:'slide-section demo', showInPresentation:true, hasScriptWrapper:true } -->
 <!-- # Other Border Styles
@@ -312,32 +313,34 @@ box-shadow: 10px 10px 5px #888;
   - Both can be specified in percentage or other numerical values
   - _Examples_:
 
-```cs
-background-position: top left;
-```
+```css
+.first-selector {
+	background-position: top left;
+}
 
-```cs
+.second-selector {
   background-position: -5px 50%;
+}
 ```
-
-
 
 <!-- attr: {   showInPresentation:true, hasScriptWrapper:true, style:'font-size:40px;' } -->
 # Background Shorthand Property
 - `background`: shorthand rule for setting background properties at the same time:
 
-```cs
+```css
 background: #FFF0C0 url("back.gif") no-repeat fixed top;
 ```
 
 - 	is equal to writing:
 
-```cs
-background-color: #FFF0C0;
-background-image: url("back.gif");
-background-repeat: no-repeat;
-background-attachment: fixed;
-background-position: top;
+```css
+#selector {
+	background-color: #FFF0C0;
+	background-image: url("back.gif");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: top;
+}
 ```
 
 - Some browsers will not apply BOTH color and image for background if using shorthand rule
@@ -371,21 +374,25 @@ background-position: top;
 <!-- attr: {   showInPresentation:true, hasScriptWrapper:true } -->
 # Gradient Backgrounds _Example_
 
-```cs
-/* Firefox 3.6+ */
-background: -moz-linear-gradient(100% 100% 90deg,   
-  #FFFF00, #0000FF);
-/* Safari 4-5, Chrome 1-9 */
-background: -webkit-gradient(linear, 0% 0%, 0%
-  100%, from(#0000FF), to(#FFFF00));
-/* Safari 5.1+, Chrome 10+ */
-background: -webkit-linear-gradient(#FFFF00,
-  #0000FF);
-/* Opera 11.10+ */
-background: -o-linear-gradient(#2F2727, #0000FF);
+-	_Example_: linear vertical gradient:
+
+```css
+.linear-gradient {
+	/* Firefox 3.6+ */
+	background: -moz-linear-gradient(100% 100% 90deg,   
+	  #FFFF00, #0000FF);
+	/* Safari 4-5, Chrome 1-9 */
+	background: -webkit-gradient(linear, 0% 0%, 0%
+	  100%, from(#0000FF), to(#FFFF00));
+	/* Safari 5.1+, Chrome 10+ */
+	background: -webkit-linear-gradient(#FFFF00,
+	  #0000FF);
+	/* Opera 11.10+ */
+	background: -o-linear-gradient(#2F2727, #0000FF);
+}
 ```
 
-<!-- <img class="slide-image" showInPresentation="true" src="imgs\pic29.png" style="top:67%; left:10%; width:70%; height: 20%; z-index:-1" /> -->
+<!-- <img class="slide-image" showInPresentation="true" src="imgs\pic29.png" style="top:77%; left:10%; width:70%; height: 20%; z-index:-1" /> -->
 
 
 <!-- attr: {  class:'slide-section demo', showInPresentation:true, hasScriptWrapper:true } -->
@@ -400,7 +407,7 @@ background: -o-linear-gradient(#2F2727, #0000FF);
 - Supported in **Firefox (3.6+), Chrome (1.0/1.3+), Opera (10.5+) and Internet Explorer (9.0+)**
 - Comma separated list for the other properties
 
-```cs
+```css
 background-image: url(sheep.png), url(grass.png);
 ```
 
@@ -435,6 +442,7 @@ background-image: url(sheep.png), url(grass.png);
 <!-- # Opacity
 ## [Demo](./../demos/8. opacity.html) -->
 
+<!-- section start -->
 
 <!-- attr: {  class:'slide-section', showInPresentation:true, hasScriptWrapper:true } -->
 # CSS Presentation
