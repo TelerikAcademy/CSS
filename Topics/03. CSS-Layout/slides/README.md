@@ -2,9 +2,9 @@
 <!-- attr: { class:'slide-title', showInPresentation:true, hasScriptWrapper:true } -->
 # CSS Layout
 ## Control the arrangement of the HTML elements
-<!-- <img class="slide-image" showInPresentation="true" showInPresentation="false" src="imgs/pic00.png" style="top:51.39%; left:53.53%; width:49.76%; z-index:-1" />  -->
+<!-- <img class="slide-image" showInPresentation="true" src="imgs/pic00.png" style="top:51.39%; left:53.53%; width:49.76%; z-index:-1" />  -->
 
-<!-- <img class="slide-image" showInPresentation="true" src="imgs/pic01.png" style="top:51%; left:10.02%; width:40.99%; z-index:-1" />  -->
+<!-- <img class="slide-image" showInPresentation="false" src="imgs/pic01.png" style="top:51%; left:10.02%; width:40.99%; z-index:-1" />  -->
 <div class="signature">
 	<p class="signature-course">CSS Styling</p>
 	<p class="signature-initiative">Telerik Software Academy</p>
@@ -14,14 +14,15 @@
 <!-- section start -->
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true } -->
 # Table of Contents
-- Width and Height
-- Overflow
-- Display
-- Visibility
-- Margins and Paddings
-- CSS Box Model
-- Position
-- Float
+- [Width and Height](#width)
+- [Overflow](#overflows)
+- [Display](#displays)
+- [Visibility](#visible)
+- [Margins and Paddings](#margins)
+- [CSS Box Model](#boxmodel)
+- [Position](#positioning)
+- [Float](#floating)
+- [Flexbox](#flex)
 
 <!-- <img class="slide-image" showInPresentation="true" src="imgs/pic02.png" style="top:12.34%; left:56.01%; width:47.07%; z-index:-1" />  -->
 <!-- <img class="slide-image" showInPresentation="true" src="imgs/pic03.png" style="top:45.37%; left:64.61%; width:30.86%; z-index:-1" />  -->
@@ -36,7 +37,7 @@
 <!-- <img class="slide-image" showInPresentation="true" src="imgs/pic05.png" style="top:43%; left:32%; width:25%; z-index:-1" />  -->
 
 
-<!-- attr: { showInPresentation:true, hasScriptWrapper:true } -->
+<!-- attr: { id:'width', showInPresentation:true, hasScriptWrapper:true } -->
 # Width
 - **width** – defines numerical value for the width of element, e.g. **200px**
 - **width** applies only for block elements
@@ -87,7 +88,7 @@
 <!-- <img class="slide-image" showInPresentation="true" src="imgs/pic10.png" style="top:45%; left:5%; width:38%; z-index:-1" />  -->
 
 
-<!-- attr: { showInPresentation:true, hasScriptWrapper:true } -->
+<!-- attr: { id:'overflows', showInPresentation:true, hasScriptWrapper:true } -->
 # Overflow
 - **overflow** defines the behavior of element when content needs more space than the available
 - **overflow** values:
@@ -110,7 +111,7 @@
 <!-- <img class="slide-image" showInPresentation="true" src="imgs/pic13.png" style="top:38.79%; left:20%; width:63.92%; z-index:-1" />  -->
 
 
-<!-- attr: { showInPresentation:true, hasScriptWrapper:true } -->
+<!-- attr: { id:'displays', showInPresentation:true, hasScriptWrapper:true } -->
 # Display
 - **display** controls the display of the element and the way it is rendered and if breaks should be placed before and after the element
 - **display** values:
@@ -142,7 +143,7 @@
 <!-- <img class="slide-image" showInPresentation="true" src="imgs/pic15.png" style="top:40%; left:28.36%; width:42%; z-index:-1" />  -->
 
 
-<!-- attr: { showInPresentation:true, hasScriptWrapper:true } -->
+<!-- attr: { id:'visible', showInPresentation:true, hasScriptWrapper:true } -->
 # Visibility
 - **visibility**
   - Determines whether the element is visible
@@ -168,7 +169,7 @@
 <!-- <img class="slide-image" showInPresentation="true" src="imgs/pic17.png" style="top:26.96%; left:10.58%; width:85.84%; z-index:-1" />  -->
 
 
-<!-- attr: { showInPresentation:true, hasScriptWrapper:true } -->
+<!-- attr: { id:'margins' showInPresentation:true, hasScriptWrapper:true } -->
 # Margin and Padding
 - **margin** and **padding** define the spacing around the element
   - Numerical value, e.g. **10px** or **-5px**
@@ -206,7 +207,7 @@
 <!-- <img class="slide-image" showInPresentation="true" src="imgs/pic19.png" style="top:42%; left:28%; width:45%; z-index:-1" />  -->
 
 
-<!-- attr: { showInPresentation:true, hasScriptWrapper:true } -->
+<!-- attr: { id:'box-model', showInPresentation:true, hasScriptWrapper:true } -->
 # CSS3 box-sizing
 - Determine whether you want an element to render it's borders and padding within its specified width, or outside of it.
 - Possible values:
@@ -259,7 +260,7 @@ box-sizing: border-box;
 
 
 
-<!-- attr: { showInPresentation:true, hasScriptWrapper:true } -->
+<!-- attr: { id:'positioning', showInPresentation:true, hasScriptWrapper:true } -->
 # Positioning
 - **position**: defines the positioning of the element in the page content flow
 -  The value is one of:
@@ -318,7 +319,7 @@ box-sizing: border-box;
 <!-- <img class="slide-image" showInPresentation="true" src="imgs/pic30.png" style="top:42%; left:13.10%; width:36.73%; z-index:-1" />  -->
 
 
-<!-- attr: { showInPresentation:true, hasScriptWrapper:true } -->
+<!-- attr: { id:'floating', showInPresentation:true, hasScriptWrapper:true } -->
 # Float
 - **float**: the element “floats” to one side
   - **left**: places the element on the left and following content on the right
@@ -354,7 +355,7 @@ box-sizing: border-box;
 ## The Next Generation of CSS Layout -->
 <!-- <img class="slide-image" showInPresentation="true" src="imgs/flexbox.jpg" style="top:52%; left:33%; width:35%; z-index:-1" />  -->
 
-<!-- attr: { showInPresentation:true, hasScriptWrapper:true } -->
+<!-- attr: { id:'flex', showInPresentation:true, hasScriptWrapper:true } -->
 # Flexbox
 - **Flexbox Layout**
   - Layout mode for the arrangement of elements on a page
