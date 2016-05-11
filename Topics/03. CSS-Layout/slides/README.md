@@ -169,7 +169,7 @@
 <!-- <img class="slide-image" showInPresentation="true" src="imgs/pic17.png" style="top:45%; left:20%; width:60%; z-index:-1" />  -->
 
 
-<!-- attr: { id:'margins' showInPresentation:true, hasScriptWrapper:true } -->
+<!-- attr: { id:'margins', showInPresentation:true, hasScriptWrapper:true } -->
 # <a id="margins"></a>Margin and Padding
 - **margin** and **padding** define the spacing around the element
   - Numerical value, e.g. `10px` or `-5px`
