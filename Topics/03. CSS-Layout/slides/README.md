@@ -400,7 +400,7 @@
 ```
 
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'font-size: 0.8em' } -->
-# Parent properties
+<!-- # Parent properties -->
 - **flex-flow** - shorthand for **flex-direction** and **flex-wrap**
 
 ```css
@@ -420,7 +420,7 @@ flex-flow: <‘flex-direction’> || <‘flex-wrap’>
 <!-- <img class="fragment balloon" showInPresentation="true" src="imgs/justify.png" style="top:20%; left:33%; width:45%; z-index:0" />  -->
 
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'font-size: 0.8em' } -->
-# Parent properties
+<!-- # Parent properties -->
 - **align-items** - justify-content version for the cross-axis
 
 ```css
@@ -437,10 +437,10 @@ flex-flow: <‘flex-direction’> || <‘flex-wrap’>
 }
 ```
 
-<div class="fragment balloon" style="top:20%; left:5%; width:45%;">Align Items
+<div class="fragment balloon" style="top:20%; left:5%; width:45%;">
     <img  src="imgs/align-items.png"  />
 </div>
-<div class="fragment balloon" style="top:20%; left:55%; width:45%;">Align Content
+<div class="fragment balloon" style="top:20%; left:55%; width:45%;">
     <img  src="imgs/align-content.png"  />
 </div>
 
@@ -498,7 +498,7 @@ flex-flow: <‘flex-direction’> || <‘flex-wrap’>
 }
 ```
 
-<div class="fragment balloon" style="top:45%; left:55%; width:25%;"><p>Align Self</p>
+<div class="fragment balloon" style="top:45%; left:55%; width:25%;">
     <img  src="imgs/align-self.png"  />
 </div>
 
@@ -506,8 +506,8 @@ flex-flow: <‘flex-direction’> || <‘flex-wrap’>
 
 <!-- attr: { class:'slide-section', showInPresentation:true, hasScriptWrapper:true } -->
 
-# CSS Layout
-## Questions?
+<!-- # CSS Layout
+## Questions? -->
 
 
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'font-size: 0.9em' } -->
