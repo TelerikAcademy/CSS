@@ -10,7 +10,7 @@
 <div class="signature">
 	<p class="signature-course">CSS Styling</p>
 	<p class="signature-initiative">Telerik Academy</p>
-	<a href="https://www.telerikacademy.com" class="signature-link">telerikacademy.com</a>
+	<a href="https://telerikacademy.com" class="signature-link">telerikacademy.com</a>
 </div>
 
 <!-- section start -->
