@@ -15,15 +15,15 @@
 <!-- section start -->
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true } -->
 # Table of Contents
-- [Width and Height](#width)
+- [Width and Height](#width-and-height)
 - [Overflow](#overflows)
-- [Display](#displays)
-- [Visibility](#visible)
-- [Margins and Paddings](#margins)
-- [CSS Box Model](#boxmodel)
-- [Position](#positioning)
+- [Display](#display)
+- [Visibility](#visibility)
+- [Margins and Paddings](#margins-and-paddings)
+- [CSS Box Model](#box-model)
+- [Positioning](#positioning)
 - [Float](#floating)
-- [Flexbox](#flex)
+- [Flexbox](#flexbox)
 
 <!-- <img class="slide-image" showInPresentation="true" src="imgs/pic02.png" style="top:12.34%; left:56.01%; width:40%; z-index:-1; border-radius: 30px 0 30px 0" />  -->
 <!-- <img class="slide-image" showInPresentation="true" src="imgs/pic03.png" style="top:50%; left:64.61%; width:30.86%; z-index:-1" />  -->
@@ -37,33 +37,37 @@
 <!-- <img class="slide-image" showInPresentation="true" src="imgs/pic05.png" style="top:43%; left:32%; width:25%; z-index:-1" />  -->
 
 
-<!-- attr: { id:'width', showInPresentation:true, hasScriptWrapper:true } -->
-# <a id="width"></a>Width
-- **width** – defines numerical value for the width of element, e.g. **200px**
-- **width** applies only for block elements
-  - Their with is 100% by default
+<!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'font-size: 0.8em' } -->
+# Width
+- The **width** property defines numerical value for the width of element, e.g. `200px`
+- Applies only for block elements
+  - Their with is `100%` by default
   - The width of inline elements is always the width of their content, by concept
-- **min-width** - defines the **minimal width**
-  - **min-width** overrides width if **width < min-width**
-- **max-width** - defines the maximal width
-  - **max-width** overrides width if **width > max-width**
+- **min-width** 
+  - defines the minimal width
+  - overrides width if **width < min-width**
+- **max-width** 
+  - defines the maximal width
+  - overrides width if **width > max-width**
 
 
 <!-- attr: { class:'slide-section demo', showInPresentation:true, hasScriptWrapper:true } -->
 <!-- # Width
-## [Demo]() -->
+## [Demo](https://github.com/TelerikAcademy/CSS/blob/master/Topics/03.%20CSS-Layout/demos/01.%20width.html) -->
 <!-- <img class="slide-image" showInPresentation="true" src="imgs/pic06.png" style="top:55%; left:27.5%; width:45%; z-index:-1" />  -->
 
 
-<!-- attr: { showInPresentation:true, hasScriptWrapper:true } -->
+<!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'font-size: 0.8em' } -->
 # Height
-- **height** – defines numerical value for the height of element, e.g. `100px`
-- height **applies only on block elements**
+- The **height** property defines numerical value for the height of element, e.g. `100px`
+- Applies only on block elements
   - The height of inline elements is always the height of their content
-- **min-height** - defines the minimal height
-  - **min-height** overrides height if **height < min-height**
-- **max-height** - defines the maximal height
-  - **max-height** overrides height if **height < min-height**
+- **min-height** 
+  - defines the minimal height
+  - overrides height if **height < min-height**
+- **max-height** 
+  - defines the maximal height
+  - overrides height if **height < min-height**
 
 
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true } -->
@@ -78,7 +82,7 @@
 
 <!-- attr: { class:'slide-section demo', showInPresentation:true, hasScriptWrapper:true } -->
 <!-- # Height
-## [Demo]() -->
+## [Demo](https://github.com/TelerikAcademy/CSS/blob/master/Topics/03.%20CSS-Layout/demos/02.%20height.html) -->
 <!-- <img class="slide-image" showInPresentation="true" src="imgs/pic07.png" style="top:55%; left:35%; width:30%; z-index:-1; border-radius: 15px" />  -->
 
 
@@ -91,8 +95,8 @@
 
 <!-- attr: { id:'overflows', showInPresentation:true, hasScriptWrapper:true } -->
 # <a id="overflows"></a>Overflow
-- **overflow** defines the behavior of element when content needs more space than the available
-- **overflow values**:
+- The **overflow** property defines the behavior of element when content needs more space than the available
+- Values:
   - `visible` (default) – content spills out of the element
   - `auto` – show scrollbars if needed
   - `scroll` – always show scrollbars
@@ -101,7 +105,7 @@
 
 <!-- attr: { class:'slide-section demo', showInPresentation:true, hasScriptWrapper:true } -->
 <!-- # Overflow
-## [Demo]() -->
+## [Demo](https://github.com/TelerikAcademy/CSS/blob/master/Topics/03.%20CSS-Layout/demos/03.%20overflow.html) -->
 <!-- <img class="slide-image" showInPresentation="true" src="imgs/pic11.png" style="top:55%; left:59.88%; width:35.42%; z-index:-1; border-radius: 15px; border: 2px solid white" />  -->
 <!-- <img class="slide-image" showInPresentation="true" src="imgs/pic12.png" style="top:55%; left:15%; width:26.45%; z-index:-1; border-radius: 15px; border: 2px solid white" />  -->
 
@@ -112,28 +116,29 @@
 <!-- <img class="slide-image" showInPresentation="true" src="imgs/pic13.png" style="top:40%; left:20%; width:60%; z-index:-1" />  -->
 
 
-<!-- attr: { id:'displays', showInPresentation:true, hasScriptWrapper:true } -->
-# <a id="displays"></a>Display
-- **display** controls the display of the element and the way it is rendered and if breaks should be placed before and after the element
-- **display** values:
-  - **inline**: no breaks are placed before or after (**<span>** is an inline element)
-    - **height** and **width** depend on the content
-  - **block**:  breaks are placed before AND after the element (**<div>** is a block element)
-    - **height** and **width** may not depend on the size of the content
+<!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'font-size: 0.9em' } -->
+# Display
+- The **display** property controls the display of the element and the way it is rendered and if breaks should be placed before and after the element
+- Values:
+  - `inline`: **no breaks are placed** before or after (`<span>` is an inline element)
+    - height and width depend on the content
+  - `block`:  **breaks are placed** before AND after the element (`<div>` is a block element)
+    - height and width may not depend on the size of the content
 
 
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true } -->
-- **display** values:
-  - **none**: element is hidden and its dimensions are not used to calculate the surrounding elements rendering
-    - differs from **visibility:** **hidden**
-  - **inline-block**: no breaks are placed before and after (like **inline**)
-    - **height** and **width** can be applied (like **block**)
-  - **table**, **table-row**, **table-cell**: the elements are arranged in a table-like layout
+# Display
+- More values:
+  - `none`: **element is hidden** and its dimensions are not used to calculate the surrounding elements rendering
+    - differs from `visibility: hidden`
+  - `inline-block`: **no breaks are placed** before and after (like **inline**)
+    - height and width can be applied (like `block`)
+  - `table`, `table-row`, `table-cell`: the elements are **arranged in a table-like layout**
 
 
 <!-- attr: { class:'slide-section demo', showInPresentation:true, hasScriptWrapper:true } -->
 <!-- # Display
-## [Demo]() -->
+## [Demo](https://github.com/TelerikAcademy/CSS/blob/master/Topics/03.%20CSS-Layout/demos/04.%20display.html) -->
 <!-- <img class="slide-image" showInPresentation="true" src="imgs/pic14.png" style="top:35%; left:5%; width:35%; z-index:-1" />  -->
 
 
@@ -143,36 +148,36 @@
 <!-- <img class="slide-image" showInPresentation="true" src="imgs/pic15.png" style="top:45%; left:28.36%; width:42%; z-index:-1" />  -->
 
 
-<!-- attr: { id:'visible', showInPresentation:true, hasScriptWrapper:true } -->
-# <a id="visible"></a>Visibility
-- **visibility**
+<!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'font-size: 0.95em' } -->
+# Visibility
+- The **visibility** property
   - Determines whether the element is visible
-  - **hidden**: element is not rendered, but still occupies place on the page
-    - similar to **opacity:0**
-  - **visible**: element is rendered normally
-  - **collapse**: collapse removes a row or column, but it does not affect the table layout
+  - `hidden`: element is **not rendered, but still occupies place** on the page
+    - similar to `opacity:0`
+  - `visible`: element is **rendered normally**
+  - `collapse`: collapse **removes a row or column**, but it does not affect the table layout
     - only for table elements
     - The space taken up by the row or column will be available for other content
 
 
 <!-- attr: { class:'slide-section demo', showInPresentation:true, hasScriptWrapper:true } -->
 <!-- # Visibility
-## [Demo]() -->
+## [Demo](https://github.com/TelerikAcademy/CSS/blob/master/Topics/03.%20CSS-Layout/demos/06.%20visibility.html) -->
 <!-- <img class="slide-image" showInPresentation="true" src="imgs/pic16.png" style="top:55%; left:54.27%; width:35%; z-index:-1" />  -->
 
 
 
 
 <!-- section start -->
-<!-- attr: { id:'margin-and-padding', class:'slide-section', showInPresentation:true, hasScriptWrapper:true } -->
-<!-- # <a id="margin-and-padding"></a>Margins and Paddings -->
+<!-- attr: { id:'margins-and-paddings', class:'slide-section', showInPresentation:true, hasScriptWrapper:true } -->
+<!-- # <a id="margins-and-paddings"></a>Margins and Paddings -->
 <!-- <img class="slide-image" showInPresentation="true" src="imgs/pic17.png" style="top:45%; left:20%; width:60%; z-index:-1" />  -->
 
 
-<!-- attr: { id:'margins', showInPresentation:true, hasScriptWrapper:true } -->
+<!-- attr: { id:'margins', showInPresentation:true, hasScriptWrapper:true, style:'font-size: 0.85em' } -->
 # <a id="margins"></a>Margin and Padding
-- **margin** and **padding** define the spacing around the element
-  - Numerical value, e.g. `10px` or `-5px`
+- The **margin** and **padding** properties define the spacing around the element
+  - They take numerical value, e.g. `10px` or `-5px`
   - Can be defined for each of the four sides separately – `margin-top`, `padding-left`, …
   - **margin** is the spacing outside of the border
   - **padding** is the spacing between the border and the content
@@ -180,22 +185,34 @@
   - When the vertical margins of two elements are touching, only the margin of the element with the largest margin value will be honored
 
 
-<!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'font-size: 0.95em' } -->
+<!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'font-size: 0.7em' } -->
 # Margin and Padding: Short Rules
-- **margin**: `5px`;
-  - Sets all four sides to have margin of `5px`;
-- **margin**: `10px 20px`;
-  - top and bottom to `10px`, left and right to `20px`;
-- **margin**: `5px 3px 8px`;
-  - top `5px`, left and right `3px`, bottom `8px`
-- **margin**: `1px 3px 5px 7px`;
-  - top, right, bottom, left (clockwise from top)
+```css
+margin: 5px;
+```
+- Sets all four sides to have margin of `5px`
+
+```css
+margin: 10px 20px;
+```
+  - top and bottom to `10px`, left and right to `20px`
+
+```css
+margin: 5px 3px 8px;
+```
+- top `5px`, left and right `3px`, bottom `8px`
+
+```css
+margin: 1px 3px 5px 7px;
+```
+- top, right, bottom, left (clockwise from top)
+
 - Same for **padding**
 
 
 <!-- attr: { class:'slide-section demo', showInPresentation:true, hasScriptWrapper:true } -->
 <!-- # Margins and Paddings
-## [Demo]() -->
+## [Demo](https://github.com/TelerikAcademy/CSS/blob/master/Topics/03.%20CSS-Layout/demos/07.%20margins-paddings-rules.html) -->
 <!-- <img class="slide-image" showInPresentation="true" src="imgs/pic18.png" style="top:55%; left:35%; width:30%; z-index:-1; border-radius: 15px" />  -->
 
 
@@ -207,12 +224,19 @@
 <!-- <img class="slide-image" showInPresentation="true" src="imgs/pic19.png" style="top:45%; left:27.5%; width:45%; z-index:-1; border-radius: 15px" />  -->
 
 
-<!-- attr: { id:'boxmodel', showInPresentation:true, hasScriptWrapper:true } -->
-# <a id="boxmodel"></a>CSS3 box-sizing
+<!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'font-size: 0.85em' } -->
+# CSS3 box-sizing
 - Determine whether you want an element to render it's borders and padding within its specified width, or outside of it.
 - Possible values:
-  - **box-sizing**: `content-box` (default)box width: `288px` + `10px` padding + `1px` border on each side = `300px`
-  - **box-sizing**: `border-box` box width: `300px`, including padding and borders
+  ```css
+  box-sizing: content-box; 
+  ```
+  - box width: `288px` + `10px` padding + `1px` border on each side = `300px`
+  
+  ```css
+  box-sizing: border-box; 
+  ```
+  - box width: `300px`, including padding and borders
 
 
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true } -->
@@ -246,7 +270,7 @@
 
 <!-- attr: { class:'slide-section demo', showInPresentation:true, hasScriptWrapper:true } -->
 <!-- # Box Model
-## [Demo]() -->
+## [Demo](https://github.com/TelerikAcademy/CSS/blob/master/Topics/03.%20CSS-Layout/demos/08.%20box-model.html) -->
 <!-- <img class="slide-image" showInPresentation="true" src="imgs/pic21.png" style="top:55%; left:25%; width:50%; z-index:-1" />  -->
 
 
@@ -262,7 +286,7 @@
 
 <!-- attr: { id:'positioning', showInPresentation:true, hasScriptWrapper:true } -->
 # <a id="positioning"></a>Positioning
-- **position**: defines the positioning of the element in the page content flow
+- The **position** property defines the positioning of the element in the page content flow
 -  The value is one of:
   - `static` is the default value
   - `relative` – relative position according to where the element would appear with static position
@@ -270,11 +294,11 @@
   - `fixed` – relative to the browser window, but ignores page scrolling
 
 
-<!-- attr: { showInPresentation:true, hasScriptWrapper:true } -->
+<!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'font-size: 0.9em' } -->
 <!-- # Positioning -->
 - **Margin** VS **relative positioning**
-- **Fixed and absolutely positioned elements do not influence the page normal flow** and usually stay on top of other elements
-  - **Their position and size are ignored** when calculating the size of parent element or position of surrounding elements
+- Fixed and absolutely positioned elements do not influence the page normal flow and usually stay on top of other elements
+  - Their position and size are ignored when calculating the size of parent element or position of surrounding elements
   - Overlaid according to their `z-index`
   - Inline fixed or absolutely positioned elements can apply height like block-level elements
 
@@ -290,21 +314,21 @@
 
 <!-- attr: { class:'slide-section demo', showInPresentation:true, hasScriptWrapper:true } -->
 <!-- # Positioning
-## [Demo]() -->
+## [Demo](https://github.com/TelerikAcademy/CSS/blob/master/Topics/03.%20CSS-Layout/demos/09.%20positioning-rules.html) -->
 <!-- <img class="slide-image" showInPresentation="true" src="imgs/pic24.png" style="top:55%; left:62%; width:28%; z-index:-1; border-radius: 15px" />  -->
 <!-- <img class="slide-image" showInPresentation="true" src="imgs/pic25.png" style="top:55%; left:10%; width:29%; z-index:-1; border-radius: 15px" />  -->
 
 
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true } -->
 # Inline element positioning
-- **vertical-align**: sets the vertical-alignment of an inline element, according to the line height
+- The **vertical-align** property sets the vertical alignment of an inline element, according to the line height
   - Values: `baseline`, `sub`, `super`, `top`, `text-top`, `middle`, `bottom`, `text-bottom` or numeric
   - Also used for content of table cells (which apply  `middle` alignment by default)
 
 
 <!-- attr: { class:'slide-section demo', showInPresentation:true, hasScriptWrapper:true } -->
 <!-- # Alignment and Z-Index
-## [Demo]() -->
+## [Demo](https://github.com/TelerikAcademy/CSS/blob/master/Topics/03.%20CSS-Layout/demos/10.%20alignments-and-z-index-rules.html) -->
 <!-- <img class="slide-image" showInPresentation="true" src="imgs/pic26.png" style="top:50%; left:6.26%; width:15%; z-index:-1" />  -->
 <!-- <img class="slide-image" showInPresentation="true" src="imgs/pic27.png" style="top:50%; left:80.87%; width:20%; z-index:-1" />  -->
 <!-- <img class="slide-image" showInPresentation="true" src="imgs/pic28.png" style="top:55%; left:34.62%; width:30%; z-index:-1; border-radius: 15px" />  -->
@@ -313,17 +337,17 @@
 
 
 <!-- section start -->
-<!-- attr: { class:'slide-section', showInPresentation:true, hasScriptWrapper:true } -->
-<!-- # Floating -->
+<!-- attr: { id:'floating', class:'slide-section', showInPresentation:true, hasScriptWrapper:true } -->
+<!-- # <a id="floating"></a>Floating -->
 <!-- <img class="slide-image" showInPresentation="true" src="imgs/pic29.png" style="top:45%; left:63.57%; width:30.09%; z-index:-1; border-radius: 15px" />  -->
 <!-- <img class="slide-image" showInPresentation="true" src="imgs/pic30.png" style="top:45%; left:13.10%; width:36.73%; z-index:-1; border-radius: 15px" />  -->
 
 
-<!-- attr: { id:'floating', showInPresentation:true, hasScriptWrapper:true } -->
-# <a id="floating"></a>Float
-- **float**: the element “floats” to one side
-  - **left**: places the element on the left and following content on the right
-  - **right**: places the element on the right and following content on the left
+<!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'font-size:0.9em' } -->
+# Float
+- The **float** property makes the element “float” to one side
+  - `left`: places the element on the left and following content on the right
+  - `right`: places the element on the right and following content on the left
   - floated elements should come before the content that will wrap around them in the code
   - margins of floated elements do not collapse
   - floated inline elements can apply height
@@ -338,30 +362,35 @@
 
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'font-size: 0.85em' } -->
 # Clear
-- What does it do?
+- What does **clear** do?
   - **Sets the sides of the element where other floating elements are NOT allowed**
   - Used to "drop" elements below floated ones or expand a container, which contains only floated children
   - Values: `left`, `right`, `both`
 - Clearing floats
   - Clear using pseudo-class `:after`
   - Additional element (`<div>`) with a clear style
-    - **Deprecated - semantically unused div**
-- https://css-tricks.com/all-about-floats/
+    - Deprecated - semantically unused div
+  - [Additional info about floats](https://css-tricks.com/all-about-floats/)
+
+<!-- attr: { class:'slide-section demo', showInPresentation:true, hasScriptWrapper:true, style:'font-size: 0.9em' } -->
+# Floating elements
+## [Demo](https://github.com/TelerikAcademy/CSS/blob/master/Topics/03.%20CSS-Layout/demos/11.%20float-rules.html)
+
 
 <!-- section start -->
-<!-- attr: { class:'slide-section', showInPresentation:true, hasScriptWrapper:true } -->
-<!-- # Flexbox
+<!-- attr: { id:'flexbox', class:'slide-section', showInPresentation:true, hasScriptWrapper:true } -->
+<!-- # <a id="flexbox"></a>Flexbox
 ## The Next Generation of CSS Layout -->
 <!-- <img class="slide-image" showInPresentation="true" src="imgs/flexbox.jpg" style="top:55%; left:33%; width:35%; z-index:-1" />  -->
 
-<!-- attr: { id:'flex', showInPresentation:true, hasScriptWrapper:true } -->
-# <a id="flex"></a>Flexbox
+<!-- attr: { showInPresentation:true, hasScriptWrapper:true } -->
+# Flexbox
 - **Flexbox Layout**
   - Layout mode for the arrangement of elements on a page
   - The elements behave predictably on different screen sizes and different display devices
-- **Browser compatibility**
+- Browser compatibility
   - [compatibility table](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes#Browser_compatibility)
-- **Complete guide**
+- Complete guide
   - [guide](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 
   <!-- attr: { showInPresentation:true, hasScriptWrapper:true } -->
@@ -402,7 +431,7 @@
 }
 ```
 
-<!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'font-size: 0.8em' } -->
+<!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'font-size: 0.7em' } -->
 <!-- # Parent properties -->
 - **flex-flow** - shorthand for **flex-direction** and **flex-wrap**
 
@@ -422,7 +451,7 @@ flex-flow: <‘flex-direction’> || <‘flex-wrap’>
 
 <!-- <img class="fragment balloon" showInPresentation="true" src="imgs/justify.png" style="top:20%; left:33%; width:45%; z-index:0" />  -->
 
-<!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'font-size: 0.8em' } -->
+<!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'font-size: 0.65em' } -->
 <!-- # Parent properties -->
 - **align-items** - justify-content version for the cross-axis
 
