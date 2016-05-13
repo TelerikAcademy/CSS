@@ -188,37 +188,42 @@
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true} -->
 # Margin and Padding: Short Rules
 
-```css
-.container{
-margin: 5px;
-}
-```
-
 - Sets all four sides to have margin of `5px`
 
 ```css
-.container{
-margin: 10px 20px;
+.container {
+    margin: 5px;
 }
 ```
-  - top and bottom to `10px`, left and right to `20px`
+
+
+- top and bottom to `10px`, left and right to `20px`
+
+```css
+.container {
+    margin: 10px 20px;
+}
+```
 
 
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true} -->
 <!-- # Margin and Padding: Short Rules -->
-```css
-.container{
-margin: 5px 3px 8px;
-}
-```
+
 - top `5px`, left and right `3px`, bottom `8px`
 
 ```css
-.container{
-margin: 1px 3px 5px 7px;
+.container {
+    margin: 5px 3px 8px;
 }
 ```
+
 - top, right, bottom, left (clockwise from top)
+
+```css
+.container {
+    margin: 1px 3px 5px 7px;
+}
+```
 
 - Same for **padding**
 
@@ -242,7 +247,7 @@ margin: 1px 3px 5px 7px;
 - Content-box
 
   ```css
-  .container{
+  .container {
       width: 300px;
       box-sizing: content-box;
   }
@@ -255,7 +260,7 @@ margin: 1px 3px 5px 7px;
 - Border-box
 
   ```css
-  .container{
+  .container {
       width: 300px;
       box-sizing: border-box;
   }
@@ -268,7 +273,7 @@ margin: 1px 3px 5px 7px;
 - _Example_: Box with total width of `300px` (including paddings and borders)
 
 ```css
-.container{
+.container {
     width: 300px;
     border: 1px solid black;
     padding: 5px;
@@ -287,6 +292,7 @@ margin: 1px 3px 5px 7px;
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'font-size: 0.95em' } -->
 # IE Quirks Mode
 - When using quirks mode<br /> (pages with no DOCTYPE <br /> or with a HTML 4 <br /> Transitional DOCTYPE)
+  
     - Internet Explorer violates<br /> the box model standard!
 
 <!-- <img class="slide-image" showInPresentation="true" src="imgs/pic20.png" style="top:13.02%; left:56.14%; width:40%; z-index:-1" />  -->
@@ -439,7 +445,7 @@ margin: 1px 3px 5px 7px;
 
 ```css
 .container {
-    display: flex; /* or inline-flex */
+  display: flex; /* or inline-flex */
 }
 ```
 
@@ -466,7 +472,7 @@ margin: 1px 3px 5px 7px;
 
 ```css
 .container {
-flex-flow: <‘flex-direction’> || <‘flex-wrap’>
+  flex-flow: <‘flex-direction’> || <‘flex-wrap’>
 }
 ```
 
