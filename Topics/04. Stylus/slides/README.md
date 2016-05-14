@@ -135,6 +135,11 @@
 }
 ```
 
+<!-- attr: { class:'slide-section demo', showInPresentation:true, hasScriptWrapper:true } -->
+<!-- # Stylus selectors
+## Nesting selectors
+## [Demo](https://github.com/TelerikAcademy/CSS/tree/master/Topics/04.%20Stylus/demos/01.%20selectors-and-selector-nesting) -->
+
 <!-- section start -->
 <!-- attr: { class:'slide-section', showInPresentation:true } -->
 <!-- # Stylus: Setup and Usage
@@ -273,7 +278,7 @@ a:visited {
 
 <!-- attr: { class:'slide-section demo', showInPresentation:true, hasScriptWrapper:true } -->
 # Stylus Features: Variables
-## [Demo]()
+## [Demo](https://github.com/TelerikAcademy/CSS/tree/master/Topics/04.%20Stylus/demos/02.%20variables)
 
 <!-- attr: { id:'interpolation', showInPresentation:true, style:'font-size: 0.8em;' } -->
 # <a id="interpolation"></a>Stylus Features: Interpolation
@@ -297,7 +302,7 @@ number = 5
 
 <!-- attr: { class:'slide-section demo', showInPresentation:true, hasScriptWrapper:true } -->
 # Stylus Features: Interpolation
-## [Demo]()
+## [Demo](https://github.com/TelerikAcademy/CSS/tree/master/Topics/04.%20Stylus/demos/03.%20interpolation)
 
 <!-- attr: { id:'lookups', showInPresentation:true, style:'font-size: 0.8em;' } -->
 # <a id="lookups"></a>Stylus Features: Property Look-up
@@ -323,7 +328,7 @@ number = 5
 
 <!-- attr: { class:'slide-section demo', showInPresentation:true, hasScriptWrapper:true } -->
 # Stylus Features: Property Look-up
-## [Demo]()
+## [Demo](https://github.com/TelerikAcademy/CSS/tree/master/Topics/04.%20Stylus/demos/04.%20property-lookup)
 
 <!-- attr: { id:'functions', showInPresentation:true, style:'font-size: 0.9em;' } -->
 # <a id="functions"></a>Stylus Features: Built-in Functions
@@ -355,7 +360,7 @@ push(props, (float left))
 
 <!-- attr: { class:'slide-section demo', showInPresentation:true, hasScriptWrapper:true } -->
 # Stylus Features: Built-In Functions
-## [Demo]()
+## [Demo](https://github.com/TelerikAcademy/CSS/tree/master/Topics/04.%20Stylus/demos/05.%20built-in-functions)
 
 <!-- attr: { id:'creating-functions', showInPresentation:true } -->
 # <a id="creating-functions"></a>Stylus Features: Functions
@@ -435,7 +440,7 @@ ul#main-nav{
 
 <!-- attr: { class:'slide-section demo', showInPresentation:true, hasScriptWrapper:true } -->
 # Stylus Features: Mixins
-## [Demo]()
+## [Demo](https://github.com/TelerikAcademy/CSS/tree/master/Topics/04.%20Stylus/demos/07.%20mixins)
 
 <!-- attr: { showInPresentation:true } -->
 # Stylus Features: Mixins with Arguments
@@ -465,7 +470,7 @@ box(border = none, bg = rgba(0, 0, 0, 0.7), size = 200px)
 
 <!-- attr: { class:'slide-section demo', showInPresentation:true, hasScriptWrapper:true } -->
 # Stylus Features: Mixins with Arguments
-## [Demo]()
+## [Demo](https://github.com/TelerikAcademy/CSS/tree/master/Topics/04.%20Stylus/demos/08.%20mixins-with-args)
 
 <!-- attr: { id:'selector-inheritance', showInPresentation:true, style:'font-size: 0.8em;' } -->
 # <a id="selector-inheritance"></a>Selector Inheritance
@@ -507,7 +512,7 @@ box(border = none, bg = rgba(0, 0, 0, 0.7), size = 200px)
 
 <!-- attr: { class:'slide-section demo', showInPresentation:true, hasScriptWrapper:true } -->
 # Stylus Features: Selector Inheritance
-## [Demo]()
+## [Demo](https://github.com/TelerikAcademy/CSS/tree/master/Topics/04.%20Stylus/demos/09.%20selector-inheritance(%40extend))
 
 
 <!-- section start -->
