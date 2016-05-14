@@ -158,39 +158,8 @@
 - Visit the Node.js website: https://nodejs.org/
 - Download and install Node.js
 - Make sure Node.js is added to PATH
+  - [Adding programs to PATH under Windows](http://www.howtogeek.com/118594/how-to-edit-your-system-path-for-easy-command-line-access/)
 - Node.js is installed on the machine and can be used through the CMD/Terminal
-
-
-<!-- attr: { showInPresentation:true, hasScriptWrapper:true } -->
-<!-- # Adding Node.js to Path on Windows -->
-- Go to "Computer" -> "Properties"
-<img class="slide-image" src="\imgs\pic01.png" style="top:28%; left:12.38%; width:75%; z-index:-1" />
-
-
-<!-- attr: { showInPresentation:true, hasScriptWrapper:true } -->
-<!-- # Adding Node.js to Path on Windows -->
-- Go to "Advanced system settings"
-<img class="slide-image" src="\imgs\pic02.png" style="top:28%; left:14.44%; width:75%; z-index:-1" />
-
-
-<!-- attr: { showInPresentation:true, hasScriptWrapper:true } -->
-<!-- # Adding Node.js to Path on Windows -->
-- Go to "Advanced"  -> "Environment             Variables"
-<img class="slide-image" src="\imgs\pic03.png" style="top:28%; left:14%; width:75%; z-index:-1" />
-
-
-<!-- attr: { showInPresentation:true, hasScriptWrapper:true } -->
-<!-- # Adding Node.js to Path on Windows -->
-- Go to "System                  Variables"  -> "Path"  -> "Edit"
-<img class="slide-image" src="\imgs\pic04.png" style="top:28%; left:14%; width:75%; z-index:-1" />
-
-
-<!-- attr: { showInPresentation:true, hasScriptWrapper:true } -->
-<!-- # Adding Node.js to Path on Windows -->
-- Add to the end:
-<img class="slide-image" src="\imgs\pic05.png" style="top:28%; left:14%; width:75%; z-index:-1" />
-
-
 
 
 <!-- attr: { showInPresentation:true } -->
