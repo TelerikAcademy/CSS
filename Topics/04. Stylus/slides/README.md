@@ -25,7 +25,7 @@
 
 
 <!-- attr: { showInPresentation:true } -->
-# Table of Contents
+<!-- # Table of Contents -->
 - [Stylus features:](#features)
   - [Variables](#variables)
   - [Interpolation](#interpolation)
@@ -43,9 +43,10 @@
 
 <!-- section start -->
 <!-- attr: { id:'overview', class:'slide-section', showInPresentation:true, hasScriptWrapper:true } -->
-# <a id="overview"></a>Preprocessors Overview
-## What is a Preprocessor?
-<img class="slide-image" src="\imgs\pic00.png" style="top:52%; left:25%; width:50%; z-index:-1" />
+<!-- # <a id="overview"></a>Preprocessors Overview
+## What is a Preprocessor? -->
+
+<!-- <img class="slide-image" showInPresentation="true" src="imgs/pic00.png" style="top:52%; left:25%; width:50%; z-index:-1" /> -->
 
 
 <!-- attr: { id:'css-preprocessors', showInPresentation:true } -->
@@ -107,7 +108,7 @@
   - `.class`, `#id`, `tagName`
 
 <!-- attr: { showInPresentation:true, style:'font-size: 0.8em' } -->
-# Selectors in Stylus
+<!-- # Selectors in Stylus -->
 - Yet, Stylus supports nesting of selectors:
 
 ```stylus
@@ -221,7 +222,7 @@
 - Usable to set default background-color, font-color, font-size, etc…
 
 <!-- attr: { showInPresentation:true } -->
-# Stylus Features: Variables
+<!-- # Stylus Features: Variables -->
 ```styl
 /* Stylus */
 link-color = #ffffff;
@@ -246,8 +247,8 @@ a:visited {
 
 
 <!-- attr: { class:'slide-section demo', showInPresentation:true, hasScriptWrapper:true } -->
-# Stylus Features: Variables
-## [Demo](https://github.com/TelerikAcademy/CSS/tree/master/Topics/04.%20Stylus/demos/02.%20variables)
+<!-- # Stylus Features: Variables
+## [Demo](https://github.com/TelerikAcademy/CSS/tree/master/Topics/04.%20Stylus/demos/02.%20variables) -->
 
 <!-- attr: { id:'interpolation', showInPresentation:true, style:'font-size: 0.8em;' } -->
 # <a id="interpolation"></a>Stylus Features: Interpolation
@@ -270,8 +271,8 @@ number = 5
 ```
 
 <!-- attr: { class:'slide-section demo', showInPresentation:true, hasScriptWrapper:true } -->
-# Stylus Features: Interpolation
-## [Demo](https://github.com/TelerikAcademy/CSS/tree/master/Topics/04.%20Stylus/demos/03.%20interpolation)
+<!-- # Stylus Features: Interpolation
+## [Demo](https://github.com/TelerikAcademy/CSS/tree/master/Topics/04.%20Stylus/demos/03.%20interpolation) -->
 
 <!-- attr: { id:'lookups', showInPresentation:true, style:'font-size: 0.8em;' } -->
 # <a id="lookups"></a>Stylus Features: Property Look-up
@@ -296,8 +297,8 @@ number = 5
 ```
 
 <!-- attr: { class:'slide-section demo', showInPresentation:true, hasScriptWrapper:true } -->
-# Stylus Features: Property Look-up
-## [Demo](https://github.com/TelerikAcademy/CSS/tree/master/Topics/04.%20Stylus/demos/04.%20property-lookup)
+<!-- # Stylus Features: Property Look-up
+## [Demo](https://github.com/TelerikAcademy/CSS/tree/master/Topics/04.%20Stylus/demos/04.%20property-lookup) -->
 
 <!-- attr: { id:'functions', showInPresentation:true, style:'font-size: 0.9em;' } -->
 # <a id="functions"></a>Stylus Features: Built-in Functions
@@ -319,7 +320,7 @@ color: lighten(#123456, 15%) /* returns #1d5288 */
 - Find all built-in functions in Stylus at https://learnboost.github.io/stylus/docs/bifs.html
 
 <!-- attr: { showInPresentation:true } -->
-# Stylus Features: Built-in Functions
+<!-- # Stylus Features: Built-in Functions -->
 - Working with lists:
 
 ```styl
@@ -328,8 +329,8 @@ push(props, (float left))
 ```
 
 <!-- attr: { class:'slide-section demo', showInPresentation:true, hasScriptWrapper:true } -->
-# Stylus Features: Built-In Functions
-## [Demo](https://github.com/TelerikAcademy/CSS/tree/master/Topics/04.%20Stylus/demos/05.%20built-in-functions)
+<!-- # Stylus Features: Built-In Functions
+## [Demo](https://github.com/TelerikAcademy/CSS/tree/master/Topics/04.%20Stylus/demos/05.%20built-in-functions) -->
 
 <!-- attr: { id:'creating-functions', showInPresentation:true } -->
 # <a id="creating-functions"></a>Stylus Features: Functions
@@ -358,7 +359,7 @@ height: sum(@width  + 150px)
 
 
 <!-- attr: { showInPresentation:true, style:'font-size: 0.8em;' } -->
-# Stylus Features: Mixins
+<!-- # Stylus Features: Mixins -->
 - Stylus
 
 ```styl
@@ -408,8 +409,8 @@ ul#main-nav{
 ```
 
 <!-- attr: { class:'slide-section demo', showInPresentation:true, hasScriptWrapper:true } -->
-# Stylus Features: Mixins
-## [Demo](https://github.com/TelerikAcademy/CSS/tree/master/Topics/04.%20Stylus/demos/07.%20mixins)
+<!-- # Stylus Features: Mixins
+## [Demo](https://github.com/TelerikAcademy/CSS/tree/master/Topics/04.%20Stylus/demos/07.%20mixins) -->
 
 <!-- attr: { showInPresentation:true } -->
 # Stylus Features: Mixins with Arguments
@@ -438,8 +439,8 @@ box(border = none, bg = rgba(0, 0, 0, 0.7), size = 200px)
     - Instead of adding `.clearfix` to all elements that clear, add it to the selector that the elements already have
 
 <!-- attr: { class:'slide-section demo', showInPresentation:true, hasScriptWrapper:true } -->
-# Stylus Features: Mixins with Arguments
-## [Demo](https://github.com/TelerikAcademy/CSS/tree/master/Topics/04.%20Stylus/demos/08.%20mixins-with-args)
+<!-- # Stylus Features: Mixins with Arguments
+## [Demo](https://github.com/TelerikAcademy/CSS/tree/master/Topics/04.%20Stylus/demos/08.%20mixins-with-args) -->
 
 <!-- attr: { id:'selector-inheritance', showInPresentation:true, style:'font-size: 0.8em;' } -->
 # <a id="selector-inheritance"></a>Selector Inheritance
@@ -463,7 +464,7 @@ box(border = none, bg = rgba(0, 0, 0, 0.7), size = 200px)
 - _Continue..._
 
 <!-- attr: { showInPresentation:true, style:'font-size: 0.8em;' } -->
-# Selector Inheritance
+<!-- # Selector Inheritance -->
 - CSS
 
 ```styl
@@ -480,8 +481,8 @@ box(border = none, bg = rgba(0, 0, 0, 0.7), size = 200px)
 ```
 
 <!-- attr: { class:'slide-section demo', showInPresentation:true, hasScriptWrapper:true } -->
-# Stylus Features: Selector Inheritance
-## [Demo](https://github.com/TelerikAcademy/CSS/tree/master/Topics/04.%20Stylus/demos/09.%20selector-inheritance(%40extend))
+<!-- # Stylus Features: Selector Inheritance
+## [Demo](https://github.com/TelerikAcademy/CSS/tree/master/Topics/04.%20Stylus/demos/09.%20selector-inheritance%28%40extend%29) -->
 
 
 <!-- section start -->
@@ -507,10 +508,8 @@ body
 
 ```
 
-_Continue..._
-
 <!-- attr: { showInPresentation:true } -->
-# Stylus Scripting
+<!-- # Stylus Scripting -->
 
 - Conditionals:
 
@@ -564,6 +563,6 @@ body
   - Telerik Software Academy Forums
     - forums.academy.telerik.com
     
-<!-- <img class="slide-image" showInPresentation="true" src="\imgs\pic08.png" style="top:58.18%; left:90.52%; width:16.97%; z-index:-1" /> -->
-<!-- <img class="slide-image" showInPresentation="true" src="\imgs\pic09.png" style="top:34.35%; left:68.14%; width:36.30%; z-index:-1" /> -->
-<!-- <img class="slide-image" showInPresentation="true" src="\imgs\pic10.png" style="top:48.92%; left:75.91%; width:10.85%; z-index:-1" /> -->
+<!-- <img class="slide-image" showInPresentation="true" src="imgs/pic08.png" style="top:58.18%; left:90.52%; width:16.97%; z-index:-1" /> -->
+<!-- <img class="slide-image" showInPresentation="true" src="imgs/pic09.png" style="top:34.35%; left:68.14%; width:36.30%; z-index:-1" /> -->
+<!-- <img class="slide-image" showInPresentation="true" src="imgs/pic10.png" style="top:48.92%; left:75.91%; width:10.85%; z-index:-1" /> -->
