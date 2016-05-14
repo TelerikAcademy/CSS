@@ -1,10 +1,16 @@
 <!-- section start -->
-<!-- attr: { id:'', class:'slide-title', showInPresentation:'True', hasScriptWrapper:'False', style:'' } -->
+<!-- attr: { class:'slide-title', showInPresentation:true, hasScriptWrapper:'False' } -->
 # Stylus Overview
 ## Expressive, dynamic, robust CSS
 
+<div class="signature">
+	<p class="signature-course">CSS Styling</p>
+	<p class="signature-initiative">Telerik Software Academy</p>
+	<a href="telerikacademy" class="signature-link">telerikacademy.com</a>
+</div>
+
 <!-- section start -->
-<!-- attr: { id:'', class:'', showInPresentation:'True', hasScriptWrapper:'False', style:'' } -->
+<!-- attr: { showInPresentation:true } -->
 # Table of Contents
 - [Preprocessors Overview](#overview)
   - [Preprocessors for CSS (Stylus, Sass/SCSS, LESS)](#css-preprocessors)
@@ -17,7 +23,7 @@
   - [Using Stylus in Editors](#using-stylus)
 
 
-<!-- attr: { id:'', class:'', showInPresentation:'True', hasScriptWrapper:'False', style:'' } -->
+<!-- attr: { showInPresentation:true } -->
 # Table of Contents
 - [Stylus features:](#features)
   - [Variables](#variables)
@@ -35,13 +41,13 @@
 
 
 <!-- section start -->
-<!-- attr: { id:'overview', class:'slide-section', showInPresentation:'True', hasScriptWrapper:'True', style:'' } -->
+<!-- attr: { id:'overview', class:'slide-section', showInPresentation:true, hasScriptWrapper:true } -->
 # <a id="overview"></a>Preprocessors Overview
 ## What is a Preprocessor?
 <img class="slide-image" src="\imgs\pic00.png" style="top:52%; left:25%; width:50%; z-index:-1" />
 
 
-<!-- attr: { id:'css-preprocessors', class:'', showInPresentation:'True', hasScriptWrapper:'False', style:'' } -->
+<!-- attr: { id:'css-preprocessors', showInPresentation:true } -->
 # <a id="css-preprocessors"></a>Preprocessors Overview
 - A preprocessor is a program that processes its input data to produce output that is used as input to another program
   - Sass, Less, Stylus are preprocessors for CSS
@@ -52,11 +58,11 @@
 
 
 <!-- section start -->
-<!-- attr: { id:'basics', class:'slide-section', showInPresentation:'True', hasScriptWrapper:'True', style:'' } -->
+<!-- attr: { id:'basics', class:'slide-section', showInPresentation:true, hasScriptWrapper:true } -->
 <!-- # <a id="basics"></a>Stylus Basics
 ## What is Stylus? -->
 
-<!-- attr: { id:'', class:'', showInPresentation:'True', hasScriptWrapper:'False', style:'' } -->
+<!-- attr: { showInPresentation:true } -->
 # What is Stylus?
 - Stylus is a preprocessor for CSS
   - All Stylus code is compiled to pure CSS
@@ -66,7 +72,7 @@
     - Removes "not-necessary" code
 
 
-<!-- attr: { id:'syntax', class:'', showInPresentation:'True', hasScriptWrapper:'False', style:'font-size: 38px;' } -->
+<!-- attr: { id:'syntax', showInPresentation:true, style:'font-size: 0.75em;' } -->
 # <a id="syntax"></a>Stylus Syntax
 - The Stylus syntax is clean and easy
   - Removes all not-necessary symbols
@@ -93,18 +99,18 @@
   border 1px solid black
 ```
 
-<!-- attr: { id:'selectors', class:'', showInPresentation:'True', hasScriptWrapper:'False', style:'' } -->
+<!-- attr: { id:'selectors', showInPresentation:true } -->
 # <a id="selectors"></a>Selectors in Stylus
 - Stylus selectors are absolutely the same as in regular CSS
   - Every CSS code is valid Stylus code!
   - **.class**, **#id**, **tagName**
 
-<!-- attr: { id:'', class:'', showInPresentation:'True', hasScriptWrapper:'False', style:'font-size: 40px;' } -->
+<!-- attr: { showInPresentation:true, style:'font-size: 0.8em' } -->
 # Selectors in Stylus
 - Yet, Stylus supports nesting of selectors:
 
 ```stylus
-<!-- Stylus -->
+/* Stylus */
 .hlist
   list-style-type none
   .list-item
@@ -115,7 +121,7 @@
 ```
 
 ```css
-<!-- CSS -->
+/* CSS */
 .hlist {
   list-style-type: none;
 }
@@ -129,11 +135,11 @@
 ```
 
 <!-- section start -->
-<!-- attr: { id:'', class:'slide-section', showInPresentation:'True', hasScriptWrapper:'False', style:'' } -->
+<!-- attr: { class:'slide-section', showInPresentation:true } -->
 <!-- # Stylus: Setup and Usage
 ## Setting up Node.js, Stylus and coding environment -->
 
-<!-- attr: { id:'setup-and-usage', class:'', showInPresentation:'True', hasScriptWrapper:'False', style:'' } -->
+<!-- attr: { id:'setup-and-usage', showInPresentation:true } -->
 # <a id="setup-and-usage"></a>Stylus: Setup and Usage
 - To use Stylus:
   - Install **Node.js**
@@ -141,7 +147,7 @@
   - Install a **plugin** for your editor
 
 
-<!-- attr: { id:'installing-node', class:'', showInPresentation:'True', hasScriptWrapper:'False', style:'' } -->
+<!-- attr: { id:'installing-node', showInPresentation:true } -->
 # <a id="installing-node"></a>Installing Node.js
 - Visit the Node.js website: https://nodejs.org/
 - Install it
@@ -149,31 +155,31 @@
 - Node.js is installed on the machine and can be used through the CMD/Terminal
 
 
-<!-- attr: { id:'', class:'', showInPresentation:'True', hasScriptWrapper:'True', style:'' } -->
+<!-- attr: { showInPresentation:true, hasScriptWrapper:true } -->
 <!-- # Adding Node.js to Path on Windows -->
 - Go to "Computer" -> "Properties"
 <img class="slide-image" src="\imgs\pic01.png" style="top:28%; left:12.38%; width:75%; z-index:-1" />
 
 
-<!-- attr: { id:'', class:'', showInPresentation:'True', hasScriptWrapper:'True', style:'' } -->
+<!-- attr: { showInPresentation:true, hasScriptWrapper:true } -->
 <!-- # Adding Node.js to Path on Windows -->
 - Go to "Advanced system settings"
 <img class="slide-image" src="\imgs\pic02.png" style="top:28%; left:14.44%; width:75%; z-index:-1" />
 
 
-<!-- attr: { id:'', class:'', showInPresentation:'True', hasScriptWrapper:'True', style:'' } -->
+<!-- attr: { showInPresentation:true, hasScriptWrapper:true } -->
 <!-- # Adding Node.js to Path on Windows -->
 - Go to "Advanced"  -> "Environment             Variables"
 <img class="slide-image" src="\imgs\pic03.png" style="top:28%; left:14%; width:75%; z-index:-1" />
 
 
-<!-- attr: { id:'', class:'', showInPresentation:'True', hasScriptWrapper:'True', style:'' } -->
+<!-- attr: { showInPresentation:true, hasScriptWrapper:true } -->
 <!-- # Adding Node.js to Path on Windows -->
 - Go to "System                  Variables"  -> "Path"  -> "Edit"
 <img class="slide-image" src="\imgs\pic04.png" style="top:28%; left:14%; width:75%; z-index:-1" />
 
 
-<!-- attr: { id:'', class:'', showInPresentation:'True', hasScriptWrapper:'True', style:'' } -->
+<!-- attr: { showInPresentation:true, hasScriptWrapper:true } -->
 <!-- # Adding Node.js to Path on Windows -->
 - Add to the end:
 <img class="slide-image" src="\imgs\pic05.png" style="top:28%; left:14%; width:75%; z-index:-1" />
@@ -181,7 +187,7 @@
 
 
 
-<!-- attr: { id:'', class:'', showInPresentation:'True', hasScriptWrapper:'False', style:'' } -->
+<!-- attr: { showInPresentation:true } -->
 # Adding Node.js to Path on Linux and OS X
 - Open `~/.bashrc` with `admin sudo`
 - Find the **Node.js** path
@@ -190,7 +196,7 @@
 - You have **Node.js** in the **PATH**
 
 
-<!-- attr: { id:'installing-stylus', class:'', showInPresentation:'True', hasScriptWrapper:'False', style:'' } -->
+<!-- attr: { id:'installing-stylus', showInPresentation:true } -->
 # <a id="installing-stylus"></a>Installing Stylus
 - Install **Node.js**
   - Make sure **Node.js** is in **PATH**
@@ -200,7 +206,7 @@
   - this will install **Stylus** globally on the machine
 
 
-<!-- attr: { id:'using-stylus', class:'', showInPresentation:'True', hasScriptWrapper:'False', style:'' } -->
+<!-- attr: { id:'using-stylus', showInPresentation:true } -->
 # <a id="using-stylus"></a>Using Stylus
 - Stylus code must be compiled to CSS
 - There are a few ways to achieve that:
@@ -216,11 +222,11 @@
 
 
 <!-- section start -->
-<!-- attr: { id:'features', class:'slide-section', showInPresentation:'True', hasScriptWrapper:'True', style:'' } -->
+<!-- attr: { id:'features', class:'slide-section', showInPresentation:true, hasScriptWrapper:true } -->
 <!-- # <a id="features"></a>Stylus Features
 ## Variables, Functions, Mixins, Variables, etc… -->
 
-<!-- attr: { id:'', class:'', showInPresentation:'True', hasScriptWrapper:'False', style:'' } -->
+<!-- attr: { showInPresentation:true } -->
 # Stylus Features
 - Stylus supports:
   - Variables
@@ -232,19 +238,19 @@
   - Many more
 
 
-<!-- attr: { id:'variables', class:'', showInPresentation:'True', hasScriptWrapper:'False', style:'font-size: 40px;' } -->
+<!-- attr: { id:'variables', showInPresentation:true } -->
 # <a id="variables"></a>Stylus Features: Variables
 - Variables in Stylus are defined easy:
   - As a regular property/value pair, but using **"="** (equals sign) instead of **":"** (colons)
   - Can be used to store **colors**, **size**, etc…
 - Usable to set default background-color, font-color, font-size, etc…
 
-<!-- attr: { id:'', class:'', showInPresentation:'True', hasScriptWrapper:'False', style:'font-size: 40px;' } -->
+<!-- attr: { showInPresentation:true } -->
 # Stylus Features: Variables
-```cs
-<!-- Stylus -->
-link-color= #ffffff;
-v-link-color= #646363;
+```styl
+/* Stylus */
+link-color = #ffffff;
+v-link-color = #646363;
 a
   color link-color
   &:visited
@@ -252,8 +258,8 @@ a
 ```
 
 
-```css
-<!-- CSS -->
+```styl
+/* CSS */
 a {
   color: #fff;
 }
@@ -264,11 +270,11 @@ a:visited {
 
 
 
-<!-- attr: { id:'', class:'slide-section demo', showInPresentation:'True', hasScriptWrapper:'True', style:'' } -->
+<!-- attr: { class:'slide-section demo', showInPresentation:true, hasScriptWrapper:true } -->
 # Stylus Features: Variables
 ## [Demo]()
 
-<!-- attr: { id:'interpolation', class:'', showInPresentation:'True', hasScriptWrapper:'False', style:'font-size: 40px;' } -->
+<!-- attr: { id:'interpolation', showInPresentation:true, style:'font-size: 0.8em;' } -->
 # <a id="interpolation"></a>Stylus Features: Interpolation
 - Interpolation means inserting variable value as a property/selector name
   - Interpolation is performed using **{…}**
@@ -288,11 +294,11 @@ number = 5
 }
 ```
 
-<!-- attr: { id:'', class:'slide-section demo', showInPresentation:'True', hasScriptWrapper:'True', style:'' } -->
+<!-- attr: { class:'slide-section demo', showInPresentation:true, hasScriptWrapper:true } -->
 # Stylus Features: Interpolation
 ## [Demo]()
 
-<!-- attr: { id:'lookups', class:'', showInPresentation:'True', hasScriptWrapper:'False', style:'font-size: 40px;' } -->
+<!-- attr: { id:'lookups', showInPresentation:true, style:'font-size: 0.8em;' } -->
 # <a id="lookups"></a>Stylus Features: Property Look-up
 - Stylus supports property look-up
   - i.e. check the values of a property
@@ -314,30 +320,30 @@ number = 5
 }
 ```
 
-<!-- attr: { id:'', class:'slide-section demo', showInPresentation:'True', hasScriptWrapper:'True', style:'' } -->
+<!-- attr: { class:'slide-section demo', showInPresentation:true, hasScriptWrapper:true } -->
 # Stylus Features: Property Look-up
 ## [Demo]()
 
-<!-- attr: { id:'functions', class:'', showInPresentation:'True', hasScriptWrapper:'False', style:'' } -->
+<!-- attr: { id:'functions', showInPresentation:true, style:'font-size: 0.9em;' } -->
 # <a id="functions"></a>Stylus Features: Built-in Functions
 - Stylus has a set of predefined functions for:
   - Working with colors:
 
 ```styl
-color= /* some color */
+color = /* some color */
 dark(color) /* returns "true", if "color" is dark */
 light(color) /* returns "true" if "color" is light */
 ```
 
 
-```cs
+```styl
 color: darken(#123456, 10%) /* returns #102f4d */
 color: lighten(#123456, 15%) /* returns #1d5288 */
 ```
 
 - Find all built-in functions in Stylus at https://learnboost.github.io/stylus/docs/bifs.html
 
-<!-- attr: { id:'', class:'', showInPresentation:'True', hasScriptWrapper:'False', style:'' } -->
+<!-- attr: { showInPresentation:true } -->
 # Stylus Features: Built-in Functions
 - Working with lists:
 
@@ -346,11 +352,11 @@ props = (padding 5px) (display block)
 push(props, (float left))
 ```
 
-<!-- attr: { id:'', class:'slide-section demo', showInPresentation:'True', hasScriptWrapper:'True', style:'' } -->
+<!-- attr: { class:'slide-section demo', showInPresentation:true, hasScriptWrapper:true } -->
 # Stylus Features: Built-In Functions
 ## [Demo]()
 
-<!-- attr: { id:'creating-functions', class:'', showInPresentation:'True', hasScriptWrapper:'False', style:'' } -->
+<!-- attr: { id:'creating-functions', showInPresentation:true } -->
 # <a id="creating-functions"></a>Stylus Features: Functions
 - Stylus supports definition of developer functions:
 
@@ -369,14 +375,14 @@ font-size: sum(14px 28px 45px)
 height: sum(@width  + 150px)
 ```
 
-<!-- attr: { id:'mixins', class:'', showInPresentation:'True', hasScriptWrapper:'False', style:'' } -->
+<!-- attr: { id:'mixins', showInPresentation:true } -->
 # <a id="mixins"></a>Stylus Features: Mixins
 - Both mixins and functions are defined in the same manner
   - Yet they are applied in different ways
     - Functions return a value, mixins generate CSS
 
 
-<!-- attr: { id:'', class:'', showInPresentation:'True', hasScriptWrapper:'False', style:'font-size: 40px;' } -->
+<!-- attr: { showInPresentation:true, style:'font-size: 0.8em;' } -->
 # Stylus Features: Mixins
 - Stylus
 
@@ -404,7 +410,7 @@ vendor(prop, args)
 
 
 
-<!-- attr: { id:'', class:'', showInPresentation:'True', hasScriptWrapper:'False', style:'' } -->
+<!-- attr: { showInPresentation:true } -->
 <!-- # Mixins -->
 - How to define mixins?
   - Use **mixin-name**
@@ -426,11 +432,11 @@ ul#main-nav{
 }
 ```
 
-<!-- attr: { id:'', class:'slide-section demo', showInPresentation:'True', hasScriptWrapper:'True', style:'' } -->
+<!-- attr: { class:'slide-section demo', showInPresentation:true, hasScriptWrapper:true } -->
 # Stylus Features: Mixins
 ## [Demo]()
 
-<!-- attr: { id:'', class:'', showInPresentation:'True', hasScriptWrapper:'False', style:'' } -->
+<!-- attr: { showInPresentation:true } -->
 # Stylus Features: Mixins with Arguments
 - Mixins can also be defined with parameters
   - i.e. for gradient-background
@@ -449,25 +455,25 @@ box(border= none, bg= rgba(0, 0, 0, 0.7), size= 200px)
   box '1px solid black' rgba(123, 0, 0, 0.6) 100px
 ```
 
-<!-- attr: { id:'', class:'', showInPresentation:'True', hasScriptWrapper:'False', style:'' } -->
+<!-- attr: { showInPresentation:true } -->
 # @extend or Mixins?
 - Why both `mixins` and `@extend`?
   - `Mixins` have parameters and generate different code, based on the parameters
   - `@extend` provides a way to minify the number of classes on an element
     - Instead of adding `.clearfix` to all elements that clear, add it to the selector that the elements already have
 
-<!-- attr: { id:'', class:'slide-section demo', showInPresentation:'True', hasScriptWrapper:'True', style:'' } -->
+<!-- attr: { class:'slide-section demo', showInPresentation:true, hasScriptWrapper:true } -->
 # Stylus Features: Mixins with Arguments
 ## [Demo]()
 
-<!-- attr: { id:'selector-inheritance', class:'', showInPresentation:'True', hasScriptWrapper:'False', style:'font-size: 40px;' } -->
+<!-- attr: { id:'selector-inheritance', showInPresentation:true, style:'font-size: 0.8em;' } -->
 # <a id="selector-inheritance"></a>Selector Inheritance
-- Selectors in Stylus can be inherited using @extend
+- Selectors in Stylus can be inherited using `@extend`
   - Meaning add a selector to a previously defined selectors list:
 
 - Stylus
 
-```cs
+```styl
 .clearfix
   zoom 1
   &:after
@@ -479,13 +485,13 @@ box(border= none, bg= rgba(0, 0, 0, 0.7), size= 200px)
     border-right: none
     @extend .clearfix
 ```
-- _Contuinue..._
+- _Continue..._
 
-<!-- attr: { id:'', class:'', showInPresentation:'True', hasScriptWrapper:'False', style:'font-size: 40px;' } -->
+<!-- attr: { showInPresentation:true, style:'font-size: 0.8em;' } -->
 # Selector Inheritance
 - CSS
 
-```cs
+```styl
 .clearfix,
 .list-item:last-of-type {
   zoom: 1;
@@ -498,16 +504,16 @@ box(border= none, bg= rgba(0, 0, 0, 0.7), size= 200px)
 .list-item:last-of-type { /* … */ }
 ```
 
-<!-- attr: { id:'', class:'slide-section demo', showInPresentation:'True', hasScriptWrapper:'True', style:'' } -->
+<!-- attr: { class:'slide-section demo', showInPresentation:true, hasScriptWrapper:true } -->
 # Stylus Features: Selector Inheritance
 ## [Demo]()
 
 
 <!-- section start -->
-<!-- attr: { id:'', class:'slide-section', showInPresentation:'True', hasScriptWrapper:'False', style:'' } -->
+<!-- attr: { class:'slide-section', showInPresentation:true } -->
 <!-- # Stylus: Scripting, Libraries and Importing -->
 
-<!-- attr: { id:'scripting', class:'', showInPresentation:'True', hasScriptWrapper:'False', style:'' } -->
+<!-- attr: { id:'scripting', showInPresentation:true } -->
 # <a id="scripting"></a>Stylus Scripting
 - Stylus supports elementary scripting
   - Something like JavaScript, but not quite
@@ -528,12 +534,12 @@ body
 
 _Continue..._
 
-<!-- attr: { id:'', class:'', showInPresentation:'True', hasScriptWrapper:'False', style:'' } -->
+<!-- attr: { showInPresentation:true } -->
 # Stylus Scripting
 
 - Conditionals:
 
-```cs
+```styl
 for i in (1...15)
     .item-{i}
         if i%2
@@ -546,36 +552,36 @@ for i in (1...15)
         background-color bc
 ```
 
-<!-- attr: { id:'libraries-and-linking', class:'', showInPresentation:'True', hasScriptWrapper:'False', style:'font-size: 40px;' } -->
+<!-- attr: { id:'libraries-and-linking', showInPresentation:true, style:'font-size: 0.8em;' } -->
 # <a id="libraries-and-linking"></a>Creating Libraries and Importing Stylus files
-- Like CSS, **Stylus** has a **@import** directive
+- Like CSS, **Stylus** has a `@import` directive
   - The CSS loads another CSS file
-  - In CSS, **@import** loads a CSS file with an additional HTTP request
-  - In Stylus, **@import** just loads the code from the file inside our file
+  - In CSS, `@import` loads a CSS file with an additional HTTP request
+  - In Stylus, `@import` just loads the code from the file inside our file
 
-```cs
+```styl
 .clearfix
   /* … */
 linear-gradient(stops)
   /* … */
 ```
 
-```cs
+```styl
 @import 'utils.styl'
 
 body
   linear-gradient #333 #fff  
 ```
 
-<!-- attr: { id:'', class:'slide-section', showInPresentation:'True', hasScriptWrapper:'False', style:'' } -->
+<!-- attr: { class:'slide-section', showInPresentation:true } -->
 <!-- # Stylus Overview
 ## Questions? -->
 
 
-<!-- attr: { id:'', class:'', showInPresentation:'True', hasScriptWrapper:'True', style:'' } -->
+<!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'font-size: 0.9em' } -->
 # Free Trainings @ Telerik Academy
 - "Web Design with HTML 5, CSS 3 and JavaScript" course @ Telerik Academy
-    - [html5course.telerik.com](html5course.telerik.com)
+    - [css course](http://academy.telerik.com/student-courses/web-design-and-ui/css-styling/about)
   - Telerik Software Academy
     - [academy.telerik.com](academy.telerik.com)
   - Telerik Academy @ Facebook
@@ -586,4 +592,3 @@ body
 <!-- <img class="slide-image" showInPresentation="true" src="\imgs\pic08.png" style="top:58.18%; left:90.52%; width:16.97%; z-index:-1" /> -->
 <!-- <img class="slide-image" showInPresentation="true" src="\imgs\pic09.png" style="top:34.35%; left:68.14%; width:36.30%; z-index:-1" /> -->
 <!-- <img class="slide-image" showInPresentation="true" src="\imgs\pic10.png" style="top:48.92%; left:75.91%; width:10.85%; z-index:-1" /> -->
-<!-- <img class="slide-image" showInPresentation="true" src="\imgs\pic11.png" style="top:11.88%; left:91.56%; width:14.23%; z-index:-1" /> -->
