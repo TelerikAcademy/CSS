@@ -1,5 +1,5 @@
 <!-- section start -->
-<!-- attr: { class:'slide-title', showInPresentation:true, hasScriptWrapper:'False' } -->
+<!-- attr: { class:'slide-title', showInPresentation:true } -->
 # Stylus Overview
 ## Expressive, dynamic, robust CSS
 
@@ -8,6 +8,7 @@
 	<p class="signature-initiative">Telerik Software Academy</p>
 	<a href="telerikacademy" class="signature-link">telerikacademy.com</a>
 </div>
+
 
 <!-- section start -->
 <!-- attr: { showInPresentation:true } -->
@@ -49,7 +50,7 @@
 
 <!-- attr: { id:'css-preprocessors', showInPresentation:true } -->
 # <a id="css-preprocessors"></a>Preprocessors Overview
-- A preprocessor is a program that processes its input data to produce output that is used as input to another program
+- A preprocessor is a **program that processes its input data to produce output that is used as input to another program**
   - Sass, Less, Stylus are preprocessors for CSS
   - CoffeeScript, TypeScript are preprocessors for JavaScript
   - Jade, Ejs are preprocessors for HTML
@@ -64,9 +65,9 @@
 
 <!-- attr: { showInPresentation:true } -->
 # What is Stylus?
-- Stylus is a preprocessor for CSS
-  - All Stylus code is compiled to pure CSS
-  - Extends CSS, without breaking it
+- Stylus is a **preprocessor for CSS**
+  - All Stylus code is **compiled to pure CSS**
+  - **Extends CSS**, without breaking it
     - Adds a lot of syntactic sugar
     - Adds a "dynamic" functionality
     - Removes "not-necessary" code
@@ -74,10 +75,10 @@
 
 <!-- attr: { id:'syntax', showInPresentation:true, style:'font-size: 0.75em;' } -->
 # <a id="syntax"></a>Stylus Syntax
-- The Stylus syntax is clean and easy
+- The Stylus **syntax is clean and easy**
   - Removes all not-necessary symbols
     - Semicolons, curly brackets, etc…
-  - Significant whitespace is what matters
+  - **Significant whitespace** is what matters
     - Indentation marks the scope
 
 ```css
@@ -101,9 +102,9 @@
 
 <!-- attr: { id:'selectors', showInPresentation:true } -->
 # <a id="selectors"></a>Selectors in Stylus
-- Stylus selectors are absolutely the same as in regular CSS
+- Stylus **selectors are absolutely the same as in regular CSS**
   - Every CSS code is valid Stylus code!
-  - **.class**, **#id**, **tagName**
+  - `.class`, `#id`, `tagName`
 
 <!-- attr: { showInPresentation:true, style:'font-size: 0.8em' } -->
 # Selectors in Stylus
@@ -150,8 +151,8 @@
 <!-- attr: { id:'installing-node', showInPresentation:true } -->
 # <a id="installing-node"></a>Installing Node.js
 - Visit the Node.js website: https://nodejs.org/
-- Install it
-- Make sure **Node.js is added to PATH**
+- Download and install Node.js
+- Make sure Node.js is added to PATH
 - Node.js is installed on the machine and can be used through the CMD/Terminal
 
 
@@ -190,16 +191,16 @@
 <!-- attr: { showInPresentation:true } -->
 # Adding Node.js to Path on Linux and OS X
 - Open `~/.bashrc` with `admin sudo`
-- Find the **Node.js** path
+- Find the Node.js path
   - Usually it is `/usr/bin/node`
-- Add the **Node.js** path to `~/.bashrc`
-- You have **Node.js** in the **PATH**
+- Add the Node.js path to `~/.bashrc`
+- You have Node.js in the PATH
 
 
 <!-- attr: { id:'installing-stylus', showInPresentation:true } -->
 # <a id="installing-stylus"></a>Installing Stylus
-- Install **Node.js**
-  - Make sure **Node.js** is in **PATH**
+- Install Node.js
+  - Make sure Node.js is in PATH
 - Open CMD/Terminal
 - Run the following line:
   - `npm install -g stylus`
@@ -241,8 +242,8 @@
 <!-- attr: { id:'variables', showInPresentation:true } -->
 # <a id="variables"></a>Stylus Features: Variables
 - Variables in Stylus are defined easy:
-  - As a regular property/value pair, but using **"="** (equals sign) instead of **":"** (colons)
-  - Can be used to store **colors**, **size**, etc…
+  - As a regular property/value pair, but using "`=`" (equals sign) instead of "`:`" (colons)
+  - Can be used to store colors, size, etc…
 - Usable to set default background-color, font-color, font-size, etc…
 
 <!-- attr: { showInPresentation:true } -->
@@ -276,8 +277,8 @@ a:visited {
 
 <!-- attr: { id:'interpolation', showInPresentation:true, style:'font-size: 0.8em;' } -->
 # <a id="interpolation"></a>Stylus Features: Interpolation
-- Interpolation means inserting variable value as a property/selector name
-  - Interpolation is performed using **{…}**
+- Interpolation means **inserting variable value as a property/selector name**
+  - Interpolation is performed using curly brackets `{…}`
 - Stylus
 
 ```styl
@@ -379,7 +380,7 @@ height: sum(@width  + 150px)
 # <a id="mixins"></a>Stylus Features: Mixins
 - Both mixins and functions are defined in the same manner
   - Yet they are applied in different ways
-    - Functions return a value, mixins generate CSS
+    - **Functions return a value, mixins generate CSS**
 
 
 <!-- attr: { showInPresentation:true, style:'font-size: 0.8em;' } -->
@@ -410,13 +411,13 @@ vendor(prop, args)
 
 
 
-<!-- attr: { showInPresentation:true } -->
+<!-- attr: { showInPresentation:true, style:'font-size: 0.9em;' } -->
 <!-- # Mixins -->
 - How to define mixins?
-  - Use **mixin-name**
-  - Then the styles are normal Stylus
+  - Specify a **mixin name**
+  - Write styles in them - normal **Stylus**
   - How to use the mixin?
-    - Place use **mixin-name ormixin-name()**
+    - Write the name of the mixin and it will get replaced by the **Stylus** code
 
 ```styl
 clearfix
@@ -443,7 +444,7 @@ ul#main-nav{
 - Use the arguments like a C#/JS/C++ methods
 
 ```styl
-box(border= none, bg= rgba(0, 0, 0, 0.7), size= 200px)
+box(border = none, bg = rgba(0, 0, 0, 0.7), size = 200px)
     width size
     height size
     border border
@@ -542,12 +543,12 @@ _Continue..._
 ```styl
 for i in (1...15)
     .item-{i}
-        if i%2
-            c= yellowgreen
-            bc= #ccc
+        if i % 2
+            c = yellowgreen
+            bc = #ccc
         else
-            c= lightblue
-            bc= #333
+            c = lightblue
+            bc = #333
         color c
         background-color bc
 ```
