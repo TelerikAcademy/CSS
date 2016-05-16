@@ -1,5 +1,5 @@
 <!-- section start -->
-<!-- attr: { class:'slide-title', showInPresentation:true } -->
+<!-- attr: { class:'slide-title', showInPresentation:true, hasScriptWrapper: true } -->
 # Stylus Overview
 ## Expressive, dynamic, robust CSS
 
@@ -461,7 +461,6 @@ box(border = none, bg = rgba(0, 0, 0, 0.7), size = 200px)
     border-right: none
     @extend .clearfix
 ```
-- _Continue..._
 
 <!-- attr: { showInPresentation:true, style:'font-size: 0.8em;' } -->
 <!-- # Selector Inheritance -->
