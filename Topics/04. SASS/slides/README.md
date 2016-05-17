@@ -379,7 +379,7 @@ div{
 
 <!-- attr: { class:'slide-section demo', showInPresentation:true, hasScriptWrapper:true } -->
 <!-- # SASS Operators
-## [Demo](https://github.com/TelerikAcademy/CSS/blob/master/Topics/04.%20SASS/demos/09.%20operators.html) -->
+## [Demo](https://github.com/TelerikAcademy/CSS/blob/master/Topics/04.%20SASS/demos/09.%20operators-and-conditional-statements.html) -->
 
 <!-- attr: { class:'slide-section', showInPresentation:true } -->
 <!-- # Conditional statements 
@@ -407,7 +407,7 @@ div{
 
 <!-- attr: { class:'slide-section demo', showInPresentation:true, hasScriptWrapper:true } -->
 <!-- # Conditional statements 
-## [Demo](https://github.com/TelerikAcademy/CSS/blob/master/Topics/04.%20SASS/demos/09.%20operators.html) -->
+## [Demo](https://github.com/TelerikAcademy/CSS/blob/master/Topics/04.%20SASS/demos/09.%20operators-and-conditional-statements.html) -->
 
 <!-- attr: { class:'slide-section', showInPresentation:true, hasScriptWrapper:true } -->
 <!-- # Loops
@@ -544,7 +544,7 @@ $selectors: div p section article;
 
 <!-- attr: { class:'slide-section demo', showInPresentation:true, hasScriptWrapper:true } -->
 <!-- # Importing SASS
-## [Demo]() -->
+## [Demo](https://github.com/TelerikAcademy/CSS/blob/master/Topics/04.%20SASS/demos/11.%20importing-sass.html) -->
 
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true } -->
 # SASS Summary
