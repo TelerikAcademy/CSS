@@ -459,11 +459,12 @@ div{
   - Repeats `<loop-body>` while the `<condition>` evaluates to `true`
 
 ```sass
-$i: 0
+$i: 0;
 @while $i < 6 {
     .width-#{$i} {
         width: $i * 20%
     }
+    $i: $i + 2
 }
 ```
 
