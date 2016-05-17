@@ -14,22 +14,24 @@
 
 
 <!-- section start -->
+<!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'font-size: 0.75em' } -->
 # Table of Contents
 - [SASS Overview](#overview)
 - [Working with SASS](#working-with-sass)
   - [Using Ruby](#sass-with-ruby)
   - [Using Visual Studio Plugins](#vs-plugin)
 - [SASS Features](#features)
-  - [Nesting](#nesting)
+  - [Selector Nesting](#nesting)
   - [Variables](#variables)
+  - [Interpolation](#interpolation)
   - [Mixins](#mixins)
   - [Selector Inheritance](#inheritance)
-  - [Flow control](#flow-control)
-    - [Conditional statements](#conditional-statements)
-    - [Loops](#loops)
+  - [Operators](#sass-operators)
+  - [Conditional statements](#conditionals)
+  - [Loops](#sass-loops)
+- [Importing SASS files](#importing)
 
-
-
+<!-- <img class="slide-image" showInPresentation="true" src="imgs/contents.jpg" style="top:25%; left:65%; width:25%; z-index:-1; border-radius: 15px; border: 3px solid yellowgreen" /> -->
 
 <!-- section start -->
 <!-- attr: { class:'slide-section', showInPresentation:true, hasScriptWrapper:true } -->
@@ -38,8 +40,8 @@
 
 <!-- <img class="slide-image" showInPresentation="true" src="imgs/pic02.png" style="top:55%; left:30%; width:40%; z-index:-1; border-radius: 15px" /> -->
 
-<!-- attr: { showInPresentation:true } -->
-# SASS Overview
+<!-- attr: { id:'overview', showInPresentation:true } -->
+# <a id="overview"></a>SASS Overview
 - **Syntactically Awesome Stylesheets** is an extension of CSS
   - Makes coding CSS much easier and organized
   - **Translates to pure CSS** on the server
@@ -51,14 +53,14 @@
 
 
 <!-- section start -->
-<!-- attr: { class:'slide-section', showInPresentation:true, hasScriptWrapper:true } -->
-# Working with SASS
-## Ok... but How?
+<!-- attr: { id:'working-with-sass', class:'slide-section', showInPresentation:true, hasScriptWrapper:true } -->
+<!-- # <a id="working-with-sass"></a>Working with SASS
+## Ok... but How? -->
 
 <!-- <img class="slide-image" showInPresentation="true" src="imgs/pic03.png" style="top:55%; left:35%; width:30%; z-index:-1; border-radius: 15px" /> -->
 
-<!-- attr: { showInPresentation:true } -->
-# Coding SASS Using Ruby
+<!-- attr: { id:'sass-with-ruby', showInPresentation:true } -->
+# <a id="sass-with-ruby"></a>Compiling SASS Using Ruby
 - Using Ruby and Ruby console
   - Install Ruby - [Installer](http://rubyinstaller.org/downloads/)
   - Use ruby gem installer to install SASS
@@ -78,8 +80,8 @@
 ## [Demo]() -->
 
 
-<!-- attr: { showInPresentation:true } -->
-# Coding SASS in Visual Studio
+<!-- attr: { id:'vs-plugin', showInPresentation:true } -->
+# <a id="vs-plugin"></a>Coding SASS in Visual Studio
 - VS has many plugins to support SASS
   - Web Workbench
   - Web Essentials (soon)
@@ -97,14 +99,14 @@
 
 
 <!-- section start -->
-<!-- attr: { class:'slide-section', showInPresentation:true, hasScriptWrapper:true } -->
-# SASS Features
-## Selector Nesting, Mixins, Variables, Operators etc…
+<!-- attr: { id:'features', class:'slide-section', showInPresentation:true, hasScriptWrapper:true } -->
+<!-- # <a id="features"></a>SASS Features
+## Selector Nesting, Mixins, Variables, Operators etc… -->
 
 <!-- <img class="slide-image" showInPresentation="true" src="imgs/pic08.png" style="top:65%; left:25%; width:50%; z-index:-1; border-radius: 15px" /> -->
 
-<!-- attr: { showInPresentation:true } -->
-# Selector Nesting
+<!-- attr: { id:'nesting', showInPresentation:true, hasScriptWrapper:true } -->
+# <a id="nesting"></a>Selector Nesting
 
 - SASS features selector nesting
 
@@ -121,7 +123,7 @@ body {
 ```
 
 <!-- attr: { showInPresentation:true } -->
-# Selector Nesting
+<!-- # Selector Nesting -->
 
 - The resulting CSS
 
@@ -138,7 +140,7 @@ body h1 {
 ```
 
 <!-- attr: { showInPresentation:true, style:'font-size: 0.9em' } -->
-# Selector Nesting
+<!-- # Selector Nesting -->
 - All selectors inside a selector are translated to nested selectors
 
 ```sass
@@ -162,7 +164,7 @@ body h1{
 ```
 
 <!-- attr: { showInPresentation:true, style:'font-size: 0.8em' } -->
-# Selector Nesting
+<!-- # Selector Nesting -->
 
 - Selectors can also reference themselves inside their selector using the symbol `&`
 - The following SASS code:
@@ -192,8 +194,8 @@ a {
 
 <!-- <img class="slide-image" showInPresentation="true" src="imgs/pic09.png" style="top:55%; left:35%; width:30%; z-index:-1; border-radius: 15px" /> -->
 
-<!-- attr: { showInPresentation:true, style:'font-size: 0.8em' } -->
-# SASS Variables
+<!-- attr: { id:'variables', showInPresentation:true, style:'font-size: 0.8em' } -->
+# <a id="variables"></a>SASS Variables
 - SASS also has variables
   - Using the `$` (dolar) symbol
   - **Can be used to store colors, size, etc…**
@@ -224,8 +226,8 @@ body a {
 
 <!-- <img class="slide-image" showInPresentation="true" src="imgs/pic10.png" style="top:55%; left:35%; width:30%; z-index:-1; border-radius: 15px" /> -->
 
-
-# Interpolation
+<!-- attr: { id:'interpolation', showInPresentation:true, hasScriptWrapper:true } -->
+# <a id="interpolation"></a>Interpolation
 - SASS variables can be inserted as CSS properties
   - Works like `C#6` string interpolation
   - Using `#{}`
@@ -249,8 +251,8 @@ border-top : 15px ridge blue
 <!-- # Interpolation
 ## [Demo]() -->
 
-<!-- attr: { showInPresentation:true, style:'font-size: 0.8em' } -->
-# Mixins
+<!-- attr: { id:'mixins', showInPresentation:true, style:'font-size: 0.8em' } -->
+# <a id="mixins"></a>Mixins
 - Mixins are kind of **developer defined functions**
   - The developer can make them for clear SASS
 - Two kind of mixins
@@ -322,8 +324,8 @@ ul#main-nav{
 
 <!-- <img class="slide-image" showInPresentation="true" src="imgs/pic12.png" style="top:55%; left:30%; width:40%; z-index:-1; border-radius: 15px" /> -->
 
-<!-- attr: { showInPresentation:true, style:'font-size: 0.7em' } -->
-# Selector Inheritance
+<!-- attr: { id:'inheritance', showInPresentation:true, hasScriptWrapper:true, style:'font-size: 0.7em' } -->
+# <a id="inheritance"></a>Selector Inheritance
 - SASS enables the **inheritance of selector**
   - i.e. in a selector, get the properties of another selector
   - Use `@extend`
@@ -363,9 +365,8 @@ div{
 <!-- # Operators
 ## Performing calculations with SASS -->
 
-<!-- attr: { showInPresentation:true, hasScriptWrapper: true } -->
-# SASS Operators
-
+<!-- attr: { id:'sass-operators', showInPresentation:true, hasScriptWrapper:true } -->
+# <a id="sass-operators"></a>SASS Operators
 - Described with examples [here](http://www.sitepoint.com/sass-basics-operators/)
 <br><br>
 
@@ -384,8 +385,8 @@ div{
 <!-- # Conditional statements 
 ## Generate style rules depending on conditions -->
 
-<!-- attr: { showInPresentation:true, style:'font-size: 0.9em' } -->
-# Conditional statements
+<!-- attr: { id:'conditionals', showInPresentation:true, style:'font-size: 0.9em' } -->
+# <a id="conditionals"></a>Conditional statements
 - Using `@if`, `@else` and `@else if` directives:
 
 ```sass
@@ -412,8 +413,8 @@ div{
 <!-- # Loops
 ## Repeating logic and generating CSS -->
 
-<!-- attr: { showInPresentation:true } -->
-# Loops
+<!-- attr: { id:'sass-loops', showInPresentation:true, hasScriptWrapper:true } -->
+# <a id="sass-loops"></a>Loops
 - SASS provides the following **loop directives**:
   - `@for` loop
   - `@while` loop
@@ -525,8 +526,8 @@ $selectors: div p section article;
 # Importing SASS
 <!-- <img class="slide-image" showInPresentation="true" src="imgs/pic14.png" style="top:45%; left:32.5%; width:35%; z-index:-1; border-radius: 15px" /> -->
 
-
-# Importing SASS Files
+<!-- attr: { id:'importing', showInPresentation:true, hasScriptWrapper:true } -->
+# <a id="importing"></a>Importing SASS Files
 - **SASS files can be imported** in other SASS files
   - Like CSS files can be imported in CSS files
   - Use the `@import` directive
@@ -567,3 +568,5 @@ $selectors: div p section article;
     - [facebook.com/TelerikAcademy](facebook.com/TelerikAcademy)
   - Telerik Software Academy Forums
     - forums.academy.telerik.com
+    
+<!-- <img class="slide-image" showInPresentation="true" src="imgs/pic35.png" style="top:34.35%; left:68.14%; width:36.30%; z-index:-1" />  -->
