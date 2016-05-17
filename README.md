@@ -2,7 +2,7 @@
 
 Repository for the course [CSS Styling](http://telerikacademy.com/Courses/Courses/Details/332) at [Telerik Academy](http://telerikacademy.com)
 
-The free course "CSS Styling" provides knowledge for styling web pages. Students will learn how to style and position all the HTML elements in the web page and to create beautiful and modern web sites. You will learn all the selectors and will be able to work with CSS preprocessors (LESS, Stylus).
+The free course "CSS Styling" provides knowledge for styling web pages. Students will learn how to style and position all the HTML elements in the web page and to create beautiful and modern web sites. You will learn all the selectors and will be able to work with CSS preprocessors (LESS, Stylus, SASS).
 ## Course program
 
 ### [00. Course Introduction](./Topics/00. Course-Intro)
