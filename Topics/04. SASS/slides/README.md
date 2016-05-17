@@ -77,7 +77,7 @@
 
 <!-- attr: { class:'slide-section demo', showInPresentation:true } -->
 <!-- # Coding SASS Using Ruby 
-## [Demo]() -->
+## Demo -->
 
 
 <!-- attr: { id:'vs-plugin', showInPresentation:true } -->
@@ -93,7 +93,7 @@
 
 <!-- attr: { class:'slide-section demo', showInPresentation:true } -->
 <!-- # SASS in Visual Studio
-## [Demo]() -->
+## Demo -->
 
 
 
@@ -190,7 +190,7 @@ a {
 
 <!-- attr: { class:'slide-section demo', showInPresentation:true, hasScriptWrapper:true } -->
 <!-- # Selector Nesting
-## [Demo]() -->
+## [Demo](https://github.com/TelerikAcademy/CSS/blob/master/Topics/04.%20SASS/demos/03.%20selector-nesting.html) -->
 
 <!-- <img class="slide-image" showInPresentation="true" src="imgs/pic09.png" style="top:55%; left:35%; width:30%; z-index:-1; border-radius: 15px" /> -->
 
@@ -222,7 +222,7 @@ body a {
 
 <!-- attr: { class:'slide-section demo', showInPresentation:true, hasScriptWrapper:true } -->
 <!-- # Variables
-## [Demo]() -->
+## [Demo](https://github.com/TelerikAcademy/CSS/blob/master/Topics/04.%20SASS/demos/04.%20variables.html) -->
 
 <!-- <img class="slide-image" showInPresentation="true" src="imgs/pic10.png" style="top:55%; left:35%; width:30%; z-index:-1; border-radius: 15px" /> -->
 
@@ -249,7 +249,7 @@ border-top : 15px ridge blue
 
 <!-- attr: { class:'slide-section demo', showInPresentation:true, hasScriptWrapper:true } -->
 <!-- # Interpolation
-## [Demo]() -->
+## [Demo](https://github.com/TelerikAcademy/CSS/blob/master/Topics/04.%20SASS/demos/05.%20interpolation.html) -->
 
 <!-- attr: { id:'mixins', showInPresentation:true, style:'font-size: 0.8em' } -->
 # <a id="mixins"></a>Mixins
@@ -292,7 +292,7 @@ ul#main-nav{
 
 <!-- attr: { class:'slide-section demo', showInPresentation:true, hasScriptWrapper:true } -->
 <!-- # Basic Mixins
-## [Demo]() -->
+## [Demo](https://github.com/TelerikAcademy/CSS/blob/master/Topics/04.%20SASS/demos/06.%20basic-mixins.html) -->
 
 <!-- <img class="slide-image" showInPresentation="true" src="imgs/pic11.png" style="top:55%; left:30%; width:40%; z-index:-1;border-radius:15px" /> -->
 
@@ -320,7 +320,7 @@ ul#main-nav{
 
 <!-- attr: { class:'slide-section demo', showInPresentation:true, hasScriptWrapper:true } -->
 <!-- # Mixins with Arguments
-## [Demo]() -->
+## [Demo](https://github.com/TelerikAcademy/CSS/blob/master/Topics/04.%20SASS/demos/07.%20mixins-arguments.html) -->
 
 <!-- <img class="slide-image" showInPresentation="true" src="imgs/pic12.png" style="top:55%; left:30%; width:40%; z-index:-1; border-radius: 15px" /> -->
 
@@ -359,7 +359,7 @@ div{
 
 <!-- attr: { class:'slide-section demo', showInPresentation:true, hasScriptWrapper:true } -->
 <!-- # Selector Inheritance
-## [Demo]() -->
+## [Demo](https://github.com/TelerikAcademy/CSS/blob/master/Topics/04.%20SASS/demos/08.%20selector-inheritance.html) -->
 
 <!-- attr: { class:'slide-section', showInPresentation:true, hasScriptWrapper:true } -->
 <!-- # Operators
@@ -379,7 +379,7 @@ div{
 
 <!-- attr: { class:'slide-section demo', showInPresentation:true, hasScriptWrapper:true } -->
 <!-- # SASS Operators
-## [Demo]() -->
+## [Demo](https://github.com/TelerikAcademy/CSS/blob/master/Topics/04.%20SASS/demos/09.%20operators.html) -->
 
 <!-- attr: { class:'slide-section', showInPresentation:true } -->
 <!-- # Conditional statements 
@@ -407,7 +407,7 @@ div{
 
 <!-- attr: { class:'slide-section demo', showInPresentation:true, hasScriptWrapper:true } -->
 <!-- # Conditional statements 
-## [Demo]() -->
+## [Demo](https://github.com/TelerikAcademy/CSS/blob/master/Topics/04.%20SASS/demos/09.%20operators.html) -->
 
 <!-- attr: { class:'slide-section', showInPresentation:true, hasScriptWrapper:true } -->
 <!-- # Loops
@@ -520,7 +520,7 @@ $selectors: div p section article;
 
 <!-- attr: { class:'slide-section demo', showInPresentation:true, hasScriptWrapper:true } -->
 <!-- # SASS Loops
-## [Demo]() -->
+## [Demo](https://github.com/TelerikAcademy/CSS/blob/master/Topics/04.%20SASS/demos/10.%20loops.html) -->
 
 <!-- section start -->
 <!-- attr: { class:'slide-section', showInPresentation:true, hasScriptWrapper:true } -->
