@@ -15,24 +15,26 @@
 
 <!-- section start -->
 # Table of Contents
-- [SASS Overview](#)
-- [Working with SASS](#)
-  - [Using Ruby Console](#)
-  - [Using Visual Studio Plugins](#)
-- [SASS Features](#)
-  - [Nesting](#)
-  - [Variables](#)
-  - [Mixins](#)
-  - [Selector Inheritance](#)
-  - [Operators](#)
+- [SASS Overview](#overview)
+- [Working with SASS](#working-with-sass)
+  - [Using Ruby](#sass-with-ruby)
+  - [Using Visual Studio Plugins](#vs-plugin)
+- [SASS Features](#features)
+  - [Nesting](#nesting)
+  - [Variables](#variables)
+  - [Mixins](#mixins)
+  - [Selector Inheritance](#inheritance)
+  - [Flow control](#flow-control)
+    - [Conditional statements](#conditional-statements)
+    - [Loops](#loops)
 
 
 
 
 <!-- section start -->
 <!-- attr: { class:'slide-section', showInPresentation:true, hasScriptWrapper:true } -->
-# SASS Overview
-## What is SASS?
+<!-- # SASS Overview
+## What is SASS? -->
 
 <!-- <img class="slide-image" showInPresentation="true" src="imgs/pic02.png" style="top:55%; left:30%; width:40%; z-index:-1; border-radius: 15px" /> -->
 
@@ -135,7 +137,7 @@ body h1 {
 }
 ```
 
-<!-- attr: { showInPresentation:true } -->
+<!-- attr: { showInPresentation:true, style:'font-size: 0.9em' } -->
 # Selector Nesting
 - All selectors inside a selector are translated to nested selectors
 
@@ -159,7 +161,7 @@ body h1{
 }
 ```
 
-<!-- attr: { showInPresentation:true } -->
+<!-- attr: { showInPresentation:true, style:'font-size: 0.8em' } -->
 # Selector Nesting
 
 - Selectors can also reference themselves inside their selector using the symbol `&`
@@ -188,13 +190,13 @@ a {
 <!-- # Selector Nesting
 ## [Demo]() -->
 
-<!-- <img class="slide-image" showInPresentation="true" src="imgs/pic09.png" style="top:55%; left:35%; width:30%; z-index:-1" /> -->
+<!-- <img class="slide-image" showInPresentation="true" src="imgs/pic09.png" style="top:55%; left:35%; width:30%; z-index:-1; border-radius: 15px" /> -->
 
 <!-- attr: { showInPresentation:true, style:'font-size: 0.8em' } -->
 # SASS Variables
 - SASS also has variables
-  - Using the $ (dolar) symbol
-  - Can be used to store colors, size, etc…
+  - Using the `$` (dolar) symbol
+  - **Can be used to store colors, size, etc…**
 - Usable to set default background-color, font-color, font-size, etc…
 
 ```sass
@@ -225,7 +227,7 @@ body a {
 
 # Interpolation
 - SASS variables can be inserted as CSS properties
-  - Like C# 6 string interpolation
+  - Works like `C#6` string interpolation
   - Using `#{}`
 
 ```sass
@@ -243,31 +245,39 @@ border-#{$border-side} :
 border-top : 15px ridge blue
 ```
 
+<!-- attr: { class:'slide-section demo', showInPresentation:true, hasScriptWrapper:true } -->
+<!-- # Interpolation
+## [Demo]() -->
+
 <!-- attr: { showInPresentation:true, style:'font-size: 0.8em' } -->
 # Mixins
-- Mixins are kind of developer defined functions
+- Mixins are kind of **developer defined functions**
   - The developer can make them for clear SASS
 - Two kind of mixins
-  - Parameterless
+  - **Parameterless**
     - Get a default styles every time
-  - With parameters
+  - **With parameters**
     - Get style based on some parameters
     - Gradient, borders, etc…
 
-<!-- attr: { showInPresentation:true, style:'font-size: 0.8em' } -->
+<!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'font-size: 0.7em' } -->
 # Defining Mixins
-- How to define mixins?
-  - Use **@****mixin** **mixin****-name**
+- How to **define mixins**?
+  - Use the following syntax:
+  ```sass
+  @mixin <mixin-name> { 
+    /* SASS styles go here */ 
+  }
+  ```
   - Then the styles are normal SASS
-  - How to use the mixin?
-    - Place use **@include****mixin****-name**
+  - How to **use the mixin**?
+    - Just write `@include <mixin-name>;`
 
 ```cs
 @mixin clearfix{
   zoom:1;
-  &:after{
-    display:block; content:"";
-    height:0; clear:both; } }
+  &:after{ display:block; content:""; height:0; clear:both; } 
+}
 ```
 
 
@@ -297,7 +307,7 @@ ul#main-nav{
   zoom: 1;
 }
 //arguments can take default values
-@mixin box($border: none,$bg: rgba(0,0,0,0.7),$size: 200px) {
+@mixin box($border: none, $bg: rgba(0,0,0,0.7), $size: 200px) {
   width: $size; height: $size;
   border: $border;
   background: $bg;
@@ -314,9 +324,9 @@ ul#main-nav{
 
 <!-- attr: { showInPresentation:true, style:'font-size: 0.7em' } -->
 # Selector Inheritance
-- SASS enables the inheritance of selector
+- SASS enables the **inheritance of selector**
   - i.e. in a selector, get the properties of another selector
-  - Use **@extend**
+  - Use `@extend`
 
 ```sass
 .clearfix {
@@ -327,7 +337,8 @@ ul#main-nav{
   }
 }
 div{
-  @extend .clearfix;}
+  @extend .clearfix;
+}
 ```
 
 
@@ -348,8 +359,166 @@ div{
 <!-- # Selector Inheritance
 ## [Demo]() -->
 
+<!-- attr: { class:'slide-section', showInPresentation:true, hasScriptWrapper:true } -->
+<!-- # Operators
+## Performing calculations with SASS -->
+
+<!-- attr: { showInPresentation:true, hasScriptWrapper: true } -->
+# SASS Operators
+
+- Described with examples [here](http://www.sitepoint.com/sass-basics-operators/)
+<br><br>
+
+|           **Operators**          |  **Role**    |
+|----------------------------------|:------------:|
+| `:`                              | assignment   |
+| `and`, `or`, `not`               | logical      |
+| `>`, `>=`, `<`, `<=`, `==`, `!=` | comparison   |
+| `+`, `-`, `/`, `*`, `%`          | arithmetical |
+
+<!-- attr: { class:'slide-section demo', showInPresentation:true, hasScriptWrapper:true } -->
+<!-- # SASS Operators
+## [Demo]() -->
+
+<!-- attr: { class:'slide-section', showInPresentation:true } -->
+<!-- # Conditional statements 
+## Generate style rules depending on conditions -->
+
+<!-- attr: { showInPresentation:true, style:'font-size: 0.9em' } -->
+# Conditional statements
+- Using `@if`, `@else` and `@else if` directives:
+
+```sass
+@mixin opacity($value) {
+  
+    opacity: $value;
+    
+    @if(0.75 < $value and $value <= 1) {
+      color: blue;
+    } @else if(0.25 < $value and $value <= 0.75) {
+      color: orange;
+    } @else {
+      color: black;
+    }
+}
+```
 
 
+<!-- attr: { class:'slide-section demo', showInPresentation:true, hasScriptWrapper:true } -->
+<!-- # Conditional statements 
+## [Demo]() -->
+
+<!-- attr: { class:'slide-section', showInPresentation:true, hasScriptWrapper:true } -->
+<!-- # Loops
+## Repeating logic and generating CSS -->
+
+<!-- attr: { showInPresentation:true } -->
+# Loops
+- SASS provides the following **loop directives**:
+  - `@for` loop
+  - `@while` loop
+  - `@each` loop
+- Similar to loops in C#, JS, C++ and so on
+- Can be used to repeat actions and/or generate css rules
+  
+<!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'font-size: 0.8em' } -->
+# `@for` loop
+
+- Syntax: 
+  ```
+  @for <index-name> <start> through <end> { <loop-body> }
+  ```
+  - Repeats `<loop-body>` for each value from `start` to `end`
+  - The index is accessible through the variable with `<index-name>`
+  
+```sass
+@for $index from 1 through 3 {
+    .margin-left-#{$index} {
+        margin-left: $index * 10%
+    }
+}
+```
+
+```css
+/* Resulting CSS */
+.margin-left-1 { margin-left: 10%; }
+
+.margin-left-2 { margin-left: 20%; }
+
+.margin-left-3 { margin-left: 30%; }
+```
+
+<!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'font-size: 0.75em' } -->
+# `@while` loop
+
+- Syntax: 
+  ```
+  @while <condition> { <loop-body> }
+  ```
+  - Repeats `<loop-body>` while the `<condition>` evaluates to `true`
+
+```sass
+$i: 0
+@while $i < 6 {
+    .width-#{$i} {
+        width: $i * 20%
+    }
+}
+```
+
+```css
+/* Resulting CSS */
+.width-0 { width: 0%; }
+
+.width-2 { width: 40%; }
+
+.width-4 { width: 80%; }
+```
+
+<!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'font-size: 0.9em' } -->
+# `@each` loop and lists in SASS
+- SASS **supports declaration of lists of values**, as well as a way of **iterating over those values** with `@each`
+- Syntax of list declaration:
+  ```
+  $list-name: <value1> <value2> <value3> ... ;
+  ```
+
+- Declaring a list:
+
+```sass
+$selectors: .link .clickable .visited;
+```
+
+- SASS Lists in more details [here](http://clubmate.fi/lists-in-sass-syntax-and-use-cases-with-examples/)
+
+<!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'font-size: 0.75em' } -->
+<!-- # `@each` loop and lists in SASS -->
+- Iterating over a list with `@each` is done using the following syntax:
+  ```
+  @each <variable-name> in <list-name> { <loop-body> }
+  ```
+
+- Very similar behavior to `foreach` in C#
+
+```sass
+.half-width { width: 50% }
+$selectors: div p section article;
+
+@each $s in $selectors {
+    #{$s} {
+        @extend .half-width
+    }
+}
+```
+
+```css
+/* Resulting CSS */
+.half-width, div, p, section, article { width: 50%; }
+```
+
+<!-- attr: { class:'slide-section demo', showInPresentation:true, hasScriptWrapper:true } -->
+<!-- # SASS Loops
+## [Demo]() -->
 
 <!-- section start -->
 <!-- attr: { class:'slide-section', showInPresentation:true, hasScriptWrapper:true } -->
@@ -358,15 +527,15 @@ div{
 
 
 # Importing SASS Files
-- SASS files can be imported in other SASS files
+- **SASS files can be imported** in other SASS files
   - Like CSS files can be imported in CSS files
   - Use the `@import` directive
-- SASS defines partials
+- **SASS defines partials**
   - i.e. SASS files that are meant to be imported
-  - Just use prefix `_` (underscope)
+  - The naming convention suggests that all partial names start with `_` (underscore)
 
 ```cs
-@import 'gradients.scss'
+@import '_gradients.scss'
 //can use the items from gradients.scss
 ```
 
@@ -374,6 +543,15 @@ div{
 <!-- attr: { class:'slide-section demo', showInPresentation:true, hasScriptWrapper:true } -->
 <!-- # Importing SASS
 ## [Demo]() -->
+
+<!-- attr: { showInPresentation:true, hasScriptWrapper:true } -->
+# SASS Summary
+- Preprocessor for CSS with a lot of features
+  - Aims to make CSS coding more powerful and flexible
+  - It's features include variables, nesting, inheritance, mixins, functions, flow-control and more
+- Used on the server
+- SASS can be compiled to CSS using Ruby, or by using a plugin for your favorite editor
+- SASS allows importing of other files and declaration of partials
 
 <!-- attr: { class:'slide-section', showInPresentation:true } -->
 <!-- # SASS
