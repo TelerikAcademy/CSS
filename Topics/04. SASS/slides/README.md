@@ -524,7 +524,8 @@ $selectors: div p section article;
 
 <!-- section start -->
 <!-- attr: { class:'slide-section', showInPresentation:true, hasScriptWrapper:true } -->
-# Importing SASS
+<!-- # Importing SASS -->
+
 <!-- <img class="slide-image" showInPresentation="true" src="imgs/pic14.png" style="top:45%; left:32.5%; width:35%; z-index:-1; border-radius: 15px" /> -->
 
 <!-- attr: { id:'importing', showInPresentation:true, hasScriptWrapper:true } -->
