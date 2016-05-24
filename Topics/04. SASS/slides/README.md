@@ -60,36 +60,39 @@
 <!-- <img class="slide-image" showInPresentation="true" src="imgs/pic03.png" style="top:55%; left:35%; width:30%; z-index:-1; border-radius: 15px" /> -->
 
 <!-- attr: { id:'sass-with-ruby', showInPresentation:true } -->
-# <a id="sass-with-ruby"></a>Compiling SASS Using Ruby
-- Using Ruby and Ruby console
-  - Install Ruby - [Installer](http://rubyinstaller.org/downloads/)
-  - Use ruby gem installer to install SASS
-  ```cmd
-  gem install sass
-  ```
-  - Set Ruby to listen for changes on the SASS file
-  ```cmd
-  sass --watch sassfile.scss:outputfile.css
-  ```
-  - This will autocompile SASS to CSS on any changes
-  - Open the SASS file with **any** text editor
+# <a id="sass-with-ruby"></a>Compiling SASS Using Node.js
+- Compiling SASS with Node.js
+  - Usable with **any text editor** or IDE
+  - Install [Node.js](https://nodejs.org/en/)
+  - Install `node-sass` package
+
+    ```bash
+    npm install -g node-sass
+    ```
+    
+  - Compile `scss` files on changes:
+    
+    ```bash
+    node-sass --watch source.sccs dest.css 
+    ```
+
   - You get the translated CSS
 
 <!-- attr: { class:'slide-section demo', showInPresentation:true } -->
-<!-- # Coding SASS Using Ruby 
+<!-- # Compiling SASS with Node.js 
 ## Demo -->
 
 
-<!-- attr: { id:'vs-plugin', showInPresentation:true } -->
+<!-- attr: { id:'vs-plugin', showInPresentation:true, style: 'font-size:1.05em' } -->
 # <a id="vs-plugin"></a>Coding SASS in Visual Studio
 - VS has many plugins to support SASS
-  - Web Workbench
-  - Web Essentials (soon)
-- How to install plugins?
-  - Find the plugin [here](http://visualstudiogallery.msdn.microsoft.com)
-  - Open VS -> Tools -> Extensions and Updates -> find the plugin
-- Create SCSS file and do your SASS
-
+  - Some of them are:
+    - [Web Compiler](https://visualstudiogallery.msdn.microsoft.com/3b329021-cd7a-4a01-86fc-714c2d05bb6c) & [Web Essentials](http://vswebessentials.com/)
+    - [SassyStudio](https://visualstudiogallery.msdn.microsoft.com/85fa99a6-e4c6-4a1c-9f00-e6a8129b6f4d)
+  - Plugins extend core Visual Studio fetures with:
+    - Syntax highlighting
+    - Intellisense
+    - Snippets
 
 <!-- attr: { class:'slide-section demo', showInPresentation:true } -->
 <!-- # SASS in Visual Studio
@@ -115,6 +118,7 @@ body {
     font: normal 16px arial;
     color: #fff;
     background-color: #011b63;
+    
     h1 {
         font-size: 2.3em;
         font-weight: bold;
@@ -127,37 +131,38 @@ body {
 
 - The resulting CSS
 
-```css
+```sass
 body {
   font: normal 16px arial;
   color: #fff;
   background-color: #011b63;
 }
+
 body h1 {
   font-size: 2.3em;
   font-weight: bold;
 }
 ```
 
-<!-- attr: { showInPresentation:true, style:'font-size: 0.9em' } -->
+<!-- attr: { showInPresentation:true } -->
 <!-- # Selector Nesting -->
-- All selectors inside a selector are translated to nested selectors
+- Nested selectors in SASS are compile to nested selectors in CSS
 
 ```sass
-/* SASS */
 body {
   font-size: 25px;
+
   h1 {
     font-style: italic;
   }
 }
 ```
 
-```css
-/* CSS */
+```sass
 body {
   font-size: 25px;
 }
+
 body h1{
   font-style: italic;
 }
@@ -172,17 +177,19 @@ body h1{
 ```sass
 a {
     color: black;
+    
     &:hover {
         color: lightblue;
     }
 }
 ```
-- translates to the following css code:
+- compiles to the following css code:
 
-```css
+```sass
  a {
    color: black;
  }
+ 
  a:hover {
    color: lightblue;
  }
@@ -212,7 +219,7 @@ a {
 ```
 
 
-```css
+```sass
 body a {
   color: white; }
   body a:visited {
@@ -229,7 +236,6 @@ body a {
 <!-- attr: { id:'interpolation', showInPresentation:true, hasScriptWrapper:true } -->
 # <a id="interpolation"></a>Interpolation
 - SASS variables can be inserted as CSS properties
-  - Works like `C#6` string interpolation
   - Using `#{}`
 
 ```sass
@@ -243,7 +249,7 @@ border-#{$border-side} :
 ```
 
 
-```css
+```sass
 border-top : 15px ridge blue
 ```
 
@@ -251,10 +257,10 @@ border-top : 15px ridge blue
 <!-- # Interpolation
 ## [Demo](https://github.com/TelerikAcademy/CSS/blob/master/Topics/04.%20SASS/demos/05.%20interpolation.html) -->
 
-<!-- attr: { id:'mixins', showInPresentation:true, style:'font-size: 0.8em' } -->
+<!-- attr: { id:'mixins', showInPresentation:true } -->
 # <a id="mixins"></a>Mixins
 - Mixins are kind of **developer defined functions**
-  - The developer can make them for clear SASS
+  - The developer can make them for clear and reusable SASS
 - Two kind of mixins
   - **Parameterless**
     - Get a default styles every time
@@ -275,7 +281,7 @@ border-top : 15px ridge blue
   - How to **use the mixin**?
     - Just write `@include <mixin-name>;`
 
-```cs
+```sass
 @mixin clearfix{
   zoom:1;
   &:after{ display:block; content:""; height:0; clear:both; } 
@@ -283,7 +289,7 @@ border-top : 15px ridge blue
 ```
 
 
-```cs
+```sass
 ul#main-nav{
   @include clearfix;
 }
@@ -300,7 +306,6 @@ ul#main-nav{
 # Mixins with Arguments
 - Mixins can also be defined with parameters
   - i.e. for gradient-background
-- Put the arguments like a C# or JavaScript method
 
 ```sass
 @mixin opacity($value){
@@ -344,7 +349,7 @@ div{
 ```
 
 
-```css
+```sass
 .clearfix, body div {
   zoom: 1; 
 }
@@ -440,7 +445,7 @@ div{
 }
 ```
 
-```css
+```sass
 /* Resulting CSS */
 .margin-left-1 { margin-left: 10%; }
 
@@ -468,7 +473,7 @@ $i: 0;
 }
 ```
 
-```css
+```sass
 /* Resulting CSS */
 .width-0 { width: 0%; }
 
@@ -513,7 +518,7 @@ $selectors: div p section article;
 }
 ```
 
-```css
+```sass
 /* Resulting CSS */
 .half-width, div, p, section, article { width: 50%; }
 ```
@@ -537,7 +542,7 @@ $selectors: div p section article;
   - i.e. SASS files that are meant to be imported
   - The naming convention suggests that all partial names start with `_` (underscore)
 
-```cs
+```sass
 @import '_gradients.scss'
 //can use the items from gradients.scss
 ```
