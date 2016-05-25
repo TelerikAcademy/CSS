@@ -2,7 +2,7 @@
 
 Repository for the course [CSS Styling](http://telerikacademy.com/Courses/Courses/Details/332) at [Telerik Academy](http://telerikacademy.com)
 
-The free course "CSS Styling" provides knowledge for styling web pages. Students will learn how to style and position all the HTML elements in the web page and to create beautiful and modern web sites. You will learn all the selectors and will be able to work with CSS preprocessors (LESS, Stylus).
+The free course "CSS Styling" provides knowledge for styling web pages. Students will learn how to style and position all the HTML elements in the web page and to create beautiful and modern web sites. You will learn all the selectors and will be able to work with CSS preprocessors (LESS, Stylus, SASS).
 ## Course program
 
 ### [00. Course Introduction](./Topics/00. Course-Intro)
@@ -46,3 +46,9 @@ CSS Preprocessors
 CSS Preprocessors
 
 ##### [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/presentation.png" height="15" />Slides](https://rawgit.com/TelerikAcademy/CSS/master/Topics/04.%20Stylus/slides/index.html) / [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/code.png" height="15"> Demos](/Topics/04. Stylus/demos) / [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/homework.png" height="15">Tasks](/Topics/04. Stylus/homework) / [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/video.png" height="13"> Videos](/Topics/04. Stylus/VIDEOS.md)
+
+### [04. SASS](./Topics/04. SASS)
+
+CSS Preprocessors
+
+##### [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/presentation.png" height="15" />Slides](https://rawgit.com/TelerikAcademy/CSS/master/Topics/04.%20SASS/slides/index.html) / [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/code.png" height="15"> Demos](/Topics/04. SASS/demos) / [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/homework.png" height="15">Tasks](/Topics/04. SASS/homework) / [<img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/icons/video.png" height="13"> Videos](/Topics/04. SASS/VIDEOS.md)

@@ -96,11 +96,12 @@
     - Not good enough, lots of copy-pastying
   - **Using node.js** to do the parsing
     - Better solution - the parsing is automated
-  - **Using VS plugin** - Web Essentials
-    - Live parses the LESS to pure CSS
+  - **Using plugins**
+    - IDEs - VS Web Essentials, Webstorm plugins
+    - Text editors - VS Code, Atom, Sublime Text and other also have plugins
 
 
-<!-- attr: { showInPresentation:true } -->
+<!-- attr: { showInPresentation:true, style:'font-size: 0.8em' } -->
 # How To Use Node.js
 - Install Node from https://nodejs.org/
 - Open Command Prompt and write
@@ -123,7 +124,7 @@ $ lessc –x {less file} {output CSS file}
 ```
 
 <!-- section start -->
-<!-- attr: { id:'features', class:'slide-section', showInPresentation:true, hasScriptWrapper:true } -->
+<!-- attr: { id:'features', class:'slide-section', showInPresentation:true } -->
 <!-- # <a id="features"></a>LESS Features
 ## Selector Nesting, Mixins, Variables, etc… -->
 
@@ -165,15 +166,16 @@ body h1 {
 - All selectors inside a selector are translated to nested selectors
 - Selectors can also reference themselves inside their selector using the symbol **&**
 
-```css
+```less
  a {
-   &:hover {…}
+   color: black;
+   &:hover { color: red; }
  }
 ```
 
 ```css
- a {…}
- a:hover {…}
+ a { color: black; }
+ a:hover { color: red; }
 ```
 
 <!-- attr: { class:'slide-section demo', showInPresentation:true, hasScriptWrapper:true } -->
@@ -190,7 +192,7 @@ body h1 {
   - Can be used to store colors, size, etc…
 - Usable to set default background-color, font-color, font-size, etc…
 
-```css
+```less
 @link-color: #ffffff;
 @v-link-color: #646363;
 a {
@@ -224,7 +226,7 @@ body a:visited {
 - LESS variables can be inserted as CSS properties
   - Using **@{…}**
 
-```css
+```less
 @border-side: top;
 @border-color: blue;
 @border-style: ridge;
@@ -250,7 +252,7 @@ border-top : 15px ridge blue
 - The **:extend** pseudo selector can be used to extend a selector
 - More here: http://lesscss.org/features/#extend-feature
 
-```css
+```less
 nav ul {
   &:extend(.inline);
   background: blue;
@@ -314,7 +316,7 @@ percentage(0.5); //returns 50%
   - How to use the mixin?
     - Place use **.mixin-name**
 
-```css
+```less
 .clearfix {
     zoom: 1;
     &:after {
@@ -390,7 +392,7 @@ div.box-div {
 
 
 
-<!-- attr: { class:'slide-section demo', showInPresentation:true, hasScriptWrapper:true } -->
+<!-- attr: { class:'slide-section demo', showInPresentation:true } -->
 <!-- # Pattern-matching Mixins
 ## [Demo]() -->
 
@@ -414,7 +416,7 @@ div {
 }
 ```
 
-<!-- attr: { class:'slide-section demo', showInPresentation:true, hasScriptWrapper:true } -->
+<!-- attr: { class:'slide-section demo', showInPresentation:true } -->
 <!-- # Mixin "Return" Values
 ## [Demo]() -->
 
@@ -426,14 +428,14 @@ div {
   - In our "other-styles.less" file
   - Results in
 
-```css
+```less
 .foo { background: #900; }
 @import "other-styles.less";
 ```
 
 
 ```less
-<!-- other-styles.less -->
+/* other-styles.less */
 .foobar { background: #900; }
 ```
 
@@ -454,12 +456,12 @@ div {
 
 <!-- attr: { showInPresentation:true } -->
 # Conditional Mixins
-- Also called "Mixin Guards"
+- Also called **Mixin Guards**
   - Using **when** keyword can specify conditions on which the mixin will be called
   - Operators are `>`, `>=`,`=`, `=<`, `<`
 
 ```less
-.mixin (@a) when (lightness(@a) >=50%) {
+.mixin (@a) when (lightness(@a) >= 50%) {
     background-color: black;
 }
 
@@ -480,12 +482,12 @@ div {
 
 ```less
 .loop(@counter) when (@counter > 0) {
-    .loop((@counter - 1)); // next iteration
-    width: (10px * @counter); // code for each iteration
+    .loop((@counter - 1)); /* next iteration */
+    width: (10px * @counter); /* code for each iteration */
 }
 
 div {
-    .loop(5); // launch the loop
+    .loop(5); /* launch the loop */
 }
 ```
 
@@ -504,7 +506,7 @@ div {
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'font-size: 0.95em' } -->
 # Free Trainings @ Telerik Academy
 - "Web Design with HTML 5, CSS 3 and JavaScript" course @ Telerik Academy
-    - [html5course.telerik.com](html5course.telerik.com)
+    - [css course](http://academy.telerik.com/student-courses/web-design-and-ui/css-styling/about)
   - Telerik Software Academy
     - [academy.telerik.com](academy.telerik.com)
   - Telerik Academy @ Facebook

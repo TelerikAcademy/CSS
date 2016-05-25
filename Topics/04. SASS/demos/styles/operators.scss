@@ -1,0 +1,31 @@
+.large-font {
+    font-size: 10px + 15px - 5px + (333px * 10) % (48 / 2)
+}
+
+.funny-background {
+    background-color: #aabbcc + #1a00cc
+}
+
+$color: brown;
+
+@if(10 + 4 < 15) {
+    $color: darkgreen
+} @else if(4 > 5 or 3 <= 4) {
+    $color: darkblue
+} @else if(4 > 5 and 3 <= 4) {
+    $color: pink
+} @else if(not 4 > 5) {
+    $color: red
+} @else if(4 != 5) {
+    $color: yellowgreen
+}
+
+.link {
+    color: #{$color}
+}
+
+@if(3 == 3) {
+    a {
+        display: block
+    }
+}
