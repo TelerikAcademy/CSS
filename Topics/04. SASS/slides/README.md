@@ -570,10 +570,10 @@ $selectors: div p section article;
 - "Web Design with HTML 5, CSS 3 and JavaScript" course @ Telerik Academy
     - [css course](http://academy.telerik.com/student-courses/web-design-and-ui/css-styling/about)
   - Telerik Software Academy
-    - [academy.telerik.com](academy.telerik.com)
+    - [academy.telerik.com](http://academy.telerik.com)
   - Telerik Academy @ Facebook
-    - [facebook.com/TelerikAcademy](facebook.com/TelerikAcademy)
+    - [facebook.com/TelerikAcademy](http://facebook.com/TelerikAcademy)
   - Telerik Software Academy Forums
-    - forums.academy.telerik.com
+    - [forums.academy.telerik.com](http://forums.academy.telerik.com)
     
 <!-- <img class="slide-image" showInPresentation="true" src="imgs/pic35.png" style="top:34.35%; left:68.14%; width:36.30%; z-index:-1" />  -->
