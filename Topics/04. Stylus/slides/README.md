@@ -106,6 +106,16 @@
 - Stylus **selectors are absolutely the same as in regular CSS**
   - Every CSS code is valid Stylus code!
   - `.class`, `#id`, `tagName`
+- _Examples:_
+
+```stylus
+#root .nav
+  list-style-type none
+#root .nav .nav-item
+  float left
+  margin 0
+  padding 0
+```
 
 <!-- attr: { showInPresentation:true, style:'font-size: 0.8em' } -->
 <!-- # Selectors in Stylus -->
@@ -223,7 +233,7 @@
 
 <!-- attr: { showInPresentation:true } -->
 <!-- # Stylus Features: Variables -->
-```styl
+```stylus
 /* Stylus */
 link-color = #ffffff;
 v-link-color = #646363;
@@ -234,7 +244,7 @@ a
 ```
 
 
-```styl
+```css
 /* CSS */
 a {
   color: #fff;
@@ -431,17 +441,6 @@ box(border = none, bg = rgba(0, 0, 0, 0.7), size = 200px)
   box '1px solid black' rgba(123, 0, 0, 0.6) 100px
 ```
 
-<!-- attr: { showInPresentation:true } -->
-# @extend or Mixins?
-- Why both `mixins` and `@extend`?
-  - `Mixins` have parameters and generate different code, based on the parameters
-  - `@extend` provides a way to minify the number of classes on an element
-    - Instead of adding `.clearfix` to all elements that clear, add it to the selector that the elements already have
-
-<!-- attr: { class:'slide-section demo', showInPresentation:true, hasScriptWrapper:true } -->
-<!-- # Stylus Features: Mixins with Arguments
-## [Demo](https://github.com/TelerikAcademy/CSS/tree/master/Topics/04.%20Stylus/demos/08.%20mixins-with-args) -->
-
 <!-- attr: { id:'selector-inheritance', showInPresentation:true, style:'font-size: 0.8em;' } -->
 # <a id="selector-inheritance"></a>Selector Inheritance
 - Selectors in Stylus can be inherited using `@extend`
@@ -484,7 +483,19 @@ box(border = none, bg = rgba(0, 0, 0, 0.7), size = 200px)
 ## [Demo](https://github.com/TelerikAcademy/CSS/tree/master/Topics/04.%20Stylus/demos/09.%20selector-inheritance%28%40extend%29) -->
 
 
+<!-- attr: { showInPresentation:true } -->
+# @extend or Mixins?
+- Why both `mixins` and `@extend`?
+  - `Mixins` have parameters and generate different code, based on the parameters
+  - `@extend` provides a way to minify the number of classes on an element
+    - Instead of adding `.clearfix` to all elements that clear, add it to the selector that the elements already have
+
+<!-- attr: { class:'slide-section demo', showInPresentation:true, hasScriptWrapper:true } -->
+<!-- # Stylus Features: Mixins with Arguments
+## [Demo](https://github.com/TelerikAcademy/CSS/tree/master/Topics/04.%20Stylus/demos/08.%20mixins-with-args) -->
+
 <!-- section start -->
+
 <!-- attr: { class:'slide-section', showInPresentation:true } -->
 <!-- # Stylus: Scripting, Libraries and Importing -->
 
@@ -546,6 +557,8 @@ body
   linear-gradient #333 #fff  
 ```
 
+<!-- section start -->
+
 <!-- attr: { class:'slide-section', showInPresentation:true } -->
 <!-- # Stylus Overview
 ## Questions? -->
@@ -561,7 +574,7 @@ body
     - [facebook.com/TelerikAcademy](facebook.com/TelerikAcademy)
   - Telerik Software Academy Forums
     - forums.academy.telerik.com
-    
+
 <!-- <img class="slide-image" showInPresentation="true" src="imgs/pic08.png" style="top:58.18%; left:90.52%; width:16.97%; z-index:-1" /> -->
 <!-- <img class="slide-image" showInPresentation="true" src="imgs/pic09.png" style="top:34.35%; left:68.14%; width:36.30%; z-index:-1" /> -->
 <!-- <img class="slide-image" showInPresentation="true" src="imgs/pic10.png" style="top:48.92%; left:75.91%; width:10.85%; z-index:-1" /> -->
