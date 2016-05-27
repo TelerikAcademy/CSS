@@ -69,17 +69,17 @@
     ```bash
     npm install -g node-sass
     ```
-    
+
   - Compile `scss` files on changes:
-    
+
     ```bash
-    node-sass --watch source.sccs dest.css 
+    node-sass --watch source.sccs dest.css
     ```
 
   - You get the translated CSS
 
 <!-- attr: { class:'slide-section demo', showInPresentation:true } -->
-<!-- # Compiling SASS with Node.js 
+<!-- # Compiling SASS with Node.js
 ## Demo -->
 
 
@@ -118,7 +118,7 @@ body {
     font: normal 16px arial;
     color: #fff;
     background-color: #011b63;
-    
+
     h1 {
         font-size: 2.3em;
         font-weight: bold;
@@ -177,7 +177,7 @@ body h1{
 ```sass
 a {
     color: black;
-    
+
     &:hover {
         color: lightblue;
     }
@@ -189,7 +189,7 @@ a {
  a {
    color: black;
  }
- 
+
  a:hover {
    color: lightblue;
  }
@@ -273,8 +273,8 @@ border-top : 15px ridge blue
 - How to **define mixins**?
   - Use the following syntax:
   ```sass
-  @mixin <mixin-name> { 
-    /* SASS styles go here */ 
+  @mixin <mixin-name> {
+    /* SASS styles go here */
   }
   ```
   - Then the styles are normal SASS
@@ -284,7 +284,7 @@ border-top : 15px ridge blue
 ```sass
 @mixin clearfix{
   zoom:1;
-  &:after{ display:block; content:""; height:0; clear:both; } 
+  &:after{ display:block; content:""; height:0; clear:both; }
 }
 ```
 
@@ -351,13 +351,13 @@ div{
 
 ```sass
 .clearfix, body div {
-  zoom: 1; 
+  zoom: 1;
 }
 .clearfix:after, body div:after {
   display: block;
   height: 0;
   content: "";
-  clear: both; 
+  clear: both;
 }
 ```
 
@@ -387,7 +387,7 @@ div{
 ## [Demo](https://github.com/TelerikAcademy/CSS/blob/master/Topics/04.%20SASS/demos/09.%20operators-and-conditional-statements.html) -->
 
 <!-- attr: { class:'slide-section', showInPresentation:true } -->
-<!-- # Conditional statements 
+<!-- # Conditional statements
 ## Generate style rules depending on conditions -->
 
 <!-- attr: { id:'conditionals', showInPresentation:true, style:'font-size: 0.9em' } -->
@@ -396,9 +396,9 @@ div{
 
 ```sass
 @mixin opacity($value) {
-  
+
     opacity: $value;
-    
+
     @if(0.75 < $value and $value <= 1) {
       color: blue;
     } @else if(0.25 < $value and $value <= 0.75) {
@@ -411,7 +411,7 @@ div{
 
 
 <!-- attr: { class:'slide-section demo', showInPresentation:true, hasScriptWrapper:true } -->
-<!-- # Conditional statements 
+<!-- # Conditional statements
 ## [Demo](https://github.com/TelerikAcademy/CSS/blob/master/Topics/04.%20SASS/demos/09.%20operators-and-conditional-statements.html) -->
 
 <!-- attr: { class:'slide-section', showInPresentation:true, hasScriptWrapper:true } -->
@@ -426,17 +426,17 @@ div{
   - `@each` loop
 - Similar to loops in C#, JS, C++ and so on
 - Can be used to repeat actions and/or generate css rules
-  
+
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'font-size: 0.8em' } -->
 # `@for` loop
 
-- Syntax: 
+- Syntax:
   ```
   @for <index-name> <start> through <end> { <loop-body> }
   ```
   - Repeats `<loop-body>` for each value from `start` to `end`
   - The index is accessible through the variable with `<index-name>`
-  
+
 ```sass
 @for $index from 1 through 3 {
     .margin-left-#{$index} {
@@ -457,7 +457,7 @@ div{
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'font-size: 0.75em' } -->
 # `@while` loop
 
-- Syntax: 
+- Syntax:
   ```
   @while <condition> { <loop-body> }
   ```
@@ -570,10 +570,10 @@ $selectors: div p section article;
 - "Web Design with HTML 5, CSS 3 and JavaScript" course @ Telerik Academy
     - [css course](http://academy.telerik.com/student-courses/web-design-and-ui/css-styling/about)
   - Telerik Software Academy
-    - [academy.telerik.com](academy.telerik.com)
+    - [telerikacademy.com](https://telerikacademy.com)
   - Telerik Academy @ Facebook
-    - [facebook.com/TelerikAcademy](facebook.com/TelerikAcademy)
+    - [facebook.com/TelerikAcademy](http://facebook.com/TelerikAcademy)
   - Telerik Software Academy Forums
-    - forums.academy.telerik.com
-    
+    - [forums.academy.telerik.com](http://forums.academy.telerik.com)
+
 <!-- <img class="slide-image" showInPresentation="true" src="imgs/pic35.png" style="top:34.35%; left:68.14%; width:36.30%; z-index:-1" />  -->

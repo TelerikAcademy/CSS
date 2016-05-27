@@ -24,7 +24,7 @@
   - [Variables and Interpolation](#variables-and-interpolation)
   - [Mixins and Functions](#mixins-and-functions)
   - [Loops](#loops)
-  
+
 <!-- <img class="slide-image" src="imgs/pic03.png" showInPresentation="true" style="top:29.78%; left:64.70%; width:38.94%; z-index:-1" /> -->
 
 
@@ -33,7 +33,7 @@
 <!-- section start -->
 <!-- attr: { id:'overview', class:'slide-section', showInPresentation:true } -->
 <!-- # <a id="overview"></a>LESS Overview
-## What is LESS? --> 
+## What is LESS? -->
 
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true } -->
 # LESS Overview
@@ -46,7 +46,7 @@
   - Mixins
   - Color editing functions
   - Selector nesting and more
-  
+
 <!-- <img class="slide-image" src="imgs/pic05.png" showInPresentation="true" style="top:47%; left:73%; width:30%; z-index:-1" /> -->
 
 
@@ -84,7 +84,7 @@
 - **Using client-side LESS is slow**
   - All the parsing is done by the client
   - i.e. spend some of the browser resources for pointless parsing - Imagine a 2000-lines-long LESS file…
-  
+
 
 
 
@@ -233,7 +233,7 @@ body a:visited {
 @border-width: 15px;
 
 border-@{border-side} :
-  $border-width $border-style $border-color;
+  @border-width @border-style @border-color;
 ```
 
 ```css
@@ -378,14 +378,14 @@ div.box-div {
 - Mixins can define different behavior, depending on its parameters
 
 ```less
-.color(dark, @color){
+.color(dark; @color){
   color: @darken(@color);
 }
-.color(light, @color){
+.color(light; @color){
   color: @lighten(@color);
 }
 //called no matter which of the above is called
-@color(@_, @color){
+@color(@_; @color){
   border: 1px solid @color;
 }
 ```
@@ -508,12 +508,12 @@ div {
 - "Web Design with HTML 5, CSS 3 and JavaScript" course @ Telerik Academy
     - [css course](http://academy.telerik.com/student-courses/web-design-and-ui/css-styling/about)
   - Telerik Software Academy
-    - [academy.telerik.com](academy.telerik.com)
+    - [telerikacademy.com](https://telerikacademy.com)
   - Telerik Academy @ Facebook
-    - [facebook.com/TelerikAcademy](facebook.com/TelerikAcademy)
+    - [facebook.com/TelerikAcademy](http://facebook.com/TelerikAcademy)
   - Telerik Software Academy Forums
-    - forums.academy.telerik.com
-    
+    - [forums.academy.telerik.com](http://forums.academy.telerik.com)
+
 <!-- <img class="slide-image" src="imgs/pic19.png" showInPresentation="true" style="top:58.18%; left:90.52%; width:16.97%; z-index:-1" /> -->
 <!-- <img class="slide-image" src="imgs/pic20.png" showInPresentation="true" style="top:34.35%; left:68.14%; width:36.30%; z-index:-1" /> -->
 <!-- <img class="slide-image" src="imgs/pic21.png" showInPresentation="true" style="top:48.92%; left:75.91%; width:10.85%; z-index:-1" /> -->
