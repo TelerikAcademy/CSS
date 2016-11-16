@@ -39,7 +39,6 @@
 - CSS Presentation
 - CSS Layout
 - Preprocessors (for CSS)
-- Exam Preparation
 - **CSS Exam**
 
 
