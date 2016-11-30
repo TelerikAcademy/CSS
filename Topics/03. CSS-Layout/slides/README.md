@@ -402,6 +402,15 @@
 <!-- # Clear -->
 - Clearing floats
   - Clear using pseudo-class `:after`
+  - Snippet after IE8
+  
+  ```css
+  .group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+```
   - Additional element (`<div>`) with a clear style
     - Deprecated - semantically unused div
   - [Additional info about floats](https://css-tricks.com/all-about-floats/)
