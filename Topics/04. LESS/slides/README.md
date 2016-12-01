@@ -178,10 +178,6 @@ body h1 {
  a:hover { color: red; }
 ```
 
-<!-- attr: { class:'slide-section demo', showInPresentation:true, hasScriptWrapper:true } -->
-<!-- # Selector Nesting
-## [Demo]() -->
-
 <!-- <img class="slide-image" src="imgs/pic07.png" showInPresentation="true" style="top:55%; left:33.68%; width:32%; z-index:-1; border-radius: 15px" /> -->
 
 
@@ -212,12 +208,6 @@ body a:visited {
 }
 ```
 
-
-
-<!-- attr: { class:'slide-section demo', showInPresentation:true, hasScriptWrapper:true } -->
-<!-- # Variables
-## [Demo]() -->
-
 <!-- <img class="slide-image" src="imgs/pic08.png" showInPresentation="true" style="top:55%; left:30%; width:40%; z-index:-1; border-radius: 15px" /> -->
 
 
@@ -239,10 +229,6 @@ border-@{border-side} :
 ```css
 border-top : 15px ridge blue
 ```
-
-<!-- attr: { class:'slide-section demo', showInPresentation:true, hasScriptWrapper:true } -->
-<!-- # Interpolation
-## [Demo]() -->
 
 <!-- <img class="slide-image" src="imgs/pic09.png" showInPresentation="true" style="top:55%; left:34.5%; width:31%; z-index:-1" /> -->
 
@@ -271,10 +257,6 @@ nav ul {
 }
 ```
 
-<!-- attr: { class:'slide-section demo', showInPresentation:true, hasScriptWrapper:true } -->
-<!-- # Extend
-## [Demo]() -->
-
 <!-- <img class="slide-image" src="imgs/pic10.png" showInPresentation="true" style="top:55%; left:30%; width:40%; z-index:-1" /> -->
 
 
@@ -291,10 +273,6 @@ background-color: lighten(@color, 10%);
 color: darken(@color, 15%);
 percentage(0.5); //returns 50%
 ```
-
-<!-- attr: { class:'slide-section demo', showInPresentation:true } -->
-<!-- # Functions
-## [Demo]() -->
 
 <!-- attr: { showInPresentation:true } -->
 # Mixins
@@ -335,10 +313,6 @@ ul#main-nav{
 }
 ```
 
-<!-- attr: { class:'slide-section demo', showInPresentation:true, hasScriptWrapper:true } -->
-<!-- # Basic Mixins
-## [Demo]() -->
-
 <!-- <img class="slide-image" src="imgs/pic12.png" showInPresentation="true" style="top:55%; left:26%; width:49.70%; z-index:-1" /> -->
 
 
@@ -363,13 +337,6 @@ div.box-div {
     .opacity(0.5); //using the mixin with 0.5 value
 }
 ```
-
-
-
-<!-- attr: { class:'slide-section demo', showInPresentation:true, hasScriptWrapper:true } -->
-<!-- # Mixins with Arguments
-## [Demo]() -->
-
 <!-- <img class="slide-image" src="imgs/pic13.png" showInPresentation="true" style="top:55%; left:35%; width:30%; z-index:-1" /> -->
 
 
@@ -390,12 +357,6 @@ div.box-div {
 }
 ```
 
-
-
-<!-- attr: { class:'slide-section demo', showInPresentation:true } -->
-<!-- # Pattern-matching Mixins
-## [Demo]() -->
-
 <!-- attr: { showInPresentation:true } -->
 # Mixin "Return" Values
 - Mixins can have **return** values because of the variable scope
@@ -415,11 +376,6 @@ div {
   padding: 33px;
 }
 ```
-
-<!-- attr: { class:'slide-section demo', showInPresentation:true } -->
-<!-- # Mixin "Return" Values
-## [Demo]() -->
-
 
 <!-- attr: { showInPresentation:true } -->
 # Importing Other Files
@@ -445,12 +401,6 @@ div {
 .foobar { background: #900; }
 ```
 
-
-
-<!-- attr: { class:'slide-section demo', showInPresentation:true, hasScriptWrapper:true } -->
-<!-- # Importing Other Files
-## [Demo]() -->
-
 <!-- <img class="slide-image" src="imgs/pic16.png" showInPresentation="true" style="top:45%; left:60%; width:28.21%; z-index:-1" /> -->
 
 
@@ -471,11 +421,6 @@ div {
 ```
 
 
-
-<!-- attr: { class:'slide-section demo', showInPresentation:true } -->
-<!-- # Conditional Mixins
-## [Demo]() -->
-
 <!-- attr: { id:'loops', showInPresentation:true } -->
 # <a id="loops"></a>Loops
 - Because of **Mixin Guards** you can create loop/iterations structure
@@ -490,10 +435,6 @@ div {
     .loop(5); /* launch the loop */
 }
 ```
-
-<!-- attr: { class:'slide-section demo', showInPresentation:true, hasScriptWrapper:true } -->
-<!-- # Loops
-## [Demo]() -->
 
 <!-- <img class="slide-image" src="imgs/pic18.png" showInPresentation="true" style="top:55%; left:32%; width:35%; z-index:-1; border-radius: 15px" /> -->
 
