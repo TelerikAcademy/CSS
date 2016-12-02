@@ -1,0 +1,66 @@
+img
+    max-width 100%
+
+*
+    margin 0
+    padding 0
+
+#root
+    width 1024px
+    margin 0 auto
+    text-align: center
+    margin-top 50px
+
+#site-header
+    text-align center
+    margin-bottom 35px
+    background-color #ccc
+    padding 15px 0
+    background #ccc url("../imgs/logo.png") 35% no-repeat
+    background-size 65px
+    overflow visible
+    color: white
+    text-shadow 3px 2px 1px black
+
+.superheroes
+    list-style-type none
+    li
+        display inline-block
+        width 17%
+        position relative
+        text-align: center
+        
+        &:hover
+            width 20%
+            .hero-header
+                opacity: 1
+            a
+                display block
+        
+        .hero-header
+            display inline-block
+            padding 10px 0
+            position absolute
+            height 30px
+            width 100%
+            background rgba(#222, 0.8)
+            opacity 0.3
+            color white
+            font-size 1.2em
+            text-align center
+            vertical-align middle
+            border-top-left-radius 17px
+            border-top-right-radius 17px
+        img
+            border-radius 15px
+        a
+            width 100%
+            color white
+            background-color rgba(#222, 0.7)
+            text-decoration: none
+            padding 10px 0;
+            display none
+            // display block
+            position absolute
+            &:hover
+                text-decoration underline

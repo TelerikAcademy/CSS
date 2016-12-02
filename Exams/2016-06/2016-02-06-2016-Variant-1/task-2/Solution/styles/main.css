@@ -1,0 +1,72 @@
+img {
+  max-width: 100%;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+#root {
+  width: 1024px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 50px;
+}
+#site-header {
+  text-align: center;
+  margin-bottom: 35px;
+  background-color: #ccc;
+  padding: 15px 0;
+  background: #ccc url("../imgs/logo.png") 35% no-repeat;
+  background-size: 65px;
+  overflow: visible;
+  color: #fff;
+  text-shadow: 3px 2px 1px #000;
+}
+.superheroes {
+  list-style-type: none;
+}
+.superheroes li {
+  display: inline-block;
+  width: 17%;
+  position: relative;
+  text-align: center;
+}
+.superheroes li:hover {
+  width: 20%;
+}
+.superheroes li:hover .hero-header {
+  opacity: 1;
+}
+.superheroes li:hover a {
+  display: block;
+}
+.superheroes li .hero-header {
+  display: inline-block;
+  padding: 10px 0;
+  position: absolute;
+  height: 30px;
+  width: 100%;
+  background: rgba(34,34,34,0.8);
+  opacity: 0.3;
+  color: #fff;
+  font-size: 1.2em;
+  text-align: center;
+  vertical-align: middle;
+  border-top-left-radius: 17px;
+  border-top-right-radius: 17px;
+}
+.superheroes li img {
+  border-radius: 15px;
+}
+.superheroes li a {
+  width: 100%;
+  color: #fff;
+  background-color: rgba(34,34,34,0.7);
+  text-decoration: none;
+  padding: 10px 0;
+  display: none;
+  position: absolute;
+}
+.superheroes li a:hover {
+  text-decoration: underline;
+}
