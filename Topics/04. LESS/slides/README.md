@@ -346,10 +346,10 @@ div.box-div {
 
 ```less
 .color(dark; @color){
-  color: @darken(@color);
+  color: @arken(@color, 25%);
 }
 .color(light; @color){
-  color: @lighten(@color);
+  color: lighten(@color, 25%);
 }
 //called no matter which of the above is called
 @color(@_; @color){
@@ -412,11 +412,11 @@ div {
 
 ```less
 .mixin (@a) when (lightness(@a) >= 50%) {
-    background-color: black;
+    background-color: white;
 }
 
 .mixin (@a) when (lightness(@a) < 50%) {
-    background-color: white;
+    background-color: black;
 }
 ```
 
