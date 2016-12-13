@@ -1,0 +1,117 @@
+body,
+div,
+h3,
+h4,
+ul,
+li,
+span {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 12px;
+    color: #6E6E6E;
+    font-weight: bold;
+}
+
+a {
+    color: #1E99CF;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#wrapper {}
+
+.icon {
+    width: 80px;
+    height: 80px;
+    background-color: #fff;
+}
+
+.content {
+    padding: 8px;
+    width: 646px;
+    height: 180px;
+    background-color: #E7E9EC;
+}
+
+.headline {
+    font-weight: normal;
+    padding: 6px 0 12px 0;
+}
+
+.header {
+    width: 100%;
+}
+
+.timestamp {
+    float: right;
+    padding-top: 9px;
+    font-weight: bold;
+}
+
+.side-article {
+    border: 1px solid #E6E6E6;
+}
+
+.content div,
+.side-article div {
+    float: left;
+}
+
+.content>div {
+    box-shadow: 0 2px 2px #5F5F5F;
+}
+
+.content-article {
+    width: 530px;
+    height: 167px;
+    background-color: #fff;
+    padding: 6px 15px 6px 15px;
+    margin-left: 5px;
+}
+
+.content-description {
+    width: 320px;
+    padding: 13px 7px 3px 10px;
+    color: #5F5F5F;
+}
+
+.content-description h4 {
+    font-size: 16px;
+}
+
+.content-description .snippet-container {
+    padding: 8px 0;
+}
+
+cite {
+    margin-right: 4px;
+}
+
+.actions {
+    list-style: none;
+    display: inline-block;
+    margin-top: 11px;
+}
+
+.actions li {
+    display: inline-block;
+    margin-right: 13px;
+}
+
+.likes,
+.comments {
+    padding-left: 18px;
+    margin-right: 5px;
+}
+
+.likes {
+    background: url(./imgs/likes.png) no-repeat;
+}
+
+.comments {
+    background: url(./imgs/comments.png) no-repeat;
+}

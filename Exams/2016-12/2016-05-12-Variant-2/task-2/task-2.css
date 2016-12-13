@@ -1,0 +1,115 @@
+body, .navigation, .nav-tabs {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    border-radius: 5px;
+    width: 50em;
+    background: #26292C;
+    display: inline-block;
+    position: relative;
+    padding: 10px;
+}
+
+.navigation {
+    right: 5em;
+    width: 10em;
+    background: #3C3C3C;
+    display: inline-block;
+    position: absolute;
+}
+
+.nav-tabs .nav-item {
+    width: 100%;
+    border: 0;
+    display: inline-block;
+    background: #3C3C3C;
+    padding: 15px;
+    color: lightgray;
+    border: 1px solid #544B4B;
+    display: none;
+}
+
+.nav-tabs .nav-item:hover {
+    background: #80807C;
+}
+
+.nav-tabs .nav-item.show-nav {
+    display: block;
+    text-align: left;
+}
+
+.nav-tabs:hover .nav-item {
+    display: block;
+}
+
+.nav-item::before {
+    content: '';
+    display: inline-block;
+    margin-right: 5px;
+    height: 1.25em;
+    width: 1.25em;
+}
+
+.file-sass::before {
+    background: url('./imgs/sass-icon.png') no-repeat top;
+    background-size: cover;
+}
+
+.file-css::before {
+    background: url('./imgs/css-icon.png') no-repeat top;
+    background-size: cover;
+}
+
+.file-html::before {
+    background: url('./imgs/html-icon.png') no-repeat top;
+    background-size: cover;
+}
+
+.code-lines {
+    margin: 0;
+    font-size: 18px;
+}
+
+.code-lines > li {
+    margin: 0 15px;
+    padding: 3px;
+    color: white;
+}
+
+.property {
+    color: #5FD8F0;
+    margin-left: 25px;
+    font-style: italic;
+}
+
+.selector {
+    color: #A4E405;
+}
+
+.selector:hover {
+    text-decoration: underline;
+    font-style: italic;
+}
+
+.punctuation {
+    color: #D4D4AA;
+}
+
+.measure {
+    color: #F91D6F;
+}
+
+.value {
+    color: #AF7DFF;
+}
+
+.function {
+    color: brown;
+}
+
+.code-lines > li:hover {
+    background: #4C5354;
+    font-weight: bold;
+}

@@ -1,0 +1,109 @@
+body {
+    position: relative;
+}
+
+body, .navigation, .nav-tabs {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background: rgb(0, 0, 0);
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, 1) 0%, rgba(96, 96, 96, 1) 100%);
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 1) 0%, rgba(96, 96, 96, 1) 100%);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(96, 96, 96, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#606060', GradientType=0);
+    position: relative;
+    padding-top: 60px;
+}
+
+.navigation {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    background: #3C3C3C;
+    border-bottom: 1px solid #544B4B;
+}
+
+.nav-tabs .file {
+    margin: -2px;
+    border: 0;
+    display: inline-block;
+    background: #3C3C3C;
+    padding: 15px;
+    color: lightgray;
+    border: 1px solid #544B4B;
+}
+
+.nav-tabs .file:hover {
+    background: #80807C;
+    cursor: pointer;
+}
+
+.file.selected {
+    background-color: #040404;
+    border-bottom: 0;
+}
+
+.code-lines {
+    margin: 0;
+    position: relative;
+    font-size: 18px;
+}
+
+.code-lines > li {
+    margin: 0 15px;
+    padding: 3px;
+    color: white;
+}
+
+.property {
+    color: #00CCDD;
+    margin-left: 25px;
+}
+
+.selector {
+    color: yellow;
+    cursor: pointer;
+}
+
+.selector:hover {
+    text-decoration: underline;
+    font-style: italic;
+}
+
+.punctuation {
+    color: grey;
+}
+
+.function {
+    color: brown;
+}
+
+.code-lines > li:hover {
+    background: #4C5354;
+    font-weight: bold;
+}
+
+.file::before {
+    content: '';
+    display: inline-block;
+    margin-right: 5px;
+    height: 1.25em;
+    width: 1.25em;
+}
+
+.file-sass::before {
+    background: url('./imgs/sass-icon.png') no-repeat top;
+    background-size: cover;
+}
+
+.file-css::before {
+    background: url('./imgs/css-icon.png') no-repeat top;
+    background-size: cover;
+}
+
+.file-html::before {
+    background: url('./imgs/html-icon.png') no-repeat top;
+    background-size: cover;
+}

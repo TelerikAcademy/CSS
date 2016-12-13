@@ -1,0 +1,87 @@
+body,
+div,
+h2,
+span {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 18px;
+}
+
+#wrapper {
+    display: inline-block;
+    background-color: #eee;
+}
+
+.article {
+    width: 558px;
+    height: 620px;
+    margin: 16px;
+    box-shadow: 0 0 5px #888;
+    background-color: #fff;
+}
+
+.header {
+    height: 200px;
+    padding: 20px;
+    color: #3C3C3C;
+}
+
+.header .publisher {
+    display: inline-block;
+    padding: 0 10px;
+}
+
+.header .importance {
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 20px 0;
+}
+
+.header .timestamp {
+    float: right;
+    font-size: 15px;
+    color: #B9B9B9;
+}
+
+.header .title {
+    height: 80px;
+    font-size: 28px;
+    color: #5F5F5F;
+    padding: 24px 0;
+    border-top: 1px solid #EBEBEB;
+}
+
+.main-image {
+    overflow: hidden;
+}
+
+.footer {
+    color: #878787;
+    padding: 21px 20px;
+}
+
+.footer div {
+    display: inline-block;
+    width: 20px;
+    height: 45px;
+    padding: 13px 0 0 55px;
+    font-size: 15px;
+}
+
+.footer .likes {
+    background: url(./imgs/number.png) no-repeat;
+}
+
+.footer .comments {
+    background: url(./imgs/comment.png) no-repeat;
+    float: right;
+}
+
+.footer .shares {
+    background: url(./imgs/share.png) no-repeat;
+    float: right;
+}

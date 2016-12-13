@@ -1,0 +1,117 @@
+body,
+div,
+p,
+a {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 16px;
+    color: #777;
+}
+
+a {
+    text-decoration: none;
+    color: #777;
+}
+
+#wrapper {
+    border: 2px solid #DFE0E4;
+    margin: 11px;
+    padding: 15px;
+    width: 562px;
+    height: 617px;
+    border-radius: 4px;
+}
+
+.logo {
+    width: 48px;
+    height: 48px;
+    border: 1px solid #E6E6E6;
+}
+
+.main-image {
+    width: 562px;
+    height: 286px;
+}
+
+.header,
+.header>div {
+    display: inline-block;
+}
+
+.header>div {
+    margin: 5px;
+    vertical-align: top;
+}
+
+.header>div>a {
+    display: block;
+}
+
+.header a.name {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #365899;
+}
+
+.header a.timestamp {
+    font-size: 0.9em;
+    color: #999;
+}
+
+#wrapper p {
+    margin: 12px 0 20px 0;
+    line-height: 22px;
+}
+
+.event {
+    box-shadow: 0 0 10px #999;
+    height: 420px;
+}
+
+.event .title {
+    font-family: serif;
+    font-size: 1.4em;
+    margin: 18px 10px 5px 15px;
+    color: #000;
+}
+
+.event .author {
+    margin: 5px 10px 5px 15px;
+    font-size: 0.8em;
+    color: #999;
+}
+
+.event .capital {
+    text-transform: uppercase;
+    font-size: 0.8em;
+    margin: 10px 10px 10px 15px;
+    color: #999;
+}
+
+.footer {
+    margin: 22px 0 0 0;
+    padding: 12px;
+    font-size: 0.9em;
+    font-weight: bold;
+    border-top: 1px solid #999;
+}
+
+.footer a {
+    padding: 0 20px;
+}
+
+.footer .like {
+    background: url(./imgs/like.png) no-repeat;
+}
+
+.footer .comment {
+    background: url(./imgs/comment.png) no-repeat;
+}
+
+.footer .share {
+    background: url(./imgs/share.png) no-repeat;
+}
