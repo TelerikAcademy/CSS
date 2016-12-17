@@ -29,7 +29,7 @@
 <!-- <img class="slide-image" showInPresentation="true" src="imgs\pic02.png" style="top:45%; left:29%; width:40%; z-index:-1; border: 2px solid white; border-radius: 10px;" /> -->
 
 
-<!-- attr: {  id:'textprops', showInPresentation:true, hasScriptWrapper:true } -->
+<!-- attr: {  id:'textprops', showInPresentation:true, hasScriptWrapper:true, style: "font-size: 0.8em" } -->
 # <a id="textprops"></a>Text-related CSS Properties
 - `color` – specifies the color of the text
 - `font-size` – size of font: `xx-small`, `x-small`, `small`, `medium`, `large`, `x-large`, `xx-large`, `smaller`, `larger` or numeric value
@@ -182,7 +182,7 @@
   - `border-top-style`, `border-left-color`, …
 
 
-<!-- attr: {   showInPresentation:true, hasScriptWrapper:true, style:'font-size: 0.85em;' } -->
+<!-- attr: {   showInPresentation:true, hasScriptWrapper:true, style:'font-size: 0.75em;' } -->
 # Border Shorthand Property
 - `border`: shorthand rule for setting border properties at once:
 
